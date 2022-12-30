@@ -1,7 +1,7 @@
 import React from "react";
 import Card from "./Card";
 
-const Test2 = () => {
+const HowItWorks = () => {
   return (
     <div class="from-secondary to-accent text-primary-content  grid place-items-center items-end bg-gradient-to-b pt-12">
       <div class="w-full lg:w-3/5 px-4">
@@ -60,4 +60,4 @@ const Test2 = () => {
   );
 };
 
-export default Test2;
+export default HowItWorks;

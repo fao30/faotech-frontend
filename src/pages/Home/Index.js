@@ -1,15 +1,15 @@
 import React from "react";
 import Introduction from "./components/Introduction";
-import Test2 from "./components/Test2";
-import Test3 from "./components/Test3";
+import HowItWorks from "./components/HowItWorks";
+import Benefits from "./components/Benefits";
 import Test4 from "./components/Test4";
 
 const Index = () => {
   return (
     <div>
       <Introduction />
-      <Test2 />
-      <Test3 />
+      <HowItWorks />
+      <Benefits />
       <Test4 />
     </div>
   );

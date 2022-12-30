@@ -1,3 +1,4 @@
+import { toBeRequired } from "@testing-library/jest-dom/dist/matchers";
 import { React, useState, useEffect, useRef } from "react";
 
 const Introduction = () => {
@@ -31,7 +32,7 @@ const Introduction = () => {
             >
               <img
                 class="mt-12 max-w-l sm:max-w-xl lg:max-w-3xl rounded-lg shadow-2xl"
-                src="https://static.wixstatic.com/media/c837a6_604c6b86faf247e3b1060fdc0a80d6dc~mv2.png/v1/fill/w_1598,h_900,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/screen%201.png"
+                src={require("./photos/screen1.png")}
               />
             </div>
           </div>
