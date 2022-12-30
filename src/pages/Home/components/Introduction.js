@@ -33,7 +33,7 @@ const Introduction = () => {
               } flex justify-center items-center`}
             >
               <img
-                class="mt-12 max-w-l sm:max-w-xl lg:max-w-3xl rounded-lg shadow-2xl"
+                class="mt-16 max-w-l sm:max-w-xl lg:max-w-3xl rounded-lg shadow-2xl image-hover"
                 src={require("./photos/screen1.png")}
               />
             </div>
