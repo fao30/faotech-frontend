@@ -1,6 +1,6 @@
 import React from "react";
 
-const Test = () => {
+const Introduction = () => {
   return (
     <div class="from-primary to-secondary text-primary-content -mt-[4rem] grid place-items-center items-end bg-gradient-to-b pt-20">
       <div class="hero">
@@ -30,4 +30,4 @@ const Test = () => {
   );
 };
 
-export default Test;
+export default Introduction;
