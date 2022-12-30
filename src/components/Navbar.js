@@ -62,7 +62,7 @@ const Navbar = () => {
             </ul>
           </div>
           <ThemeChanger />
-          <a class="btn ml-0.5 btn-info font-bold normal-case">
+          <a class="btn ml-0.5 lg:ml-2 sm:lg-ml-2 md:ml-2 btn-info font-bold normal-case">
             Book a Meeting
           </a>
         </div>

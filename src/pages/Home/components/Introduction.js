@@ -1,10 +1,9 @@
-import { React, useState, useEffect } from "react";
-import Popup from "react-animated-popup";
+import { React, useState, useEffect, useRef } from "react";
+
 const Introduction = () => {
   const [show, setShow] = useState(false);
-
   useEffect(() => {
-    let timer1 = setTimeout(() => setShow(true), 1.5 * 1000);
+    let timer1 = setTimeout(() => setShow(true), 0.5 * 1000);
     return () => {
       clearTimeout(timer1);
     };
