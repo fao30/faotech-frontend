@@ -10,12 +10,14 @@ const Introduction = () => {
     };
   }, []);
   return (
-    <div class="from-primary to-secondary text-primary-content -mt-[4rem] grid place-items-center items-end bg-gradient-to-b pt-20">
+    <div class="from-primary to-secondary text-primary-content -mt-[5rem] grid place-items-center items-end bg-gradient-to-b pt-20">
       <div class="hero">
         <div class="hero-content mt-20 text-center">
           <div>
             <h1 class="text-3xl sm:text-4xl lg:text-4xl font-bold mb-6 ">
-              Unlimited Ideas, Simple Steps
+              Unlimited Ideas,
+              <br />
+              Simple Steps
             </h1>
             <h1 class="text-4xl sm:text-5xl lg:text-5xl font-bold">
               Build, manage and deliver

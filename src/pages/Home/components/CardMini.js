@@ -8,7 +8,7 @@ const CardMini = ({ cardDescProps, cardIconProps, cardTitleProps }) => {
           <img src={cardIconProps} class="w-32 rounded-md" />
         </div>
         <div class="flex justify-center items-center">
-          <h2 class="font-bold text-center text-base-content text-s md:text-xl lg:text-2xl mb-2">
+          <h2 class="font-bold text-center text-base-content text-s md:text-xl lg:text-xl mb-2">
             {cardTitleProps}
           </h2>
         </div>
