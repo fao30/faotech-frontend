@@ -1,11 +1,14 @@
 import { React, useState, useEffect } from "react";
 import Popup from "react-animated-popup";
-
 const Introduction = () => {
-  const [visible, setVisible] = useState(false);
+  const [show, setShow] = useState(false);
+
   useEffect(() => {
-    setVisible(true);
-  });
+    let timer1 = setTimeout(() => setShow(true), 1.5 * 1000);
+    return () => {
+      clearTimeout(timer1);
+    };
+  }, []);
   return (
     <div class="from-primary to-secondary text-primary-content -mt-[4rem] grid place-items-center items-end bg-gradient-to-b pt-20">
       <div class="hero">
@@ -22,7 +25,11 @@ const Introduction = () => {
             <button class="mt-10 btn btn-warning font-bold normal-case">
               Learn More
             </button>
-            <div class="flex justify-center items-center">
+            <div
+              class={`${
+                !show ? "animate-bounce" : ""
+              } flex justify-center items-center`}
+            >
               <img
                 class="mt-12 max-w-l sm:max-w-xl lg:max-w-3xl rounded-lg shadow-2xl"
                 src="https://static.wixstatic.com/media/c837a6_604c6b86faf247e3b1060fdc0a80d6dc~mv2.png/v1/fill/w_1598,h_900,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/screen%201.png"
@@ -36,7 +43,3 @@ const Introduction = () => {
 };
 
 export default Introduction;
-
-{
-  /* <Popup visible={visible}> */
-}
