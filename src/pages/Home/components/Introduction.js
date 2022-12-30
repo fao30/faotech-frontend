@@ -1,6 +1,11 @@
-import React from "react";
+import { React, useState, useEffect } from "react";
+import Popup from "react-animated-popup";
 
 const Introduction = () => {
+  const [visible, setVisible] = useState(false);
+  useEffect(() => {
+    setVisible(true);
+  });
   return (
     <div class="from-primary to-secondary text-primary-content -mt-[4rem] grid place-items-center items-end bg-gradient-to-b pt-20">
       <div class="hero">
@@ -31,3 +36,7 @@ const Introduction = () => {
 };
 
 export default Introduction;
+
+{
+  /* <Popup visible={visible}> */
+}
