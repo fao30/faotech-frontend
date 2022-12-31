@@ -17,40 +17,47 @@ const HowItWorks = () => {
       </div>
       <div class="hero">
         <div class="hero-content text-center text-base-content">
-          <div class="flex justify-center flex-wrap items-center gap-4">
+          <div class="flex justify-center flex-wrap items-center">
             <Card
               cardDescProps={"Activity description"}
               cardTitleProps={"Planning"}
               cardIconProps={
-                "https://atg.fas.harvard.edu/sites/hwpi.harvard.edu/files/fas-acadtech/files/zoom-icon-white-on-blue_01.png?m=1609960507"
+                "https://cdn-icons-png.flaticon.com/512/3585/3585991.png"
               }
             />
             <Card
               cardDescProps={"Activity description"}
-              cardTitleProps={"Analyze"}
+              cardTitleProps={"Scrutinize"}
               cardIconProps={
-                "http://store-images.s-microsoft.com/image/apps.56950.13959754522315136.c4ea2415-8e3c-42bf-8f77-e885eb7c11a1.1c754ca1-130c-4a98-afb0-c50aed118ab8"
+                "https://cdn-icons-png.flaticon.com/512/3212/3212050.png"
               }
             />
             <Card
               cardDescProps={"Activity description"}
               cardTitleProps={"UI/UX"}
               cardIconProps={
-                "https://camo.githubusercontent.com/a86a8278da4c5b5a43330e1ea28e6ba050007a837128b5dff5b35d5ff0f1248a/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f313630302f312a365867664443566e3831415958363858766432492d674032782e706e67"
+                "https://cdn-icons-png.flaticon.com/512/5202/5202983.png"
               }
             />
             <Card
               cardDescProps={"Activity description"}
               cardTitleProps={"Back End"}
               cardIconProps={
-                "https://cdn-icons-png.flaticon.com/512/3668/3668474.png"
+                "https://cdn-icons-png.flaticon.com/512/2166/2166796.png"
               }
             />
             <Card
               cardDescProps={"Activity description"}
               cardTitleProps={"Front End"}
               cardIconProps={
-                "https://cdn-icons-png.flaticon.com/512/2721/2721264.png"
+                "https://cdn-icons-png.flaticon.com/512/752/752420.png"
+              }
+            />
+            <Card
+              cardDescProps={"Activity description"}
+              cardTitleProps={"Maintenance"}
+              cardIconProps={
+                "https://cdn-icons-png.flaticon.com/512/2942/2942690.png"
               }
             />
           </div>

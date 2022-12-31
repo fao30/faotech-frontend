@@ -8,12 +8,14 @@
   cursor: pointer;
 }
 
-.image-hover:hover {
-  transform: scale(1.1);
-  cursor: pointer;
-}
-
-.image-hover {
+/* .image-hover {
+  transition: -webkit-transform 0.2s;
   transition: transform 0.2s;
   cursor: pointer;
 }
+
+.image-hover:active {
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+  cursor: pointer;
+} */

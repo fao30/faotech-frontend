@@ -9,12 +9,12 @@ const Benefits = () => {
           <div>
             <div class="flex justify-center items-center">
               <img
-                class="mt-12 max-w-l sm:max-w-xl lg:max-w-3xl rounded-lg image-hover"
+                class="mt-2 max-w-l sm:max-w-xl lg:max-w-3xl rounded-lg image-hover"
                 src={require("./photos/screen2.png")}
               />
             </div>
           </div>
-          <div class="flex flex-wrap justify-center items-center gap-4 mt-16">
+          <div class="flex flex-wrap justify-center items-center mt-6">
             <CardMini
               cardTitleProps={"Attractive Interface"}
               cardIconProps={require("./photos/screensupport1.png")}

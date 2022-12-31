@@ -16,11 +16,8 @@ const Introduction = () => {
           Unlimited Ideas, <br />
           Unlimited Steps
         </h1>
-        <h1 class="text-4xl sm:text-5xl lg:text-5xl font-bold text-center">
+        <h1 class="text-4xl sm:text-5xl lg:text-5xl font-bold text-center mb-2">
           Build, manage and deliver application with FaoTech
-        </h1>
-        <h1 class="mt-6 text-xl sm:text-4xl lg:text-4xl font-bold mb-6 text-center ">
-          A one-stop shop that delivers your application across all platforms
         </h1>
       </div>
 
@@ -36,7 +33,7 @@ const Introduction = () => {
               } flex justify-center items-center`}
             >
               <img
-                class="mt-16 max-w-l sm:max-w-xl lg:max-w-3xl rounded-lg shadow-xl image-hover"
+                class="mt-10 max-w-l sm:max-w-xl lg:max-w-3xl rounded-lg shadow-xl image-hover"
                 src={require("./photos/screen1.png")}
               />
             </div>
