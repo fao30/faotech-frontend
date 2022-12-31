@@ -1,4 +1,4 @@
-.card:hover {
+/* .card:hover {
   transform: scale(1.1);
   cursor: pointer;
 }
@@ -6,7 +6,7 @@
 .card {
   transition: transform 0.2s;
   cursor: pointer;
-}
+} */
 
 /* .image-hover {
   transition: -webkit-transform 0.2s;

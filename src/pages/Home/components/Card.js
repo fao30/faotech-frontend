@@ -3,9 +3,9 @@ import "./custom.css";
 
 const Card = ({ cardDescProps, cardIconProps, cardTitleProps }) => {
   return (
-    <div class=" card w-36 xl:w-96 lg:w-64 md:w-52 sm:w-52 shadow-xl my-4 mx-4 from-accent to-white bg-gradient-to-t">
+    <div class=" card w-36 xl:w-96 lg:w-64 md:w-52 sm:w-52 shadow-xl my-4 mx-4 from-accent to-white bg-gradient-to-t transition-all hover:shadow-lg transform hover:scale-110 hover:cursor-pointer">
       <div class="card-body   text-left text-primary-content">
-        <h2 class="font-bold text-center md:text-left lg:text-left text-sm md:text-xl lg:text-2xl">
+        <h2 class="font-bold text-center md:text-left lg:text-left text-sm md:text-xl lg:text-xl">
           {cardTitleProps}
         </h2>
         <p class="hidden md:flex lg:flex">{cardDescProps}</p>

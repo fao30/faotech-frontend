@@ -3,7 +3,7 @@ import "./custom.css";
 
 const CardMini = ({ cardDescProps, cardIconProps, cardTitleProps }) => {
   return (
-    <div class=" card w-36 xl:w-96 lg:w-64 md:w-52 sm:w-52 shadow-xl my-4 mx-4 from-accent to-base-200 bg-gradient-to-b">
+    <div class=" card w-36 xl:w-96 lg:w-64 md:w-52 sm:w-52 shadow-xl my-4 mx-4 from-accent to-base-200 bg-gradient-to-b transition-all hover:shadow-lg transform hover:scale-110 hover:cursor-pointer">
       <div class="card-body text-left text-primary-content">
         <div class="card-actions justify-center lg:justify-center">
           <img src={cardIconProps} class="w-32 rounded-md" />

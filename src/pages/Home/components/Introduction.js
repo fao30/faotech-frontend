@@ -32,7 +32,7 @@ const Introduction = () => {
               } flex justify-center items-center`}
             >
               <img
-                class="mt-10 max-w-l sm:max-w-xl lg:max-w-3xl rounded-lg shadow-xl image-hover"
+                class="mt-10 max-w-l sm:max-w-xl lg:max-w-3xl rounded-lg shadow-xl image-hover transition-all hover:shadow-lg transform active:scale-110 hover:cursor-pointer"
                 src={require("./photos/screen1.png")}
               />
             </div>
