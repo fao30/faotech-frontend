@@ -1,12 +1,11 @@
-import { toBeRequired } from "@testing-library/jest-dom/dist/matchers";
-import { React, useState, useEffect, useRef } from "react";
+import { React, useState, useEffect } from "react";
 
 const Introduction = () => {
   const [show, setShow] = useState(false);
   useEffect(() => {
-    let timer1 = setTimeout(() => setShow(true), 0.5 * 1000);
+    let imageTimer = setTimeout(() => setShow(true), 0.5 * 1000);
     return () => {
-      clearTimeout(timer1);
+      clearTimeout(imageTimer);
     };
   }, []);
   return (

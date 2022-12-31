@@ -8,7 +8,6 @@ function App() {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
     >
-      {" "}
       <Index />
     </motion.div>
   );
