@@ -8,10 +8,10 @@ const HowItWorks = () => {
         <h1 class="text-2xl sm:text-4xl lg:text-4xl font-bold mb-6 text-center ">
           How it works?
         </h1>
-        <h1 class="text-4xl sm:text-5xl lg:text-5xl font-bold text-center">
+        <h1 class="text-3xl sm:text-5xl lg:text-5xl font-bold text-center">
           All-in-one solution for efficient applications (UI/UX, Full Stack)
         </h1>
-        <h1 class="mt-6 text-2xl sm:text-4xl lg:text-4xl font-bold mb-6 text-center ">
+        <h1 class="mt-6 text-xl sm:text-4xl lg:text-4xl font-bold mb-6 text-center ">
           A one-stop shop that delivers your application across all platforms
         </h1>
       </div>
