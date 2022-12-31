@@ -1,15 +1,17 @@
 import React from "react";
 import ThemeChanger from "./ThemeChanger";
+import UseReadingProgress from "./UseReadingProgress";
 
 const Navbar = () => {
+  const completion = UseReadingProgress();
   return (
     <div
       class="
-    sticky top-0 z-30 flex h-16 w-full justify-center bg-opacity-90 backdrop-blur transition-all duration-100 
+    sticky top-0 z-30  h-16  bg-opacity-90 backdrop-blur transition-all duration-100 
     text-primary-content shadow
     "
     >
-      <div class="navbar">
+      <div class="navbar flex justify-center">
         <div class="navbar-start">
           <div class="dropdown">
             <label tabindex="0" class="btn btn-ghost lg:hidden">
@@ -66,6 +68,10 @@ const Navbar = () => {
             Book a Meeting
           </a>
         </div>
+        <span
+          style={{ transform: `translateX(${completion - 100}%)` }}
+          class="absolute bg-base-content h-1 w-full bottom-0"
+        />
       </div>
     </div>
   );

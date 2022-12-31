@@ -9,7 +9,7 @@ const Footer = () => {
             <span class=" font-extrabold">Fao</span> <span>Tech</span>
           </div>
           <p>© 2023</p>
-          <p>All Right Reserved.</p>
+          <p>All rights reserved.</p>
         </div>
         <div>
           <span class="footer-title">Guides</span>
