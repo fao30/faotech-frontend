@@ -12,6 +12,7 @@ const Footer = () => {
           <p>All Right Reserved.</p>
         </div>
         <div>
+          <span class="footer-title">Guides</span>
           <a href class="link link-hover">
             Features
           </a>
@@ -26,6 +27,7 @@ const Footer = () => {
           </a>
         </div>
         <div>
+          <span class="footer-title">Our Location</span>
           <a href class="link link-hover">
             Bima Citra 16, No. 2
           </a>

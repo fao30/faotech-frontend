@@ -1,8 +1,8 @@
 import React from "react";
 
-const Test3 = () => {
+const Test4 = () => {
   return (
-    <div class="from-accent to-base-200 text-primary-content grid place-items-center items-end bg-gradient-to-b pt-20 pb-20">
+    <div class="from-base-200 to-base-300 text-primary-content grid place-items-center items-end bg-gradient-to-b pt-20 pb-20">
       <div class="hero">
         <div class="hero-content text-center">
           <div>
@@ -30,4 +30,4 @@ const Test3 = () => {
   );
 };
 
-export default Test3;
+export default Test4;
