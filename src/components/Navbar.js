@@ -1,8 +1,10 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import ThemeChanger from "./ThemeChanger";
 import UseReadingProgress from "./UseReadingProgress";
 
 const Navbar = () => {
+  const navigate = useNavigate();
   const completion = UseReadingProgress();
   return (
     <div
@@ -35,17 +37,40 @@ const Navbar = () => {
               class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52  text-base-content"
             >
               <li>
-                <a>Home</a>
+                <a
+                  onClick={() => {
+                    navigate("/");
+                  }}
+                >
+                  Home
+                </a>
               </li>
               <li>
-                <a>About</a>
+                <a
+                  onClick={() => {
+                    navigate("/about-us");
+                  }}
+                >
+                  About
+                </a>
               </li>
               <li>
-                <a>Jobs</a>
+                <a
+                  onClick={() => {
+                    navigate("/careers");
+                  }}
+                >
+                  Jobs
+                </a>
               </li>
             </ul>
           </div>
-          <a class="btn btn-ghost normal-case lg:text-2xl sm:text-2xl text-xl font-extrabold font-title">
+          <a
+            onClick={() => {
+              navigate("/");
+            }}
+            class="btn btn-ghost normal-case lg:text-2xl sm:text-2xl text-xl font-extrabold font-title"
+          >
             Fao<span className="font-semibold">Tech</span>
           </a>
         </div>
@@ -53,13 +78,34 @@ const Navbar = () => {
           <div class="hidden lg:flex">
             <ul class="menu menu-horizontal px-1">
               <li>
-                <a className="btn btn-ghost normal-case">Home</a>
+                <a
+                  className="btn btn-ghost normal-case"
+                  onClick={() => {
+                    navigate("/");
+                  }}
+                >
+                  Home
+                </a>
               </li>
               <li>
-                <a className="btn btn-ghost normal-case">About</a>
+                <a
+                  className="btn btn-ghost normal-case"
+                  onClick={() => {
+                    navigate("/about-us");
+                  }}
+                >
+                  About
+                </a>
               </li>
               <li>
-                <a className="btn btn-ghost normal-case">Jobs</a>
+                <a
+                  className="btn btn-ghost normal-case"
+                  onClick={() => {
+                    navigate("/careers");
+                  }}
+                >
+                  Jobs
+                </a>
               </li>
             </ul>
           </div>
