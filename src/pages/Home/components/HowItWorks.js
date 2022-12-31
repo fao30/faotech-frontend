@@ -4,9 +4,9 @@ import Card from "./Card";
 const HowItWorks = () => {
   return (
     <div class="from-secondary to-accent text-primary-content  grid place-items-center items-end bg-gradient-to-b pt-12">
-      <div class="w-full lg:w-3/5 px-4">
+      <div class=" w-11/12 md:w-4/5 lg:w-6/12 px-4">
         <h1 class="text-2xl sm:text-4xl lg:text-4xl font-bold mb-6 text-center ">
-          How it works
+          How it works?
         </h1>
         <h1 class="text-4xl sm:text-5xl lg:text-5xl font-bold text-center">
           All-in-one solution for efficient applications (UI/UX, Full Stack)
@@ -41,14 +41,14 @@ const HowItWorks = () => {
             />
             <Card
               cardDescProps={"Activity description"}
-              cardTitleProps={"Back-End"}
+              cardTitleProps={"Back End"}
               cardIconProps={
                 "https://cdn-icons-png.flaticon.com/512/3668/3668474.png"
               }
             />
             <Card
               cardDescProps={"Activity description"}
-              cardTitleProps={"Front-End"}
+              cardTitleProps={"Front End"}
               cardIconProps={
                 "https://cdn-icons-png.flaticon.com/512/2721/2721264.png"
               }

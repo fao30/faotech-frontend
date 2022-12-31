@@ -9,7 +9,7 @@ const Benefits = () => {
           <div>
             <div class="flex justify-center items-center">
               <img
-                class="mt-12 max-w-l sm:max-w-xl lg:max-w-3xl rounded-lg shadow-2xl image-hover"
+                class="mt-12 max-w-l sm:max-w-xl lg:max-w-3xl rounded-lg image-hover"
                 src={require("./photos/screen2.png")}
               />
             </div>
