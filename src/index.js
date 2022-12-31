@@ -20,7 +20,7 @@ export default function Routing() {
         <Navbar />
         <Routes>
           <Route exact path="/" element={<App />} />
-          <Route path="/about-us" element={<AboutUs />} />
+          <Route path="/about" element={<AboutUs />} />
           <Route path="/careers" element={<Job />} />
           <Route path="*" element={<App />} />
         </Routes>

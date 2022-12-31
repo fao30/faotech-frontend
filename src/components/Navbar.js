@@ -48,7 +48,7 @@ const Navbar = () => {
               <li>
                 <a
                   onClick={() => {
-                    navigate("/about-us");
+                    navigate("/about");
                   }}
                 >
                   About
@@ -91,7 +91,7 @@ const Navbar = () => {
                 <a
                   className="btn btn-ghost normal-case"
                   onClick={() => {
-                    navigate("/about-us");
+                    navigate("/about");
                   }}
                 >
                   About

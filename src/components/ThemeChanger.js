@@ -1,6 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { themeChange } from "theme-change";
 
 const ThemeChanger = () => {
+  useEffect(() => {
+    themeChange(false);
+  }, []);
   return (
     <div title="Change Theme" className="dropdown dropdown-end">
       <div tabIndex="0" class="btn gap-1 btn-ghost" data-choose-theme>

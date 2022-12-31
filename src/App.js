@@ -1,15 +1,16 @@
-import { useEffect } from "react";
-import { themeChange } from "theme-change";
+import { motion } from "framer-motion";
 import Index from "./pages/Home/Index";
 
 function App() {
-  useEffect(() => {
-    themeChange(false);
-  }, []);
   return (
-    <div>
+    <motion.div
+      initial={{ opacity: 0.5 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+    >
+      {" "}
       <Index />
-    </div>
+    </motion.div>
   );
 }
 
