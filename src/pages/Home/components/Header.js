@@ -26,7 +26,7 @@ const Header = () => {
               </h1>
             </motion.div>
             <div class="flex justify-start">
-              <button class="text-white  hover:bg-primary-200 bg-primary-100 shadow-xl btn border-none normal-case w-72 lg:w-80 mb-12 lg:mb-0">
+              <button class="text-white rounded-3xl hover:bg-primary-200 bg-primary-100 shadow-xl btn border-none normal-case w-72 lg:w-80 mb-12 lg:mb-0">
                 Start Your Journey
               </button>
             </div>
@@ -34,12 +34,6 @@ const Header = () => {
           {/* carousel */}
           <div class="z-10 mx-10 rounded-box w-full lg:w-2/5 transition-all transform hover:scale-110 hover:cursor-ew-resize">
             <div class="carousel carousel-center w-full  rounded-box space-x-4">
-              <div class="carousel-item">
-                <img
-                  src="https://preview.redd.it/ouodm9z9ycp51.png?auto=webp&s=51b2940b6d7fb31275465303a10fa104192e003f"
-                  class="rounded-box w-96"
-                />
-              </div>
               <div class="carousel-item">
                 <img
                   src="https://preview.redd.it/ouodm9z9ycp51.png?auto=webp&s=51b2940b6d7fb31275465303a10fa104192e003f"

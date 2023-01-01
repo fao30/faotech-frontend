@@ -1,5 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import { Icon } from "@iconify/react";
 
 const Footer = () => {
   const navigate = useNavigate();
@@ -53,31 +54,40 @@ const Footer = () => {
         <div class="w-56">
           <span class="text-lg">Contact</span>
           <div class="flex justify-center items-start">
-            <img
-              class="w-6 h-auto"
-              src="https://cdn-icons-png.flaticon.com/512/542/542689.png"
+            <Icon
+              icon="material-symbols:mail-outline"
+              color="#757575"
+              width="24"
+              height="24"
             />
             <a href class="link link-hover text-gray-500 ml-2">
               contact@faotech.com
             </a>
           </div>
           <div class="flex justify-center items-start">
-            <img
-              class="w-6"
-              src="https://cdn-icons-png.flaticon.com/512/455/455705.png"
+            <Icon
+              icon="material-symbols:call"
+              color="#757575"
+              width="24"
+              height="24"
             />
             <a href class="link link-hover text-gray-500 ml-2">
               +79246246378
             </a>
           </div>
           <div class="flex justify-center items-start">
-            <img
-              class="w-6"
-              src="https://cdn-icons-png.flaticon.com/512/5616/5616461.png"
+            <Icon
+              icon="mdi:home-city-outline"
+              color="#757575"
+              width="24"
+              height="24"
             />
             <a href class="link link-hover text-gray-500 ml-2">
-              Jl. Meridiannaya No.3, Sovetsky Rayon, Kota Kazan, Respublik
-              Tatarstan, Russia
+              Meridiannaya Street 3,
+              <br />
+              Sovetskiy District, Kazan,
+              <br />
+              Republic of Tatarstan, Russia
             </a>
           </div>
         </div>
