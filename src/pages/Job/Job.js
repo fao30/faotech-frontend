@@ -1,16 +1,14 @@
 import { motion } from "framer-motion";
-import Index from "./pages/Home/Index";
+import React from "react";
 
-function App() {
+const Job = () => {
   return (
     <motion.div
       initial={{ opacity: 0.5 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-    >
-      <Index />
-    </motion.div>
+    ></motion.div>
   );
-}
+};
 
-export default App;
+export default Job;

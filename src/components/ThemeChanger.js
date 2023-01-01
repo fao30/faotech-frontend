@@ -1,6 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { themeChange } from "theme-change";
 
 const ThemeChanger = () => {
+  useEffect(() => {
+    themeChange(false);
+  }, []);
   return (
     <div title="Change Theme" className="dropdown dropdown-end">
       <div tabIndex="0" class="btn gap-1 btn-ghost" data-choose-theme>
@@ -44,11 +48,11 @@ const ThemeChanger = () => {
             >
               <div class="grid grid-cols-5 grid-rows-3">
                 <div class="col-span-5 row-span-3 row-start-1 flex gap-1 py-3 px-4">
-                  <div class="flex-grow text-sm font-bold">cupcake</div>{" "}
+                  <div class="flex-grow text-sm font-bold">cupcake</div>
                   <div class="flex flex-shrink-0 flex-wrap gap-1">
-                    <div class="bg-primary w-2 rounded"></div>{" "}
-                    <div class="bg-secondary w-2 rounded"></div>{" "}
-                    <div class="bg-accent w-2 rounded"></div>{" "}
+                    <div class="bg-primary w-2 rounded"></div>
+                    <div class="bg-secondary w-2 rounded"></div>
+                    <div class="bg-accent w-2 rounded"></div>
                     <div class="bg-neutral w-2 rounded"></div>
                   </div>
                 </div>
@@ -66,11 +70,11 @@ const ThemeChanger = () => {
             >
               <div class="grid grid-cols-5 grid-rows-3">
                 <div class="col-span-5 row-span-3 row-start-1 flex gap-1 py-3 px-4">
-                  <div class="flex-grow text-sm font-bold">pastel</div>{" "}
+                  <div class="flex-grow text-sm font-bold">pastel</div>
                   <div class="flex flex-shrink-0 flex-wrap gap-1">
-                    <div class="bg-primary w-2 rounded"></div>{" "}
-                    <div class="bg-secondary w-2 rounded"></div>{" "}
-                    <div class="bg-accent w-2 rounded"></div>{" "}
+                    <div class="bg-primary w-2 rounded"></div>
+                    <div class="bg-secondary w-2 rounded"></div>
+                    <div class="bg-accent w-2 rounded"></div>
                     <div class="bg-neutral w-2 rounded"></div>
                   </div>
                 </div>
@@ -88,11 +92,11 @@ const ThemeChanger = () => {
             >
               <div class="grid grid-cols-5 grid-rows-3">
                 <div class="col-span-5 row-span-3 row-start-1 flex gap-1 py-3 px-4">
-                  <div class="flex-grow text-sm font-bold">valentine</div>{" "}
+                  <div class="flex-grow text-sm font-bold">valentine</div>
                   <div class="flex flex-shrink-0 flex-wrap gap-1">
-                    <div class="bg-primary w-2 rounded"></div>{" "}
-                    <div class="bg-secondary w-2 rounded"></div>{" "}
-                    <div class="bg-accent w-2 rounded"></div>{" "}
+                    <div class="bg-primary w-2 rounded"></div>
+                    <div class="bg-secondary w-2 rounded"></div>
+                    <div class="bg-accent w-2 rounded"></div>
                     <div class="bg-neutral w-2 rounded"></div>
                   </div>
                 </div>
@@ -110,11 +114,33 @@ const ThemeChanger = () => {
             >
               <div class="grid grid-cols-5 grid-rows-3">
                 <div class="col-span-5 row-span-3 row-start-1 flex gap-1 py-3 px-4">
-                  <div class="flex-grow text-sm font-bold">retro</div>{" "}
+                  <div class="flex-grow text-sm font-bold">retro</div>
                   <div class="flex flex-shrink-0 flex-wrap gap-1">
-                    <div class="bg-primary w-2 rounded"></div>{" "}
-                    <div class="bg-secondary w-2 rounded"></div>{" "}
-                    <div class="bg-accent w-2 rounded"></div>{" "}
+                    <div class="bg-primary w-2 rounded"></div>
+                    <div class="bg-secondary w-2 rounded"></div>
+                    <div class="bg-accent w-2 rounded"></div>
+                    <div class="bg-neutral w-2 rounded"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="outline-base-content overflow-hidden rounded-lg outline-2 outline-offset-2 outline"
+            data-set-theme="night"
+            data-act-class="outline"
+          >
+            <div
+              data-theme="night"
+              class="bg-base-100 text-base-content w-full cursor-pointer font-sans"
+            >
+              <div class="grid grid-cols-5 grid-rows-3">
+                <div class="col-span-5 row-span-3 row-start-1 flex gap-1 py-3 px-4">
+                  <div class="flex-grow text-sm font-bold">night</div>
+                  <div class="flex flex-shrink-0 flex-wrap gap-1">
+                    <div class="bg-primary w-2 rounded"></div>
+                    <div class="bg-secondary w-2 rounded"></div>
+                    <div class="bg-accent w-2 rounded"></div>
                     <div class="bg-neutral w-2 rounded"></div>
                   </div>
                 </div>
@@ -132,17 +158,18 @@ const ThemeChanger = () => {
             >
               <div class="grid grid-cols-5 grid-rows-3">
                 <div class="col-span-5 row-span-3 row-start-1 flex gap-1 py-3 px-4">
-                  <div class="flex-grow text-sm font-bold">dracula</div>{" "}
+                  <div class="flex-grow text-sm font-bold">dracula</div>
                   <div class="flex flex-shrink-0 flex-wrap gap-1">
-                    <div class="bg-primary w-2 rounded"></div>{" "}
-                    <div class="bg-secondary w-2 rounded"></div>{" "}
-                    <div class="bg-accent w-2 rounded"></div>{" "}
+                    <div class="bg-primary w-2 rounded"></div>
+                    <div class="bg-secondary w-2 rounded"></div>
+                    <div class="bg-accent w-2 rounded"></div>
                     <div class="bg-neutral w-2 rounded"></div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+
           <div
             class="outline-base-content overflow-hidden rounded-lg outline-2 outline-offset-2 outline"
             data-set-theme="synthwave"
@@ -154,11 +181,11 @@ const ThemeChanger = () => {
             >
               <div class="grid grid-cols-5 grid-rows-3">
                 <div class="col-span-5 row-span-3 row-start-1 flex gap-1 py-3 px-4">
-                  <div class="flex-grow text-sm font-bold">synthwave</div>{" "}
+                  <div class="flex-grow text-sm font-bold">synthwave</div>
                   <div class="flex flex-shrink-0 flex-wrap gap-1">
-                    <div class="bg-primary w-2 rounded"></div>{" "}
-                    <div class="bg-secondary w-2 rounded"></div>{" "}
-                    <div class="bg-accent w-2 rounded"></div>{" "}
+                    <div class="bg-primary w-2 rounded"></div>
+                    <div class="bg-secondary w-2 rounded"></div>
+                    <div class="bg-accent w-2 rounded"></div>
                     <div class="bg-neutral w-2 rounded"></div>
                   </div>
                 </div>
@@ -176,11 +203,11 @@ const ThemeChanger = () => {
             >
               <div class="grid grid-cols-5 grid-rows-3">
                 <div class="col-span-5 row-span-3 row-start-1 flex gap-1 py-3 px-4">
-                  <div class="flex-grow text-sm font-bold">cyberpunk</div>{" "}
+                  <div class="flex-grow text-sm font-bold">cyberpunk</div>
                   <div class="flex flex-shrink-0 flex-wrap gap-1">
-                    <div class="bg-primary w-2 rounded"></div>{" "}
-                    <div class="bg-secondary w-2 rounded"></div>{" "}
-                    <div class="bg-accent w-2 rounded"></div>{" "}
+                    <div class="bg-primary w-2 rounded"></div>
+                    <div class="bg-secondary w-2 rounded"></div>
+                    <div class="bg-accent w-2 rounded"></div>
                     <div class="bg-neutral w-2 rounded"></div>
                   </div>
                 </div>

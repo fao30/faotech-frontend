@@ -3,13 +3,13 @@ import React from "react";
 const Footer = () => {
   return (
     <div class="bg-base-300 text-base-content">
-      <footer class="footer mx-auto max-w-6xl p-12 flex flex-wrap justify-between">
+      <footer class="footer mx-auto max-w-5xl p-12 flex flex-wrap justify-between lg:justify-around">
         <div>
           <div class="font-title inline-flex text-3xl">
             <span class=" font-extrabold">Fao</span> <span>Tech</span>
           </div>
           <p>© 2023</p>
-          <p>All Right Reserved.</p>
+          <p>All rights reserved.</p>
         </div>
         <div>
           <span class="footer-title">Guides</span>
