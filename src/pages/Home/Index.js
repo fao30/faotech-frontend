@@ -8,9 +8,6 @@ const Index = () => {
   return (
     <div>
       <Header />
-      <HowItWorks />
-      <Benefits />
-      <Test4 />
     </div>
   );
 };

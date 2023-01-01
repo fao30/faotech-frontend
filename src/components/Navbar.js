@@ -9,11 +9,14 @@ const Navbar = () => {
   return (
     <div
       class="
-    sticky top-0 z-30  h-16  bg-opacity-90 backdrop-blur transition-all duration-100 
+    sticky top-0 z-30  h-16 backdrop-blur bg-white 
     text-black shadow
     "
     >
-      <div class="navbar flex justify-center">
+      <div
+        class="navbar flex justify-center lg:px-34 md:px-8 px-2
+      "
+      >
         <div class="navbar-start">
           <div class="dropdown">
             <label tabindex="0" class="btn btn-ghost lg:hidden md:hidden">
@@ -34,7 +37,7 @@ const Navbar = () => {
             </label>
             <ul
               tabindex="0"
-              class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-white rounded-box w-52 "
+              class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-white hover:bg-white rounded-box w-52 "
             >
               <li>
                 <a
@@ -74,13 +77,8 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
-          <a
-            onClick={() => {
-              navigate("/");
-            }}
-            class="btn btn-ghost normal-case lg:text-2xl sm:text-2xl text-xl font-extrabold font-title"
-          >
-            Fao<span className="font-semibold">Tech</span>
+          <a class="ml-3 normal-case lg:text-2xl sm:text-2xl text-2xl font-extrabold">
+            Fao<span className="font-semibold normal-case">Tech</span>
           </a>
         </div>
         <div class="navbar-end">
@@ -132,7 +130,7 @@ const Navbar = () => {
         </div>
         <span
           style={{ transform: `translateX(${completion - 100}%)` }}
-          class="absolute bg-black h-1 w-full bottom-0"
+          class="absolute bg-primary-100 h-1 w-full bottom-0"
         />
       </div>
     </div>

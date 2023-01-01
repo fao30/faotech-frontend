@@ -6,8 +6,9 @@ import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import { HashRouter, Routes, Route } from "react-router-dom";
 import AboutUs from "./pages/AboutUs/AboutUs";
-import Job from "./pages/Job/Job";
+import Contact from "./pages/Contact/Contact";
 import { motion } from "framer-motion";
+import Portfolio from "./pages/Portfolio/Portfolio";
 
 export default function Routing() {
   return (
@@ -21,7 +22,8 @@ export default function Routing() {
         <Routes>
           <Route exact path="/" element={<App />} />
           <Route path="/about" element={<AboutUs />} />
-          <Route path="/careers" element={<Job />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/portfolio" element={<Portfolio />} />
           <Route path="*" element={<App />} />
         </Routes>
         <Footer />
