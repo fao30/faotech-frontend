@@ -9,7 +9,7 @@ const Header = () => {
         <div class="flex lg:justify-around justify-center flex-wrap items-center">
           <div class="mx-10 w-full lg:w-96">
             <motion.div
-              initial={{ x: "-50%" }}
+              initial={{ x: "-20%" }}
               animate={{ x: "calc(100% - 100%)" }}
             >
               <h1 class="text-xl my-2 text-primary-100 font-bold">
@@ -18,7 +18,7 @@ const Header = () => {
               <h1 class="text-5xl font-bold text-black">
                 We Help You Develop Through Digitalization
               </h1>
-              <h1 class="text-l my-6 text-footer-100">
+              <h1 class="text-l my-6 text-gray-500">
                 FaoTech - Technology Company engaged in industrial digitization
                 located in Kazan. We focus on helping you to digitalize your
                 business from the first scratch until a digital product ready to
@@ -26,7 +26,7 @@ const Header = () => {
               </h1>
             </motion.div>
             <div class="flex justify-start">
-              <button class="text-white rounded-3xl hover:bg-primary-200 bg-primary-100 shadow-xl btn border-none normal-case w-72 lg:w-80 mb-12 lg:mb-0">
+              <button class="text-white  hover:bg-primary-200 rounded-2xl bg-primary-100 shadow-xl btn border-none normal-case w-72 lg:w-80 mb-12 lg:mb-0">
                 Start Your Journey
               </button>
             </div>
@@ -34,6 +34,12 @@ const Header = () => {
           {/* carousel */}
           <div class="z-10 mx-10 rounded-box w-full lg:w-2/5 transition-all transform hover:scale-110 hover:cursor-ew-resize">
             <div class="carousel carousel-center w-full  rounded-box space-x-4">
+              <div class="carousel-item">
+                <img
+                  src="https://preview.redd.it/ouodm9z9ycp51.png?auto=webp&s=51b2940b6d7fb31275465303a10fa104192e003f"
+                  class="rounded-box w-96"
+                />
+              </div>
               <div class="carousel-item">
                 <img
                   src="https://preview.redd.it/ouodm9z9ycp51.png?auto=webp&s=51b2940b6d7fb31275465303a10fa104192e003f"

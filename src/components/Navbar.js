@@ -20,7 +20,7 @@ const Navbar = () => {
           <div class="dropdown">
             <label
               tabindex="0"
-              class="btn btn-ghost rounded-3xl lg:hidden md:hidden"
+              class="btn btn-ghost rounded-2xl lg:hidden md:hidden"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -88,7 +88,7 @@ const Navbar = () => {
             <ul class=" menu-horizontal px-1">
               <li>
                 <a
-                  className="btn btn-ghost rounded-3xl normal-case active:text-black"
+                  className="btn btn-ghost  rounded-2xl normal-case active:text-black"
                   onClick={() => {
                     navigate("/");
                   }}
@@ -98,7 +98,7 @@ const Navbar = () => {
               </li>
               <li>
                 <a
-                  className="btn btn-ghost rounded-3xl normal-case active:text-black"
+                  className="btn btn-ghost  rounded-2xl normal-case active:text-black"
                   onClick={() => {
                     navigate("/about");
                   }}
@@ -108,7 +108,7 @@ const Navbar = () => {
               </li>
               <li>
                 <a
-                  className="btn btn-ghost rounded-3xl normal-case active:text-black"
+                  className="btn btn-ghost  rounded-2xl normal-case active:text-black"
                   onClick={() => {
                     navigate("/portfolio");
                   }}
@@ -118,7 +118,7 @@ const Navbar = () => {
               </li>
               <li>
                 <a
-                  className="btn btn-ghost rounded-3xl hover:bg-primary-200 hover:text-white normal-case"
+                  className="btn btn-ghost  rounded-2xl hover:bg-primary-200 hover:text-white normal-case"
                   onClick={() => {
                     navigate("/contact");
                   }}
