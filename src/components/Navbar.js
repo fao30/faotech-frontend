@@ -1,6 +1,5 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import ThemeChanger from "./ThemeChanger";
 import UseReadingProgress from "./UseReadingProgress";
 
 const Navbar = () => {
@@ -126,7 +125,6 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
-          {/* <ThemeChanger /> */}
         </div>
         <span
           style={{ transform: `translateX(${completion - 100}%)` }}
