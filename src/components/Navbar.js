@@ -85,7 +85,7 @@ const Navbar = () => {
             <ul class="menu menu-horizontal px-1">
               <li>
                 <a
-                  className="btn btn-ghost normal-case"
+                  className="btn btn-ghost normal-case active:text-black"
                   onClick={() => {
                     navigate("/");
                   }}
@@ -95,7 +95,7 @@ const Navbar = () => {
               </li>
               <li>
                 <a
-                  className="btn btn-ghost normal-case"
+                  className="btn btn-ghost normal-case active:text-black"
                   onClick={() => {
                     navigate("/about");
                   }}
@@ -105,7 +105,7 @@ const Navbar = () => {
               </li>
               <li>
                 <a
-                  className="btn btn-ghost normal-case"
+                  className="btn btn-ghost normal-case active:text-black"
                   onClick={() => {
                     navigate("/portfolio");
                   }}
@@ -115,7 +115,7 @@ const Navbar = () => {
               </li>
               <li>
                 <a
-                  className="btn btn-ghost normal-case"
+                  className="btn btn-ghost hover:bg-primary-200 hover:text-white normal-case"
                   onClick={() => {
                     navigate("/contact");
                   }}
