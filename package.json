@@ -1,6 +1,6 @@
 {
   "homepage": "https://faotech.dev",
-  "name": "theme-test",
+  "name": "faotech-frontend",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -13,6 +13,7 @@
     "react": "^18.2.0",
     "react-animated-popup": "^0.1.8",
     "react-cards-stack": "^1.1.1",
+    "react-carousel-dots": "^0.1.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
     "react-spring": "^9.6.1",

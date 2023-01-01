@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import React from "react";
-import Introduction from "../Home/components/Introduction";
 
 const AboutUs = () => {
   return (
@@ -8,9 +7,7 @@ const AboutUs = () => {
       initial={{ opacity: 0.5 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-    >
-      <Introduction />
-    </motion.div>
+    ></motion.div>
   );
 };
 

@@ -10,13 +10,13 @@ const Navbar = () => {
     <div
       class="
     sticky top-0 z-30  h-16  bg-opacity-90 backdrop-blur transition-all duration-100 
-    text-primary-content shadow
+    text-black shadow
     "
     >
       <div class="navbar flex justify-center">
         <div class="navbar-start">
           <div class="dropdown">
-            <label tabindex="0" class="btn btn-ghost lg:hidden">
+            <label tabindex="0" class="btn btn-ghost lg:hidden md:hidden">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="h-5 w-5"
@@ -34,7 +34,7 @@ const Navbar = () => {
             </label>
             <ul
               tabindex="0"
-              class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52  text-base-content"
+              class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-white rounded-box w-52 "
             >
               <li>
                 <a
@@ -57,10 +57,19 @@ const Navbar = () => {
               <li>
                 <a
                   onClick={() => {
-                    navigate("/careers");
+                    navigate("/portfolio");
                   }}
                 >
-                  Jobs
+                  Portfolio
+                </a>
+              </li>
+              <li>
+                <a
+                  onClick={() => {
+                    navigate("/contact");
+                  }}
+                >
+                  Contact Us
                 </a>
               </li>
             </ul>
@@ -75,7 +84,7 @@ const Navbar = () => {
           </a>
         </div>
         <div class="navbar-end">
-          <div class="hidden lg:flex">
+          <div class="hidden md:flex lg:flex">
             <ul class="menu menu-horizontal px-1">
               <li>
                 <a
@@ -101,22 +110,29 @@ const Navbar = () => {
                 <a
                   className="btn btn-ghost normal-case"
                   onClick={() => {
-                    navigate("/careers");
+                    navigate("/portfolio");
                   }}
                 >
-                  Jobs
+                  Portfolio
+                </a>
+              </li>
+              <li>
+                <a
+                  className="btn btn-ghost normal-case"
+                  onClick={() => {
+                    navigate("/contact");
+                  }}
+                >
+                  Contact Us
                 </a>
               </li>
             </ul>
           </div>
-          <ThemeChanger />
-          <a class="btn ml-0.5 lg:ml-2 sm:lg-ml-2 md:ml-2 btn-info font-bold normal-case">
-            Book a Meeting
-          </a>
+          {/* <ThemeChanger /> */}
         </div>
         <span
           style={{ transform: `translateX(${completion - 100}%)` }}
-          class="absolute bg-base-content h-1 w-full bottom-0"
+          class="absolute bg-black h-1 w-full bottom-0"
         />
       </div>
     </div>
