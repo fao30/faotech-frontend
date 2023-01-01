@@ -1,10 +1,13 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
 import UseReadingProgress from "./UseReadingProgress";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
-  const navigate = useNavigate();
   const completion = UseReadingProgress();
+  let activeClassName =
+    "btn bg-primary-100 hover:bg-primary-200 border-none rounded-2xl hover:bg-primary-200 text-white mx-0.5 normal-case";
+  let activeClassNameDropdown =
+    "bg-primary-100 text-white hover:bg-primary-200 my-0.5";
   return (
     <div
       class="
@@ -42,89 +45,103 @@ const Navbar = () => {
               class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-white hover:bg-white rounded-box w-52 "
             >
               <li>
-                <a
-                  onClick={() => {
-                    navigate("/");
-                  }}
+                <NavLink
+                  to="/"
+                  end
+                  className={({ isActive }) =>
+                    isActive ? activeClassNameDropdown : "my-0.5"
+                  }
                 >
                   Home
-                </a>
+                </NavLink>
               </li>
               <li>
-                <a
-                  onClick={() => {
-                    navigate("/about");
-                  }}
+                <NavLink
+                  to="/about"
+                  className={({ isActive }) =>
+                    isActive ? activeClassNameDropdown : "my-0.5"
+                  }
                 >
                   About
-                </a>
+                </NavLink>
               </li>
               <li>
-                <a
-                  onClick={() => {
-                    navigate("/portfolio");
-                  }}
+                <NavLink
+                  to="/portfolio"
+                  className={({ isActive }) =>
+                    isActive ? activeClassNameDropdown : "my-0.5"
+                  }
                 >
                   Portfolio
-                </a>
+                </NavLink>
               </li>
               <li>
-                <a
-                  onClick={() => {
-                    navigate("/contact");
-                  }}
+                <NavLink
+                  to="/contact"
+                  className={({ isActive }) =>
+                    isActive ? activeClassNameDropdown : "my-0.5"
+                  }
                 >
                   Contact Us
-                </a>
+                </NavLink>
               </li>
             </ul>
           </div>
-          <a class="ml-3 normal-case lg:text-2xl sm:text-2xl text-2xl font-extrabold">
+          <a class="ml-3 normal-case lg:text-2xl sm:text-2xl text-2xl font-extrabold ">
             Fao<span className="font-semibold normal-case">Tech</span>
           </a>
         </div>
         <div class="navbar-end">
           <div class="hidden md:flex lg:flex">
-            <ul class=" menu-horizontal px-1">
+            <ul class=" menu-horizontal">
               <li>
-                <a
-                  className="btn btn-ghost  rounded-2xl normal-case active:text-black"
-                  onClick={() => {
-                    navigate("/");
-                  }}
+                <NavLink
+                  to="/"
+                  end
+                  className={({ isActive }) =>
+                    isActive
+                      ? activeClassName
+                      : "btn btn-ghost border-none rounded-2xl mx-0.5 normal-case"
+                  }
                 >
                   Home
-                </a>
+                </NavLink>
               </li>
               <li>
-                <a
-                  className="btn btn-ghost  rounded-2xl normal-case active:text-black"
-                  onClick={() => {
-                    navigate("/about");
-                  }}
+                <NavLink
+                  to="/about"
+                  className={({ isActive }) =>
+                    isActive
+                      ? activeClassName
+                      : "btn btn-ghost border-none rounded-2xl mx-0.5 normal-case"
+                  }
                 >
                   About
-                </a>
+                </NavLink>
               </li>
               <li>
-                <a
-                  className="btn btn-ghost  rounded-2xl normal-case active:text-black"
-                  onClick={() => {
-                    navigate("/portfolio");
-                  }}
+                <NavLink
+                  to="/portfolio"
+                  className={({ isActive }) =>
+                    isActive
+                      ? activeClassName
+                      : "btn btn-ghost border-none rounded-2xl mx-0.5 normal-case"
+                  }
                 >
                   Portfolio
-                </a>
+                </NavLink>
               </li>
               <li>
-                <a
-                  className="btn btn-ghost  rounded-2xl hover:bg-primary-200 hover:text-white normal-case"
-                  onClick={() => {
-                    navigate("/contact");
-                  }}
+                <NavLink
+                  to="/contact"
+                  className={({ isActive }) =>
+                    isActive
+                      ? activeClassName
+                      : "btn btn-ghost border-none rounded-2xl mx-0.5 normal-case"
+                  }
                 >
                   Contact Us
-                </a>
+                </NavLink>
               </li>
             </ul>
           </div>
