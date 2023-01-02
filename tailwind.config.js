@@ -6,9 +6,14 @@ module.exports = {
       colors: {
         primary: {
           100: "#4C6BDC",
+          300: "#e4ecf8",
+          69: "#1159C7",
         },
         footer: {
           100: "#757575 ",
+        },
+        ourWork: {
+          100: "#333333",
         },
       },
       backgroundColor: {
@@ -22,6 +27,14 @@ module.exports = {
       padding: {
         38: "9.5rem",
         34: "8.8rem",
+      },
+      width: {
+        37: "9.1rem",
+        38: "9.5rem",
+        34: "8.8rem",
+      },
+      fontSize: {
+        s: "0.8rem",
       },
     },
   },

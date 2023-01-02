@@ -13,9 +13,8 @@ const Navbar = () => {
   };
   const completion = UseReadingProgress();
   let activeClassName =
-    "btn bg-primary-100 hover:bg-primary-200 border-none rounded-2xl hover:bg-primary-200 text-white mx-0.5 normal-case";
-  let activeClassNameDropdown =
-    "bg-primary-100 text-white hover:bg-primary-200 my-0.5";
+    "btn bg-transparent hover:bg-transparent border-none rounded-2xl text-primary-100 mx-0.5 normal-case";
+  let activeClassNameDropdown = "bg-transparent text-primary-100 my-0.5";
   return (
     <div
       class="
