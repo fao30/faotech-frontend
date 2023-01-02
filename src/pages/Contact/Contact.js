@@ -9,7 +9,7 @@ const Contact = () => {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
     >
-      <Header />
+      CONTACT
     </motion.div>
   );
 };

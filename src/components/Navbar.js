@@ -1,9 +1,10 @@
 import React from "react";
 import UseReadingProgress from "./UseReadingProgress";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import { dropdownOptions, navbarOptions } from "../store/helper/NavbarOptions";
 
 const Navbar = () => {
+  const navigate = useNavigate();
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
@@ -75,7 +76,13 @@ const Navbar = () => {
           </p>
         </div>
         <div class="navbar-end">
-          <p class="mr-3 normal-case lg:text-2xl sm:text-2xl text-2xl font-extrabold btn btn-ghost md:hidden lg:hidden">
+          <p
+            onClick={() => {
+              navigate("/");
+              scrollToTop();
+            }}
+            class="mr-3 normal-case lg:text-2xl sm:text-2xl text-2xl font-extrabold btn btn-ghost md:hidden lg:hidden"
+          >
             Fao<span className="font-semibold normal-case">Tech</span>
           </p>
           <div class="hidden md:flex lg:flex">

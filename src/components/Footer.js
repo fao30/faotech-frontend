@@ -12,7 +12,7 @@ const Footer = () => {
     });
   };
   return (
-    <div class="bg-base-300 text-base-content">
+    <div class="bg-white text-base-content">
       <footer class="footer px-12 lg:px-38 py-12 flex flex-wrap justify-between md:px-12">
         <div class="w-4/6">
           <div class="font-title text-black inline-flex text-3xl">

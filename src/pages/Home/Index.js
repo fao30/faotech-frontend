@@ -5,8 +5,8 @@ const Index = () => {
   return (
     <div>
       <Header />
-      <Header />
-      <Header />
+      {/* <Header />
+      <Header /> */}
     </div>
   );
 };

@@ -16,6 +16,7 @@ module.exports = {
           100: "#4C6BDC",
           200: "#2F51CB",
           69: "#1159C7",
+          300: "#e4ecf8",
         },
       },
       padding: {
