@@ -1,6 +1,7 @@
 import React from "react";
 import UseReadingProgress from "./UseReadingProgress";
 import { NavLink } from "react-router-dom";
+import { navbarOptions } from "../store/helper/NavbarOptions";
 
 const Navbar = () => {
   const completion = UseReadingProgress();
@@ -45,103 +46,43 @@ const Navbar = () => {
               class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-white hover:bg-white rounded-box w-52 "
             >
               <li>
-                <NavLink
-                  to="/"
-                  end
-                  className={({ isActive }) =>
-                    isActive ? activeClassNameDropdown : "my-0.5"
-                  }
-                >
-                  Home
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
-                  to="/about"
-                  className={({ isActive }) =>
-                    isActive ? activeClassNameDropdown : "my-0.5"
-                  }
-                >
-                  About
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
-                  to="/portfolio"
-                  className={({ isActive }) =>
-                    isActive ? activeClassNameDropdown : "my-0.5"
-                  }
-                >
-                  Portfolio
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
-                  to="/contact"
-                  className={({ isActive }) =>
-                    isActive ? activeClassNameDropdown : "my-0.5"
-                  }
-                >
-                  Contact Us
-                </NavLink>
+                {navbarOptions.map((e) => {
+                  return (
+                    <NavLink
+                      to={e.to}
+                      className={({ isActive }) =>
+                        isActive ? activeClassNameDropdown : "my-0.5"
+                      }
+                    >
+                      {e.label}
+                    </NavLink>
+                  );
+                })}
               </li>
             </ul>
           </div>
-          <a class="ml-3 normal-case lg:text-2xl sm:text-2xl text-2xl font-extrabold ">
+          <p class="ml-3 normal-case lg:text-2xl sm:text-2xl text-2xl font-extrabold ">
             Fao<span className="font-semibold normal-case">Tech</span>
-          </a>
+          </p>
         </div>
         <div class="navbar-end">
           <div class="hidden md:flex lg:flex">
             <ul class=" menu-horizontal">
               <li>
-                <NavLink
-                  to="/"
-                  end
-                  className={({ isActive }) =>
-                    isActive
-                      ? activeClassName
-                      : "btn btn-ghost border-none rounded-2xl mx-0.5 normal-case"
-                  }
-                >
-                  Home
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
-                  to="/about"
-                  className={({ isActive }) =>
-                    isActive
-                      ? activeClassName
-                      : "btn btn-ghost border-none rounded-2xl mx-0.5 normal-case"
-                  }
-                >
-                  About
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
-                  to="/portfolio"
-                  className={({ isActive }) =>
-                    isActive
-                      ? activeClassName
-                      : "btn btn-ghost border-none rounded-2xl mx-0.5 normal-case"
-                  }
-                >
-                  Portfolio
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
-                  to="/contact"
-                  className={({ isActive }) =>
-                    isActive
-                      ? activeClassName
-                      : "btn btn-ghost border-none rounded-2xl mx-0.5 normal-case"
-                  }
-                >
-                  Contact Us
-                </NavLink>
+                {navbarOptions.map((e) => {
+                  return (
+                    <NavLink
+                      to={e.to}
+                      className={({ isActive }) =>
+                        isActive
+                          ? activeClassName
+                          : "btn btn-ghost border-none rounded-2xl mx-0.5 normal-case"
+                      }
+                    >
+                      {e.label}
+                    </NavLink>
+                  );
+                })}
               </li>
             </ul>
           </div>

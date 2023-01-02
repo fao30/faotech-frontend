@@ -1,6 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import { Icon } from "@iconify/react";
+import { navbarOptions } from "../store/helper/NavbarOptions";
 
 const Footer = () => {
   const navigate = useNavigate();
@@ -18,38 +19,19 @@ const Footer = () => {
         </div>
         <div class="w-96 md:w-96 lg:w-32 pr-12">
           <span class="text-lg">Features</span>
-          <a
-            onClick={() => {
-              navigate("/");
-            }}
-            class="link link-hover text-footer-100"
-          >
-            Home
-          </a>
-          <a
-            onClick={() => {
-              navigate("/portfolio");
-            }}
-            class="link link-hover text-footer-100"
-          >
-            Portfolio
-          </a>
-          <a
-            onClick={() => {
-              navigate("/about");
-            }}
-            class="link link-hover text-footer-100"
-          >
-            About
-          </a>
-          <a
-            onClick={() => {
-              navigate("/contact");
-            }}
-            class="link link-hover text-footer-100"
-          >
-            Contact Us
-          </a>
+          {navbarOptions.map((e) => {
+            return (
+              <a
+                href
+                onClick={() => {
+                  navigate(`${e.to}`);
+                }}
+                class="cursor-pointer text-footer-100"
+              >
+                {e.label}
+              </a>
+            );
+          })}
         </div>
         <div class="w-56">
           <span class="text-lg">Contact</span>
