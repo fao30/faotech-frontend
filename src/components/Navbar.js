@@ -1,9 +1,10 @@
 import React from "react";
 import UseReadingProgress from "./UseReadingProgress";
-import { NavLink, useNavigate } from "react-router-dom";
+import { NavLink, useNavigate, useLocation } from "react-router-dom";
 import { dropdownOptions, navbarOptions } from "../store/helper/NavbarOptions";
 
 const Navbar = () => {
+  const location = useLocation();
   const navigate = useNavigate();
   const scrollToTop = () => {
     window.scrollTo({
@@ -17,10 +18,11 @@ const Navbar = () => {
   let activeClassNameDropdown = "bg-transparent text-primary-100 my-0.5";
   return (
     <div
-      class="
-    sticky top-0 z-30  h-16 backdrop-blur bg-white 
-    text-black shadow
-    "
+      class={`${
+        location.pathname === "/contact"
+          ? "hidden"
+          : " sticky top-0 z-30  h-16 backdrop-blur bg-white text-black shadow "
+      }`}
     >
       <div
         class="navbar flex justify-center lg:px-34 md:px-8 px-2 
