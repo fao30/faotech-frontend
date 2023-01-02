@@ -1,7 +1,7 @@
 import React from "react";
 import UseReadingProgress from "./UseReadingProgress";
 import { NavLink, useNavigate } from "react-router-dom";
-import { navbarOptions } from "../store/helper/NavbarOptions";
+import { dropdownOptions, navbarOptions } from "../store/helper/NavbarOptions";
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -47,13 +47,20 @@ const Navbar = () => {
               class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-white hover:bg-white rounded-box w-52 "
             >
               <li>
-                {navbarOptions.map((e) => {
+                {dropdownOptions.map((e) => {
                   return (
                     <NavLink
                       to={e.to}
                       className={({ isActive }) =>
                         isActive ? activeClassNameDropdown : "my-0.5"
                       }
+                      onClick={() => {
+                        window.scrollTo({
+                          top: 0,
+                          left: 0,
+                          behavior: "smooth",
+                        });
+                      }}
                     >
                       {e.label}
                     </NavLink>
@@ -70,6 +77,11 @@ const Navbar = () => {
           <p
             onClick={() => {
               navigate("/");
+              window.scrollTo({
+                top: 0,
+                left: 0,
+                behavior: "smooth",
+              });
             }}
             class="mr-3 normal-case lg:text-2xl sm:text-2xl text-2xl font-extrabold btn btn-ghost md:hidden lg:hidden"
           >
@@ -87,6 +99,13 @@ const Navbar = () => {
                           ? activeClassName
                           : "btn btn-ghost border-none rounded-2xl mx-0.5 normal-case"
                       }
+                      onClick={() => {
+                        window.scrollTo({
+                          top: 0,
+                          left: 0,
+                          behavior: "smooth",
+                        });
+                      }}
                     >
                       {e.label}
                     </NavLink>

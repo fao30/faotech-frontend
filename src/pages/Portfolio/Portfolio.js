@@ -10,6 +10,8 @@ const Portfolio = () => {
       exit={{ opacity: 0 }}
     >
       <Header />
+      <Header />
+      <Header />
     </motion.div>
   );
 };
