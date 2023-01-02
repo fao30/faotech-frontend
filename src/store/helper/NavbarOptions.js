@@ -13,7 +13,7 @@ export const navbarOptions = [
     label: "Portfolio",
   },
   {
-    to: "/contact",
+    to: "/contact-us",
     label: "Contact Us",
   },
 ];
@@ -28,7 +28,7 @@ export const dropdownOptions = [
     label: "Portfolio",
   },
   {
-    to: "/contact",
+    to: "/contact-us",
     label: "Contact Us",
   },
 ];

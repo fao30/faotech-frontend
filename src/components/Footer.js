@@ -27,7 +27,7 @@ const Footer = () => {
               href="https://www.google.com"
               rel="noreferrer"
               target="_blank"
-              class="transition-all transform hover:scale-110 hover:rotate-12"
+              class="transition-all transform hover:scale-110"
             >
               <Icon
                 icon="mdi:linkedin"
@@ -40,7 +40,7 @@ const Footer = () => {
               href="https://www.google.com"
               rel="noreferrer"
               target="_blank"
-              class="ml-0.5 transition-all transform hover:scale-110 hover:rotate-12"
+              class="ml-0.5 transition-all transform hover:scale-110"
             >
               <Icon
                 icon="mdi:instagram"

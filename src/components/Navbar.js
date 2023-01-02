@@ -19,9 +19,9 @@ const Navbar = () => {
   return (
     <div
       class={`${
-        location.pathname === "/contact"
+        location.pathname === "/contact-us"
           ? "hidden"
-          : " sticky top-0 z-30  h-16 backdrop-blur bg-white text-black shadow "
+          : "sticky top-0 z-30 h-16 bg-white text-black shadow "
       }`}
     >
       <div
