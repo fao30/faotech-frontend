@@ -17,7 +17,7 @@ const Footer = () => {
             Lets’s create future for your better business
           </p>
           <div class="flex justify-start items-center ">
-            <a href="/">
+            <a href="https://www.google.com" rel="noreferrer" target="_blank">
               <Icon
                 icon="mdi:linkedin"
                 color="#757575"
@@ -25,7 +25,7 @@ const Footer = () => {
                 height="26"
               />
             </a>
-            <a href="/">
+            <a href="https://www.google.com" rel="noreferrer" target="_blank">
               <Icon
                 icon="mdi:instagram"
                 color="#757575"
@@ -62,6 +62,8 @@ const Footer = () => {
               height="24"
             />
             <a
+              rel="noreferrer"
+              target="_blank"
               href="mailto:contact@faotech.com"
               class="link link-hover text-gray-500 ml-2"
             >
@@ -75,7 +77,12 @@ const Footer = () => {
               width="24"
               height="24"
             />
-            <a href class="link link-hover text-gray-500 ml-2">
+            <a
+              href
+              rel="noreferrer"
+              target="_blank"
+              class="link link-hover text-gray-500 ml-2"
+            >
               +79246246378
             </a>
           </div>

@@ -1,9 +1,10 @@
 import React from "react";
 import UseReadingProgress from "./UseReadingProgress";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import { navbarOptions } from "../store/helper/NavbarOptions";
 
 const Navbar = () => {
+  const navigate = useNavigate();
   const completion = UseReadingProgress();
   let activeClassName =
     "btn bg-primary-100 hover:bg-primary-200 border-none rounded-2xl hover:bg-primary-200 text-white mx-0.5 normal-case";
@@ -17,11 +18,11 @@ const Navbar = () => {
     "
     >
       <div
-        class="navbar flex justify-center lg:px-34 md:px-8 px-2
+        class="navbar flex justify-center lg:px-34 md:px-8 px-2 
       "
       >
         <div class="navbar-start">
-          <div class="dropdown">
+          <div class="dropdown lg:hidden md:hidden ml-4">
             <label
               tabindex="0"
               class="btn btn-ghost rounded-2xl lg:hidden md:hidden"
@@ -61,11 +62,19 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
-          <p class="ml-3 normal-case lg:text-2xl sm:text-2xl text-2xl font-extrabold ">
+          <p class="ml-3 normal-case lg:text-2xl sm:text-2xl text-2xl font-extrabold hidden lg:flex md:flex">
             Fao<span className="font-semibold normal-case">Tech</span>
           </p>
         </div>
         <div class="navbar-end">
+          <p
+            onClick={() => {
+              navigate("/");
+            }}
+            class="mr-3 normal-case lg:text-2xl sm:text-2xl text-2xl font-extrabold btn btn-ghost md:hidden lg:hidden"
+          >
+            Fao<span className="font-semibold normal-case">Tech</span>
+          </p>
           <div class="hidden md:flex lg:flex">
             <ul class=" menu-horizontal">
               <li>
