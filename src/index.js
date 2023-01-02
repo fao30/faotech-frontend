@@ -7,7 +7,7 @@ import Navbar from "./components/Navbar";
 import { HashRouter, Routes, Route } from "react-router-dom";
 import AboutUs from "./pages/AboutUs/AboutUs";
 import Contact from "./pages/Contact/Contact";
-import { motion } from "framer-motion";
+// import { motion } from "framer-motion";
 import Portfolio from "./pages/Portfolio/Portfolio";
 import LoadToTop from "./components/LoadToTop";
 

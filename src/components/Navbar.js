@@ -1,10 +1,15 @@
 import React from "react";
 import UseReadingProgress from "./UseReadingProgress";
-import { NavLink, useNavigate } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { dropdownOptions, navbarOptions } from "../store/helper/NavbarOptions";
 
 const Navbar = () => {
-  const navigate = useNavigate();
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
   const completion = UseReadingProgress();
   let activeClassName =
     "btn bg-primary-100 hover:bg-primary-200 border-none rounded-2xl hover:bg-primary-200 text-white mx-0.5 normal-case";
@@ -55,11 +60,7 @@ const Navbar = () => {
                         isActive ? activeClassNameDropdown : "my-0.5"
                       }
                       onClick={() => {
-                        window.scrollTo({
-                          top: 0,
-                          left: 0,
-                          behavior: "smooth",
-                        });
+                        scrollToTop();
                       }}
                     >
                       {e.label}
@@ -90,11 +91,7 @@ const Navbar = () => {
                           : "btn btn-ghost border-none rounded-2xl mx-0.5 normal-case"
                       }
                       onClick={() => {
-                        window.scrollTo({
-                          top: 0,
-                          left: 0,
-                          behavior: "smooth",
-                        });
+                        scrollToTop();
                       }}
                     >
                       {e.label}

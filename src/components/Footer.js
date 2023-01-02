@@ -5,6 +5,12 @@ import { navbarOptions } from "../store/helper/NavbarOptions";
 
 const Footer = () => {
   const navigate = useNavigate();
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
   return (
     <div class="bg-base-300 text-base-content">
       <footer class="footer px-12 lg:px-38 py-12 flex flex-wrap justify-between md:px-12">
@@ -17,7 +23,12 @@ const Footer = () => {
             Lets’s create future for your better business
           </p>
           <div class="flex justify-start items-center ">
-            <a href="https://www.google.com" rel="noreferrer" target="_blank">
+            <a
+              href="https://www.google.com"
+              rel="noreferrer"
+              target="_blank"
+              class="transition-all transform hover:scale-110 hover:rotate-12"
+            >
               <Icon
                 icon="mdi:linkedin"
                 color="#757575"
@@ -25,13 +36,17 @@ const Footer = () => {
                 height="26"
               />
             </a>
-            <a href="https://www.google.com" rel="noreferrer" target="_blank">
+            <a
+              href="https://www.google.com"
+              rel="noreferrer"
+              target="_blank"
+              class="ml-0.5 transition-all transform hover:scale-110 hover:rotate-12"
+            >
               <Icon
                 icon="mdi:instagram"
                 color="#757575"
                 width="26"
                 height="26"
-                class="ml-1"
               />
             </a>
           </div>
@@ -44,6 +59,7 @@ const Footer = () => {
                 href
                 onClick={() => {
                   navigate(`${e.to}`);
+                  scrollToTop();
                 }}
                 class=" text-footer-100 link link-hover"
               >
@@ -96,7 +112,7 @@ const Footer = () => {
             <a href class="link link-hover text-gray-500 ml-2">
               Meridiannaya Street 3,
               <br />
-              Sovetskiy District, Kazan,
+              Sovetsky City District, Kazan,
               <br />
               Republic of Tatarstan, Russia
             </a>
