@@ -36,18 +36,21 @@ const Header = () => {
             <div class="carousel carousel-center w-full  rounded-box space-x-4">
               <div class="carousel-item">
                 <img
+                  alt=""
                   src="https://preview.redd.it/ouodm9z9ycp51.png?auto=webp&s=51b2940b6d7fb31275465303a10fa104192e003f"
                   class="rounded-box w-96"
                 />
               </div>
               <div class="carousel-item">
                 <img
+                  alt=""
                   src="https://preview.redd.it/ouodm9z9ycp51.png?auto=webp&s=51b2940b6d7fb31275465303a10fa104192e003f"
                   class="rounded-box w-96"
                 />
               </div>
               <div class="carousel-item">
                 <img
+                  alt=""
                   src="https://preview.redd.it/ouodm9z9ycp51.png?auto=webp&s=51b2940b6d7fb31275465303a10fa104192e003f"
                   class="rounded-box w-96"
                 />
