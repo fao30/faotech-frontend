@@ -9,25 +9,21 @@ import AboutUs from "./pages/AboutUs/AboutUs";
 import Contact from "./pages/Contact/Contact";
 import { motion } from "framer-motion";
 import Portfolio from "./pages/Portfolio/Portfolio";
+import LoadToTop from "./components/LoadToTop";
 
 export default function Routing() {
   return (
     <HashRouter>
-      <motion.div
-        initial={{ opacity: 0.5 }}
-        animate={{ opacity: 1 }}
-        exit={{ opacity: 0 }}
-      >
-        <Navbar />
-        <Routes>
-          <Route exact path="/" element={<App />} />
-          <Route path="/about" element={<AboutUs />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/portfolio" element={<Portfolio />} />
-          <Route path="*" element={<App />} />
-        </Routes>
-        <Footer />
-      </motion.div>
+      <Navbar />
+      <Routes>
+        <Route exact path="/" element={<App />} />
+        <Route path="/about" element={<AboutUs />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="*" element={<App />} />
+      </Routes>
+      <Footer />
+      <LoadToTop />
     </HashRouter>
   );
 }

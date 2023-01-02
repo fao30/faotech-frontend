@@ -74,17 +74,7 @@ const Navbar = () => {
           </p>
         </div>
         <div class="navbar-end">
-          <p
-            onClick={() => {
-              navigate("/");
-              window.scrollTo({
-                top: 0,
-                left: 0,
-                behavior: "smooth",
-              });
-            }}
-            class="mr-3 normal-case lg:text-2xl sm:text-2xl text-2xl font-extrabold btn btn-ghost md:hidden lg:hidden"
-          >
+          <p class="mr-3 normal-case lg:text-2xl sm:text-2xl text-2xl font-extrabold btn btn-ghost md:hidden lg:hidden">
             Fao<span className="font-semibold normal-case">Tech</span>
           </p>
           <div class="hidden md:flex lg:flex">
