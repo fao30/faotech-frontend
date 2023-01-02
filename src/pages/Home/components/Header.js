@@ -32,6 +32,7 @@ const Header = () => {
             </div>
           </div>
           {/* carousel */}
+          {/* DON'T DELETE CODES BELOW */}
           {/* <div class="hidden lg:md:sm:flex absolute w-7/12 h-4/5 right-0 bg-primary-300 blur-3xl"></div>
           <div class="md:lg:hidden w-1/5 h-2/5 top-3/4 right-0 absolute rounded-2xl bg-blue-100 blur-3xl"></div> */}
           <div class="z-10 mx-10 rounded-box w-full bg-transparent lg:w-2/5 transition-all transform hover:scale-110 hover:cursor-ew-resize">

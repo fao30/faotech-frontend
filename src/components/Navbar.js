@@ -1,5 +1,5 @@
 import React from "react";
-import UseReadingProgress from "./UseReadingProgress";
+import useReadingProgress from "./UseReadingProgress";
 import { NavLink, useNavigate, useLocation } from "react-router-dom";
 import { dropdownOptions, navbarOptions } from "../store/helper/NavbarOptions";
 
@@ -12,7 +12,7 @@ const Navbar = () => {
       behavior: "smooth",
     });
   };
-  const completion = UseReadingProgress();
+  const completion = useReadingProgress();
   let activeClassName =
     "btn bg-transparent hover:bg-transparent border-none rounded-2xl text-primary-100 mx-0.5 normal-case";
   let activeClassNameDropdown = "bg-transparent text-primary-100 my-0.5";
