@@ -16,6 +16,25 @@ const Footer = () => {
           <p class="text-footer-100">
             Lets’s create future for your better business
           </p>
+          <div class="flex justify-start items-center ">
+            <a href="/">
+              <Icon
+                icon="mdi:linkedin"
+                color="#757575"
+                width="26"
+                height="26"
+              />
+            </a>
+            <a href="/">
+              <Icon
+                icon="mdi:instagram"
+                color="#757575"
+                width="26"
+                height="26"
+                class="ml-1"
+              />
+            </a>
+          </div>
         </div>
         <div class="w-96 md:w-96 lg:w-32 pr-12">
           <span class="text-lg">Features</span>
@@ -26,7 +45,7 @@ const Footer = () => {
                 onClick={() => {
                   navigate(`${e.to}`);
                 }}
-                class="cursor-pointer text-footer-100"
+                class=" text-footer-100 link link-hover"
               >
                 {e.label}
               </a>
@@ -42,7 +61,10 @@ const Footer = () => {
               width="24"
               height="24"
             />
-            <a href class="link link-hover text-gray-500 ml-2">
+            <a
+              href="mailto:contact@faotech.com"
+              class="link link-hover text-gray-500 ml-2"
+            >
               contact@faotech.com
             </a>
           </div>
