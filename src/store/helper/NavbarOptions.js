@@ -13,7 +13,7 @@ export const footerOptions = [
     label: "Portfolio",
   },
   {
-    to: "/contact-us",
+    to: "/contact",
     label: "Contact Us",
   },
 ];
@@ -28,7 +28,7 @@ export const dropdownOptions = [
     label: "Portfolio",
   },
   {
-    to: "/contact-us",
+    to: "/contact",
     label: "Contact Us",
   },
 ];

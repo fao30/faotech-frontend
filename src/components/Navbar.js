@@ -28,7 +28,7 @@ const Navbar = () => {
         <div class="navbar-start">
           <div
             class={`${
-              location.pathname === "/contact-us"
+              location.pathname === "/contact"
                 ? "hidden"
                 : "dropdown lg:hidden md:hidden ml-4"
             }`}
@@ -77,8 +77,8 @@ const Navbar = () => {
           </div>
           <p
             class={`${
-              location.pathname === "/contact-us"
-                ? "ml-8 sm:ml-3 md:lg:ml-4 normal-case lg:text-2xl sm:text-2xl text-2xl font-extrabold md:flex lg:flex"
+              location.pathname === "/contact"
+                ? "ml-8 md:ml-3 sm:lg:ml-3 normal-case lg:text-2xl sm:text-2xl text-2xl font-extrabold md:flex lg:flex"
                 : "ml-3 normal-case lg:text-2xl sm:text-2xl text-2xl font-extrabold hidden md:flex lg:flex"
             } `}
           >
@@ -90,7 +90,7 @@ const Navbar = () => {
               scrollToTop();
             }}
             class={`${
-              location.pathname === "/contact-us"
+              location.pathname === "/contact"
                 ? "hidden"
                 : "mr-3 normal-case lg:text-2xl sm:text-2xl text-2xl font-extrabold btn btn-ghost md:hidden lg:hidden"
             }`}
@@ -99,7 +99,7 @@ const Navbar = () => {
           </p>
         </div>
         <div class="navbar-end">
-          <div class={`${location.pathname === "/contact-us" ? "hidden" : ""}`}>
+          <div class={`${location.pathname === "/contact" ? "hidden" : ""}`}>
             <div class="hidden md:flex lg:flex">
               <ul class=" menu-horizontal">
                 <li>
@@ -121,10 +121,10 @@ const Navbar = () => {
                     );
                   })}
                   <a
-                    // href="/#/contact-us"
+                    // href="/#/contact"
                     class="btn btn-ghost rounded-2xl mx-0.5 normal-case border-none  text-black hover:bg-primary-100 hover:text-white active:bg-primary-200"
                     onClick={() => {
-                      navigate("/contact-us");
+                      navigate("/contact");
                       scrollToTop();
                     }}
                   >
