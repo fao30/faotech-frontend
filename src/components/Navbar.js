@@ -122,7 +122,7 @@ const Navbar = () => {
                   })}
                   <a
                     // href="/#/contact"
-                    class="btn btn-ghost rounded-2xl mx-0.5 normal-case border-none  text-black hover:bg-primary-100 hover:text-white active:bg-primary-200"
+                    class="btn btn-ghost rounded-2xl mx-0.5 normal-case border-none  text-black hover:bg-primary-100 hover:text-white active:bg-primary-200 hover:shadow-xl"
                     onClick={() => {
                       navigate("/contact");
                       scrollToTop();
