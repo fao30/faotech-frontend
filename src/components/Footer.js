@@ -68,7 +68,7 @@ const Footer = () => {
             );
           })}
         </div>
-        <div class="w-56">
+        <div class="w-40">
           <span class="text-lg">Contact</span>
           <div class="flex justify-center items-start">
             <Icon
@@ -99,7 +99,7 @@ const Footer = () => {
               target="_blank"
               class="link link-hover text-gray-500 ml-2"
             >
-              +79246246378
+              +6287762023382
             </a>
           </div>
           <div class="flex justify-center items-start">
@@ -110,11 +110,11 @@ const Footer = () => {
               height="24"
             />
             <a href class="link link-hover text-gray-500 ml-2">
-              Meridiannaya Street 3,
+              Jl. Bima Citra 16 No.2,
               <br />
-              Sovetsky City District, Kazan,
+              Tambun, Bekasi,
               <br />
-              Republic of Tatarstan, Russia
+              West Java, Indonesia
             </a>
           </div>
         </div>
