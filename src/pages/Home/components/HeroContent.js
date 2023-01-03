@@ -12,7 +12,7 @@ const HeroContent = () => {
       <div class="my-6 lg:my-[11rem] z-10">
         <div class="flex lg:justify-around justify-center flex-wrap items-center">
           {/* HEADER TITLE */}
-          <div class="mx-10 lg:mx-0 lg:pl-14 w-full lg:w-[35rem] md:w-4/5">
+          <div class="mx-10 lg:pl-14 w-full lg:w-[39rem] md:w-4/5">
             <motion.div
               initial={{ x: "-20%" }}
               animate={{ x: "calc(100% - 100%)" }}
@@ -33,7 +33,7 @@ const HeroContent = () => {
           {/* DON'T DELETE CODES BELOW */}
           {/* <div class="hidden lg:md:sm:flex absolute w-7/12 h-4/5 right-0 bg-primary-300 blur-3xl"></div>
           <div class="md:lg:hidden w-1/5 h-2/5 top-3/4 right-0 absolute rounded-2xl bg-blue-100 blur-3xl"></div> */}
-          <div class="z-10 mx-10 rounded-box w-full md:w-4/5 sm:w-full lg:w-2/5 bg-transparent flex justify-center lg:justify-end flex-wrap items-center">
+          <div class="lg:pr-12 z-10 mx-10 rounded-box w-full md:w-4/5 sm:w-full lg:w-2/5 bg-transparent flex justify-center lg:justify-end flex-wrap items-center">
             <div>
               <CardMini
                 cardDescProps={
