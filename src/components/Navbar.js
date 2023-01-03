@@ -81,7 +81,7 @@ const Navbar = () => {
             class={`${
               location.pathname === "/contact"
                 ? "ml-8 md:ml-3 sm:lg:ml-3 normal-case lg:text-2xl sm:text-2xl text-2xl font-extrabold md:flex lg:flex"
-                : "ml-3 normal-case lg:text-2xl sm:text-2xl text-2xl font-extrabold hidden md:flex lg:flex"
+                : "ml-[0.8rem] normal-case lg:text-2xl sm:text-2xl text-2xl font-extrabold hidden md:flex lg:flex"
             } `}
           >
             Fao<span className="font-semibold normal-case">Tech</span>
