@@ -26,10 +26,10 @@ const Contact = () => {
         </button>
       </div>
       <div className="flex flex-col z-10 xl:mx-auto pt-2">
-        <p className="text-[#4C6BDC] text-[3rem] font-bold leading-[1.1]">
+        <p className="text-[#4C6BDC] md:lg:text-5xl text-4xl font-bold leading-[1.1]">
           Let’s discuss your project with our team
         </p>
-        <p className="text-[#A1A1A1] text-[1.25rem] leading-[1.4] mt-2">
+        <p className="text-[#A1A1A1] text-base md:lg:text-[1.25rem] leading-[1.4] mt-2">
           We would love to hear from you! Send us an email and we will respond
           within 24 hours.
         </p>
