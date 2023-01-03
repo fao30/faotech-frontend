@@ -78,24 +78,28 @@ const Navbar = () => {
           <p
             class={`${
               location.pathname === "/contact-us"
-                ? "ml-8 sm:ml-3 md:lg:ml-3 normal-case lg:text-2xl sm:text-2xl text-2xl font-extrabold  md:lg:flex"
-                : "ml-3 normal-case lg:text-2xl sm:text-2xl text-2xl font-extrabold hidden sm:flex md:lg:flex"
+                ? "ml-8 sm:ml-3 md:lg:ml-4 normal-case lg:text-2xl sm:text-2xl text-2xl font-extrabold md:flex lg:flex"
+                : "ml-3 normal-case lg:text-2xl sm:text-2xl text-2xl font-extrabold hidden md:flex lg:flex"
             } `}
+          >
+            Fao<span className="font-semibold normal-case">Tech</span>
+          </p>
+          <p
+            onClick={() => {
+              navigate("/");
+              scrollToTop();
+            }}
+            class={`${
+              location.pathname === "/contact-us"
+                ? "hidden"
+                : "mr-3 normal-case lg:text-2xl sm:text-2xl text-2xl font-extrabold btn btn-ghost md:hidden lg:hidden"
+            }`}
           >
             Fao<span className="font-semibold normal-case">Tech</span>
           </p>
         </div>
         <div class="navbar-end">
           <div class={`${location.pathname === "/contact-us" ? "hidden" : ""}`}>
-            <p
-              onClick={() => {
-                navigate("/");
-                scrollToTop();
-              }}
-              class="mr-3 normal-case lg:text-2xl sm:text-2xl text-2xl font-extrabold btn btn-ghost md:hidden lg:hidden"
-            >
-              Fao<span className="font-semibold normal-case">Tech</span>
-            </p>
             <div class="hidden md:flex lg:flex">
               <ul class=" menu-horizontal">
                 <li>
