@@ -89,7 +89,7 @@ const FormContact = () => {
           <input
             type="submit"
             value="Submit Message"
-            className="text-[#FFFFFF] bg-[#4C6BDC] py-4 rounded-xl w-full sm:w-72 cursor-pointer"
+            className="text-[#FFFFFF] bg-[#4C6BDC] hover:bg-primary-400 py-4 rounded-xl w-full sm:w-72 cursor-pointer btn border-none normal-case"
           />
           <span class="absolute w-0 h-0 transition-all duration-300 ease-out bg-white rounded-full group-hover:w-32 group-hover:h-32 opacity-10"></span>
         </div>

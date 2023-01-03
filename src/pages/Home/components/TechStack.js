@@ -53,7 +53,7 @@ const TechStack = () => {
             />
           </div>
           <div class="w-full">
-            <div class="my-16 md:mx-[5rem] lg:mx-[9.5rem] mx-10 px-12 flex justify-center md:lg:justify-between content-center flex-wrap items-center rounded-xl h-56 md:h-48 lg:h-[120px] bg-[#4C6BDC] ">
+            <div class="my-16 md:mx-[5rem] lg:mx-[9.5rem] mx-10 px-12 flex justify-end md:lg:justify-between content-center flex-wrap items-center rounded-xl h-72 md:h-48 lg:h-[120px] bg-[#4C6BDC] ">
               <div class="flex justify-between items-center">
                 <div class="md:text-lg w-full mr-6">
                   <p class="text-[#FCFDFF] font-bold text-2xl">
@@ -65,12 +65,17 @@ const TechStack = () => {
                   </p>
                 </div>
               </div>
-              <button class="mt-4 lg:mt-0 btn text-sm lg:text-base  hover:bg-white normal-case font-semibold rounded-lg border-none bg-white text-[#4C6BDC] w-40 group">
+              <button
+                class="mt-4 lg:mt-0 btn text-sm lg:text-base  hover:bg-white normal-case font-semibold rounded-lg border-none bg-white text-[#4C6BDC] w-40 group 
+relative inline-flex items-center overflow-hidden"
+              >
                 Go!
-                <span
-                  class="ml-1.5 invisible group-hover:visible
+                {/* <span
+                  class="ml-1.5 hidden group-hover:flex
             group-hover:transition group:hover:duration-700 group-hover:ease-in-out"
-                >
+                > */}{" "}
+                {/* <span class="absolute left-0 block w-full r-0 transition-all  opacity-100 group-hover:h-full top-1/2 group-hover:top-0 duration-400 ease"></span> */}
+                <span class="absolute right-0 flex items-center justify-start w-10 h-10 duration-300 transform translate-y-full group-hover:translate-y-0 ease">
                   <Icon
                     icon="mdi:rocket-launch"
                     color="#4c6bdc"

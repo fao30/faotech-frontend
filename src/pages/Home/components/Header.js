@@ -29,7 +29,7 @@ const Header = () => {
               </h1>
             </motion.div>
             <div class="flex justify-start">
-              <button class="text-white  hover:bg-primary-200 rounded-2xl bg-primary-100 shadow-xl btn border-none normal-case w-full lg:w-full mb-12 lg:mb-0">
+              <button class="text-white  hover:bg-primary-400 rounded-2xl bg-primary-100 shadow-xl btn border-none normal-case w-full lg:w-full mb-12 lg:mb-0">
                 Start Your Journey
               </button>
             </div>
