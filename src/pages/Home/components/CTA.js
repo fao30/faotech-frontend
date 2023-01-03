@@ -5,7 +5,7 @@ const CTA = () => {
 
 <div class=" text- mr-8 ml-8 px-6 py-6 bg-primary-100 rounded-3xl lg:py-12 lg:px-12 xl:flex xl:items-center">
     <div class="xl:w-0 xl:flex-1">
-        <h2 class="ml-5 text-4xl font-bold leading-8 tracking-tight text-white sm:text-4xl sm:leading-9">
+        <h2 class="ml-5 text-3xl font-bold leading-8 tracking-tight text-white sm:text-4xl  ">
             Ready to start?
         </h2>
         <p class="ml-5 max-w-3xl mt-3 text-lg leading-6 text-indigo-200">
