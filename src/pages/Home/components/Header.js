@@ -21,7 +21,7 @@ const Header = () => {
               <h1 class="md:lg:text-5xl text-4xl font-bold text-black">
                 We Help You Develop Through Digitalization
               </h1>
-              <h1 class="text-l my-6 text-gray-500">
+              <h1 class="text-l my-6 text-[#757575]">
                 FaoTech - Technology Company engaged in industrial digitization
                 located in Kazan. We focus on helping you to digitalize your
                 business from the first scratch until a digital product ready to
