@@ -1,22 +1,42 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
-import ThemeChanger from "./ThemeChanger";
-import UseReadingProgress from "./UseReadingProgress";
+import useReadingProgress from "./UseReadingProgress";
+import { NavLink, useNavigate, useLocation } from "react-router-dom";
+import {
+  dropdownOptions,
+  navbarWithoutContact,
+} from "../store/helper/NavbarOptions";
 
 const Navbar = () => {
+  const location = useLocation();
   const navigate = useNavigate();
-  const completion = UseReadingProgress();
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+  const completion = useReadingProgress();
+  let activeClassName =
+    "btn bg-transparent hover:bg-transparent border-none rounded-2xl text-primary-100 mx-0.5 normal-case";
+  let activeClassNameDropdown = "bg-transparent text-primary-100 my-0.5";
   return (
-    <div
-      class="
-    sticky top-0 z-30  h-16  bg-opacity-90 backdrop-blur transition-all duration-100 
-    text-black shadow
-    "
-    >
-      <div class="navbar flex justify-center">
+    <div class="sticky top-0 z-30 h-16 bg-white text-black shadow ">
+      <div
+        class="navbar flex justify-center lg:px-34 md:px-18 px-2  
+      "
+      >
         <div class="navbar-start">
-          <div class="dropdown">
-            <label tabindex="0" class="btn btn-ghost lg:hidden md:hidden">
+          <div
+            class={`${
+              location.pathname === "/contact-us"
+                ? "hidden"
+                : "dropdown lg:hidden md:hidden ml-4"
+            }`}
+          >
+            <label
+              tabindex="0"
+              class="btn btn-ghost rounded-2xl lg:hidden md:hidden"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="h-5 w-5"
@@ -34,105 +54,90 @@ const Navbar = () => {
             </label>
             <ul
               tabindex="0"
-              class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-white rounded-box w-52 "
+              class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-white hover:bg-white rounded-box w-52 "
             >
               <li>
-                <a
-                  onClick={() => {
-                    navigate("/");
-                  }}
-                >
-                  Home
-                </a>
-              </li>
-              <li>
-                <a
-                  onClick={() => {
-                    navigate("/about");
-                  }}
-                >
-                  About
-                </a>
-              </li>
-              <li>
-                <a
-                  onClick={() => {
-                    navigate("/portfolio");
-                  }}
-                >
-                  Portfolio
-                </a>
-              </li>
-              <li>
-                <a
-                  onClick={() => {
-                    navigate("/contact");
-                  }}
-                >
-                  Contact Us
-                </a>
+                {dropdownOptions.map((e) => {
+                  return (
+                    <NavLink
+                      to={e.to}
+                      className={({ isActive }) =>
+                        isActive ? activeClassNameDropdown : "my-0.5"
+                      }
+                      onClick={() => {
+                        scrollToTop();
+                      }}
+                    >
+                      {e.label}
+                    </NavLink>
+                  );
+                })}
               </li>
             </ul>
           </div>
-          <a
+          <p
+            class={`${
+              location.pathname === "/contact-us"
+                ? "ml-8 sm:ml-3 md:lg:ml-4 normal-case lg:text-2xl sm:text-2xl text-2xl font-extrabold md:flex lg:flex"
+                : "ml-3 normal-case lg:text-2xl sm:text-2xl text-2xl font-extrabold hidden md:flex lg:flex"
+            } `}
+          >
+            Fao<span className="font-semibold normal-case">Tech</span>
+          </p>
+          <p
             onClick={() => {
               navigate("/");
+              scrollToTop();
             }}
-            class="btn btn-ghost normal-case lg:text-2xl sm:text-2xl text-xl font-extrabold font-title"
+            class={`${
+              location.pathname === "/contact-us"
+                ? "hidden"
+                : "mr-3 normal-case lg:text-2xl sm:text-2xl text-2xl font-extrabold btn btn-ghost md:hidden lg:hidden"
+            }`}
           >
-            Fao<span className="font-semibold">Tech</span>
-          </a>
+            Fao<span className="font-semibold normal-case">Tech</span>
+          </p>
         </div>
         <div class="navbar-end">
-          <div class="hidden md:flex lg:flex">
-            <ul class="menu menu-horizontal px-1">
-              <li>
-                <a
-                  className="btn btn-ghost normal-case"
-                  onClick={() => {
-                    navigate("/");
-                  }}
-                >
-                  Home
-                </a>
-              </li>
-              <li>
-                <a
-                  className="btn btn-ghost normal-case"
-                  onClick={() => {
-                    navigate("/about");
-                  }}
-                >
-                  About
-                </a>
-              </li>
-              <li>
-                <a
-                  className="btn btn-ghost normal-case"
-                  onClick={() => {
-                    navigate("/portfolio");
-                  }}
-                >
-                  Portfolio
-                </a>
-              </li>
-              <li>
-                <a
-                  className="btn btn-ghost normal-case"
-                  onClick={() => {
-                    navigate("/contact");
-                  }}
-                >
-                  Contact Us
-                </a>
-              </li>
-            </ul>
+          <div class={`${location.pathname === "/contact-us" ? "hidden" : ""}`}>
+            <div class="hidden md:flex lg:flex">
+              <ul class=" menu-horizontal">
+                <li>
+                  {navbarWithoutContact.map((e) => {
+                    return (
+                      <NavLink
+                        to={e.to}
+                        className={({ isActive }) =>
+                          isActive
+                            ? activeClassName
+                            : "btn btn-ghost border-none rounded-2xl mx-0.5 normal-case"
+                        }
+                        onClick={() => {
+                          scrollToTop();
+                        }}
+                      >
+                        {e.label}
+                      </NavLink>
+                    );
+                  })}
+                  <a
+                    // href="/#/contact-us"
+                    class="btn btn-ghost rounded-2xl mx-0.5 normal-case border-none  text-black hover:bg-primary-100 hover:text-white active:bg-primary-200"
+                    onClick={() => {
+                      navigate("/contact-us");
+                      scrollToTop();
+                    }}
+                  >
+                    Contact Us
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
-          {/* <ThemeChanger /> */}
         </div>
         <span
           style={{ transform: `translateX(${completion - 100}%)` }}
-          class="absolute bg-black h-1 w-full bottom-0"
+          class="absolute bg-primary-100 h-1 w-full bottom-0"
         />
       </div>
     </div>

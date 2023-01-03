@@ -1,55 +1,122 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
+import { Icon } from "@iconify/react";
+import { footerOptions } from "../store/helper/NavbarOptions";
 
 const Footer = () => {
+  const navigate = useNavigate();
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
   return (
-    <div class="bg-base-300 text-base-content">
-      <footer class="footer mx-auto max-w-5xl p-12 flex flex-wrap justify-between lg:justify-around">
-        <div>
-          <div class="font-title inline-flex text-3xl">
-            <span class=" font-extrabold">Fao</span> <span>Tech</span>
+    <div class="bg-white text-base-content lg:mx-0 md:mx-9">
+      <footer class="footer px-12 lg:px-38 py-12 flex flex-wrap justify-between md:px-12">
+        <div class="w-4/6">
+          <div class="font-title text-black inline-flex text-3xl">
+            <span class="font-extrabold">Fao</span> <span>Tech</span>
           </div>
-          <p>© 2023</p>
-          <p>All rights reserved.</p>
+          <p class="text-footer-100">© 2023. All rights reserved.</p>
+          <p class="text-footer-100">
+            Lets’s create future for your better business
+          </p>
+          <div class="flex justify-start items-center ">
+            <a
+              href="https://www.google.com"
+              rel="noreferrer"
+              target="_blank"
+              class="transition-all transform hover:scale-110"
+            >
+              <Icon
+                icon="mdi:linkedin"
+                color="#757575"
+                width="26"
+                height="26"
+              />
+            </a>
+            <a
+              href="https://www.google.com"
+              rel="noreferrer"
+              target="_blank"
+              class="ml-0.5 transition-all transform hover:scale-110"
+            >
+              <Icon
+                icon="mdi:instagram"
+                color="#757575"
+                width="26"
+                height="26"
+              />
+            </a>
+          </div>
         </div>
-        <div>
-          <span class="footer-title">Guides</span>
-          <a href class="link link-hover">
-            Features
-          </a>
-          <a href class="link link-hover">
-            Pricing
-          </a>
-          <a href class="link link-hover">
-            Resources
-          </a>
-          <a href class="link link-hover">
-            Contact
-          </a>
+        <div class="w-96 md:w-96 lg:w-32 pr-12">
+          <span class="text-lg">Features</span>
+          {footerOptions.map((e) => {
+            return (
+              <a
+                href
+                onClick={() => {
+                  navigate(`${e.to}`);
+                  scrollToTop();
+                }}
+                class=" text-footer-100 link link-hover"
+              >
+                {e.label}
+              </a>
+            );
+          })}
         </div>
-        <div>
-          <span class="footer-title">Our Location</span>
-          <a href class="link link-hover">
-            Bima Citra 16, No. 2
-          </a>
-          <a href class="link link-hover">
-            Bekasi,
-          </a>
-          <a href="mailto:info@faotech.co" class="link link-hover">
-            info@faotech.co
-          </a>
-          <a href class="link link-hover">
-            123-456-7890
-          </a>
-        </div>
-        <div>
-          <a>
-            We're looking for talented,
-            <br />
-            passionate folks to join our team.
-          </a>
-          <button className="btn btn-success mt-2 normal-case">
-            Jobs at FaoTech
-          </button>
+        <div class="w-56">
+          <span class="text-lg">Contact</span>
+          <div class="flex justify-center items-start">
+            <Icon
+              icon="material-symbols:mail-outline"
+              color="#757575"
+              width="24"
+              height="24"
+            />
+            <a
+              rel="noreferrer"
+              target="_blank"
+              href="mailto:contact@faotech.com"
+              class="link link-hover text-gray-500 ml-2"
+            >
+              contact@faotech.com
+            </a>
+          </div>
+          <div class="flex justify-center items-start">
+            <Icon
+              icon="material-symbols:call"
+              color="#757575"
+              width="24"
+              height="24"
+            />
+            <a
+              href
+              rel="noreferrer"
+              target="_blank"
+              class="link link-hover text-gray-500 ml-2"
+            >
+              +79246246378
+            </a>
+          </div>
+          <div class="flex justify-center items-start">
+            <Icon
+              icon="mdi:home-city-outline"
+              color="#757575"
+              width="24"
+              height="24"
+            />
+            <a href class="link link-hover text-gray-500 ml-2">
+              Meridiannaya Street 3,
+              <br />
+              Sovetsky City District, Kazan,
+              <br />
+              Republic of Tatarstan, Russia
+            </a>
+          </div>
         </div>
       </footer>
     </div>
