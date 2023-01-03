@@ -4,9 +4,10 @@ import { React } from "react";
 
 const Header = () => {
   return (
-    <div class="text-primary-content grid place-items-center items-end from-white to-primary-300 bg-gradient-to-r">
+    <div class="text-primary-content grid place-items-center items-end">
       <div class="my-12 lg:my-40 z-10">
         <div class="flex lg:justify-around justify-center flex-wrap items-center">
+          {/* HEADER TITLE */}
           <div class="mx-10 w-full lg:w-96 md:w-4/5">
             <motion.div
               initial={{ x: "-20%" }}
