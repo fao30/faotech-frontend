@@ -19,3 +19,18 @@
   transform: scale(1.05);
   cursor: pointer;
 } */
+/* 
+ .btn-journey {
+  background-color: #4c6bdc;
+}
+.btn-journey:hover {
+  background-color: #2f51cb;
+}
+.heading-text-color {
+  color: #4c6bdc;
+} */
+
+.bg-fao {
+  background-color: #e6eef9;
+  background-position: right 40% bottom 45%;
+}
