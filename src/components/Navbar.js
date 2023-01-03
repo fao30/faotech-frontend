@@ -62,7 +62,9 @@ const Navbar = () => {
                     <NavLink
                       to={e.to}
                       className={({ isActive }) =>
-                        isActive ? activeClassNameDropdown : "my-0.5"
+                        isActive
+                          ? activeClassNameDropdown
+                          : "my-0.5 text-[#393737]"
                       }
                       onClick={() => {
                         scrollToTop();
@@ -110,7 +112,7 @@ const Navbar = () => {
                         className={({ isActive }) =>
                           isActive
                             ? activeClassName
-                            : "btn btn-ghost border-none rounded-2xl mx-0.5 normal-case"
+                            : "btn btn-ghost border-none rounded-2xl mx-0.5 normal-case text-[#393737] "
                         }
                         onClick={() => {
                           scrollToTop();
@@ -122,7 +124,7 @@ const Navbar = () => {
                   })}
                   <a
                     // href="/#/contact"
-                    class="btn btn-ghost rounded-2xl mx-0.5 normal-case border-none  text-black hover:bg-primary-100 hover:text-white active:bg-primary-200 hover:shadow-xl"
+                    class="btn btn-ghost rounded-2xl mx-0.5 normal-case border-none  text-[#393737] hover:bg-primary-100 hover:text-white active:bg-primary-200 hover:shadow-xl"
                     onClick={() => {
                       navigate("/contact");
                       scrollToTop();
