@@ -1,7 +1,10 @@
 import React from "react";
 import useReadingProgress from "./UseReadingProgress";
 import { NavLink, useNavigate, useLocation } from "react-router-dom";
-import { dropdownOptions, navbarOptions } from "../store/helper/NavbarOptions";
+import {
+  dropdownOptions,
+  navbarWithoutContact,
+} from "../store/helper/NavbarOptions";
 
 const Navbar = () => {
   const location = useLocation();
@@ -17,19 +20,19 @@ const Navbar = () => {
     "btn bg-transparent hover:bg-transparent border-none rounded-2xl text-primary-100 mx-0.5 normal-case";
   let activeClassNameDropdown = "bg-transparent text-primary-100 my-0.5";
   return (
-    <div
-      class={`${
-        location.pathname === "/contact-us"
-          ? "hidden"
-          : "sticky top-0 z-30 h-16 bg-white text-black shadow "
-      }`}
-    >
+    <div class="sticky top-0 z-30 h-16 bg-white text-black shadow ">
       <div
-        class="navbar flex justify-center lg:px-34 md:px-8 px-2 
+        class="navbar flex justify-center lg:px-34 md:px-18 px-2  
       "
       >
         <div class="navbar-start">
-          <div class="dropdown lg:hidden md:hidden ml-4">
+          <div
+            class={`${
+              location.pathname === "/contact-us"
+                ? "hidden"
+                : "dropdown lg:hidden md:hidden ml-4"
+            }`}
+          >
             <label
               tabindex="0"
               class="btn btn-ghost rounded-2xl lg:hidden md:hidden"
@@ -72,42 +75,60 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
-          <p class="ml-3 normal-case lg:text-2xl sm:text-2xl text-2xl font-extrabold hidden lg:flex md:flex">
+          <p
+            class={`${
+              location.pathname === "/contact-us"
+                ? "ml-8 sm:ml-3 md:lg:ml-3 normal-case lg:text-2xl sm:text-2xl text-2xl font-extrabold  md:lg:flex"
+                : "ml-3 normal-case lg:text-2xl sm:text-2xl text-2xl font-extrabold hidden sm:flex md:lg:flex"
+            } `}
+          >
             Fao<span className="font-semibold normal-case">Tech</span>
           </p>
         </div>
         <div class="navbar-end">
-          <p
-            onClick={() => {
-              navigate("/");
-              scrollToTop();
-            }}
-            class="mr-3 normal-case lg:text-2xl sm:text-2xl text-2xl font-extrabold btn btn-ghost md:hidden lg:hidden"
-          >
-            Fao<span className="font-semibold normal-case">Tech</span>
-          </p>
-          <div class="hidden md:flex lg:flex">
-            <ul class=" menu-horizontal">
-              <li>
-                {navbarOptions.map((e) => {
-                  return (
-                    <NavLink
-                      to={e.to}
-                      className={({ isActive }) =>
-                        isActive
-                          ? activeClassName
-                          : "btn btn-ghost border-none rounded-2xl mx-0.5 normal-case"
-                      }
-                      onClick={() => {
-                        scrollToTop();
-                      }}
-                    >
-                      {e.label}
-                    </NavLink>
-                  );
-                })}
-              </li>
-            </ul>
+          <div class={`${location.pathname === "/contact-us" ? "hidden" : ""}`}>
+            <p
+              onClick={() => {
+                navigate("/");
+                scrollToTop();
+              }}
+              class="mr-3 normal-case lg:text-2xl sm:text-2xl text-2xl font-extrabold btn btn-ghost md:hidden lg:hidden"
+            >
+              Fao<span className="font-semibold normal-case">Tech</span>
+            </p>
+            <div class="hidden md:flex lg:flex">
+              <ul class=" menu-horizontal">
+                <li>
+                  {navbarWithoutContact.map((e) => {
+                    return (
+                      <NavLink
+                        to={e.to}
+                        className={({ isActive }) =>
+                          isActive
+                            ? activeClassName
+                            : "btn btn-ghost border-none rounded-2xl mx-0.5 normal-case"
+                        }
+                        onClick={() => {
+                          scrollToTop();
+                        }}
+                      >
+                        {e.label}
+                      </NavLink>
+                    );
+                  })}
+                  <a
+                    // href="/#/contact-us"
+                    class="btn btn-ghost rounded-2xl mx-0.5 normal-case border-none  text-black hover:bg-primary-100 hover:text-white active:bg-primary-200"
+                    onClick={() => {
+                      navigate("/contact-us");
+                      scrollToTop();
+                    }}
+                  >
+                    Contact Us
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
         <span

@@ -7,7 +7,7 @@ const Header = () => {
     <div class="text-primary-content grid place-items-center items-end from-white to-primary-300 bg-gradient-to-r">
       <div class="my-12 lg:my-40 z-10">
         <div class="flex lg:justify-around justify-center flex-wrap items-center">
-          <div class="mx-10 w-full lg:w-96">
+          <div class="mx-10 w-full lg:w-96 md:w-4/5">
             <motion.div
               initial={{ x: "-20%" }}
               animate={{ x: "calc(100% - 100%)" }}
@@ -15,7 +15,7 @@ const Header = () => {
               <h1 class="text-xl my-2 text-primary-100 font-bold">
                 Fast, Trust, Number 1
               </h1>
-              <h1 class="text-5xl font-bold text-black">
+              <h1 class="md:lg:text-5xl text-4xl font-bold text-black">
                 We Help You Develop Through Digitalization
               </h1>
               <h1 class="text-l my-6 text-gray-500">
@@ -35,7 +35,7 @@ const Header = () => {
           {/* DON'T DELETE CODES BELOW */}
           {/* <div class="hidden lg:md:sm:flex absolute w-7/12 h-4/5 right-0 bg-primary-300 blur-3xl"></div>
           <div class="md:lg:hidden w-1/5 h-2/5 top-3/4 right-0 absolute rounded-2xl bg-blue-100 blur-3xl"></div> */}
-          <div class="z-10 mx-10 rounded-box w-full bg-transparent lg:w-2/5 transition-all transform hover:scale-110 hover:cursor-ew-resize">
+          <div class="z-10 mx-10 rounded-box w-full md:w-4/5 lg:w-2/5 bg-transparent transition-all transform hover:scale-110 hover:cursor-ew-resize">
             <div class="carousel carousel-center w-full  rounded-box space-x-4">
               <div class="carousel-item">
                 <img

@@ -25,6 +25,7 @@ module.exports = {
         },
       },
       padding: {
+        18: "4.4rem",
         38: "9.5rem",
         34: "8.8rem",
       },
@@ -34,7 +35,7 @@ module.exports = {
         34: "8.8rem",
       },
       fontSize: {
-        s: "0.8rem",
+        s: "0.7rem",
       },
     },
   },

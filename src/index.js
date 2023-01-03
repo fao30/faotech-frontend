@@ -7,7 +7,7 @@ import { HashRouter, Routes, Route } from "react-router-dom";
 // import { motion } from "framer-motion";
 import LoadToTop from "./components/LoadToTop";
 import Loading from "react-fullscreen-loading";
-import { routesOptions } from "./store/helper/Router";
+import { routesOptions } from "./store/helper/Routes";
 
 export default function Routing() {
   const [loading, setLoading] = useState(false);

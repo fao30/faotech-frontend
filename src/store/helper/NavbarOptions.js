@@ -1,5 +1,5 @@
 // navbar and footer options (router)
-export const navbarOptions = [
+export const footerOptions = [
   {
     to: "/",
     label: "Home",
@@ -30,5 +30,20 @@ export const dropdownOptions = [
   {
     to: "/contact-us",
     label: "Contact Us",
+  },
+];
+
+export const navbarWithoutContact = [
+  {
+    to: "/",
+    label: "Home",
+  },
+  {
+    to: "/about",
+    label: "About",
+  },
+  {
+    to: "/portfolio",
+    label: "Portfolio",
   },
 ];

@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import { Icon } from "@iconify/react";
-import { navbarOptions } from "../store/helper/NavbarOptions";
+import { footerOptions } from "../store/helper/NavbarOptions";
 
 const Footer = () => {
   const navigate = useNavigate();
@@ -12,7 +12,7 @@ const Footer = () => {
     });
   };
   return (
-    <div class="bg-white text-base-content">
+    <div class="bg-white text-base-content lg:mx-0 md:mx-9">
       <footer class="footer px-12 lg:px-38 py-12 flex flex-wrap justify-between md:px-12">
         <div class="w-4/6">
           <div class="font-title text-black inline-flex text-3xl">
@@ -53,7 +53,7 @@ const Footer = () => {
         </div>
         <div class="w-96 md:w-96 lg:w-32 pr-12">
           <span class="text-lg">Features</span>
-          {navbarOptions.map((e) => {
+          {footerOptions.map((e) => {
             return (
               <a
                 href
