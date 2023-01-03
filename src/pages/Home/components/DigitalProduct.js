@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import React from "react";
 
 const DigitalProduct = () => {
@@ -13,15 +12,10 @@ const DigitalProduct = () => {
             </h1>
           </div>
           <div class="w-72 text-[#757575] text-[16px] mt-6">
-            <motion.div
-              initial={{ x: "-20%" }}
-              animate={{ x: "calc(100% - 100%)" }}
-            >
-              <h1>
-                We experienced in digitalizing various business and enterprises
-                across industries with our product.
-              </h1>
-            </motion.div>
+            <h1>
+              We experienced in digitalizing various business and enterprises
+              across industries with our product.
+            </h1>
           </div>
         </div>
         {/* Communication Platform for Business to Business Partners */}
@@ -41,6 +35,7 @@ const DigitalProduct = () => {
             </div>
           </div>
           <img
+            alt="b2b"
             class="hidden lg:flex w-full lg:w-6/12 transition-all transform hover:scale-125 hover:cursor-zoom-in mt-12 lg:mt-0"
             src={require("./components/b2b.png")}
           ></img>
@@ -48,6 +43,7 @@ const DigitalProduct = () => {
         {/* IMG FOR MOBILE PHONES */}
         <div class="flex justify-center">
           <img
+            alt="b2b"
             class="md:lg:hidden w-11/12 transition-all transform hover:scale-125 hover:cursor-zoom-in mt-12"
             src={require("./components/b2b.png")}
           ></img>

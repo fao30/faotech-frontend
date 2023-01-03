@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import { React } from "react";
 import CardWork from "./components/CardWork";
 import { Icon } from "@iconify/react";
