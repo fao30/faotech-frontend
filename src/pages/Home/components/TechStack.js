@@ -1,6 +1,6 @@
 import React from "react";
 import { Icon } from "@iconify/react";
-import { motion } from "framer-motion";
+// import { motion } from "framer-motion";
 import CardTech from "./CardTech";
 import CTA from "./CTA";
 // import CTA from './CTA';
@@ -14,17 +14,17 @@ const TechStack = () => {
       <div class="my-6 mb-8 lg:mt-20 lg:mb-80 z-10 md:w-4/5 lg:w-full">
         <div>
           <div class=" flex flex-col justify-center flex-wrap items-center mb-6">
-            <h1 class="text-5xl  text-black font-bold mb-8">Tech Stack</h1>
-            <p className="block text-sm text-gray-500 lg:text-lg ">
+            <h1 class="text-3xl lg:text-5xl  text-black font-bold mb-8">Tech Stack</h1>
+            <p className="block  mx-auto text-sm text-gray-500 lg:text-lg ">
               There is no right answer when choosing the right tech stack for
-              you. We take into account
+              you. We take into account  
             </p>
             <p className="block text-sm text-gray-500 lg:text-lg">
             your long term goal, development timeline, speed and budget.
             </p>
 
           </div>
-          <div class="flex flex-wrap justify-center items-center  " style={{marginBottom:"10rem"}}>
+          <div class="flex flex-wrap justify-center items-center  " style={{marginBottom:"14rem"}}>
             <CardTech
               cardIconProps={
                 <Icon
@@ -58,7 +58,6 @@ const TechStack = () => {
               }
               cardTitleProps={"Flutter"}
             />
-            <div></div>
           </div>
           <div>
           <CTA />

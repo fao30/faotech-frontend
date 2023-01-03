@@ -2,7 +2,7 @@ import React from 'react'
 
 const ReachUs = () => {
   return (
-    <div class=" text- mr-8 ml-8 px-6 py-6 bg-primary-100 rounded-3xl lg:py-12 lg:px-12 xl:flex xl:items-center">
+    <div class=" text- mr-10 ml-10 px-6 py-6 bg-primary-100 rounded-3xl lg:py-12 lg:px-12 xl:flex xl:items-center">
     <div class="xl:w-0 xl:flex-1">
         <h2 class="ml-5 text-xl font-bold leading-8 tracking-tight text-white sm:text-2xl sm:leading-9">
         <span class="block">
