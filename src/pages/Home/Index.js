@@ -5,13 +5,14 @@ import Products from "./components/Products";
 import HeroContent from "./components/HeroContent";
 import HowItWorks from "./components/HowItWorks";
 import Benefits from "./components/Benefits";
-import Test4 from "./components/Test4";
+// import CardProducts from "./components/CardProducts";
 
 const Index = () => {
   return (
     <div>
       <Header />
       <Hero />
+      {/* <CardProducts /> */}
       <Products />
       {/* <HeroContent /> */}
       {/* <HowItWorks /> */}
