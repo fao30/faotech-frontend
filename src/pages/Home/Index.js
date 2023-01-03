@@ -7,9 +7,7 @@ import TechStack from "./components/TechStack";
 const Index = () => {
   return (
     <div>
-    
       <TechStack/>
-      <CTA/>
       <ReachUs/>
     </div>
   );
