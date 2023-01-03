@@ -1,9 +1,7 @@
 import { Icon } from "@iconify/react";
 import { motion } from "framer-motion";
 import { React } from "react";
-import CardMini from "./components/CardMini";
-import CarouselItem from "./components/CarouselItem";
-
+import CardHero from "./components/CardHero";
 // from-white to-blue-200  bg-gradient-to-r
 
 const HeroContent = () => {
@@ -11,8 +9,8 @@ const HeroContent = () => {
     <div class="text-primary-content flex flex-col justify-around">
       <div class="my-6 lg:my-[11rem] z-10">
         <div class="flex lg:justify-around justify-center flex-wrap items-center">
-          {/* HEADER TITLE */}
-          <div class="mx-10 lg:pl-14 w-full lg:w-[39rem] md:w-4/5">
+          {/* HERO TITLE */}
+          <div class="z-20 mx-10 lg:pl-14 w-full lg:w-[39rem] md:w-4/5">
             <motion.div
               initial={{ x: "-20%" }}
               animate={{ x: "calc(100% - 100%)" }}
@@ -29,13 +27,13 @@ const HeroContent = () => {
               </h1>
             </motion.div>
           </div>
-          {/* carousel */}
+
           {/* DON'T DELETE CODES BELOW */}
-          {/* <div class="hidden lg:md:sm:flex absolute w-7/12 h-4/5 right-0 bg-primary-300 blur-3xl"></div>
-          <div class="md:lg:hidden w-1/5 h-2/5 top-3/4 right-0 absolute rounded-2xl bg-blue-100 blur-3xl"></div> */}
+          {/* <div class="hidden lg:md:sm:flex absolute w-7/12 h-3/4 right-0 bg-primary-300 blur-3xl"></div>
+          <div class="md:lg:hidden w-1/5 h-2/5 top-3/4 right-0 absolute rounded-2xl bg-blue-100 blur-3xl rounded-tl-full"></div> */}
           <div class="lg:pr-12 z-10 mx-10 rounded-box w-full md:w-4/5 sm:w-full lg:w-2/5 bg-transparent flex justify-center lg:justify-end flex-wrap items-center">
             <div>
-              <CardMini
+              <CardHero
                 cardDescProps={
                   "Bring business operation productivity and efficiency by implementing an automation engine."
                 }
@@ -48,8 +46,8 @@ const HeroContent = () => {
                     height="67px"
                   />
                 }
-              ></CardMini>
-              <CardMini
+              />
+              <CardHero
                 cardDescProps={
                   "Every project includes free bug fixing up to 3 months after the handover time."
                 }
@@ -62,8 +60,8 @@ const HeroContent = () => {
                     height="68.75px"
                   />
                 }
-              ></CardMini>
-              <CardMini
+              />
+              <CardHero
                 cardDescProps={
                   "Help enterprises to improve business operation through digitalization by increasing visibility."
                 }
@@ -76,7 +74,7 @@ const HeroContent = () => {
                     height="68.75px"
                   />
                 }
-              ></CardMini>
+              />
             </div>
           </div>
         </div>
