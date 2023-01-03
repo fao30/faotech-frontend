@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
 import { React } from "react";
+import CarouselItem from "./components/CarouselItem";
+
 // from-white to-blue-200  bg-gradient-to-r
 
 const Header = () => {
@@ -38,27 +40,15 @@ const Header = () => {
           <div class="md:lg:hidden w-1/5 h-2/5 top-3/4 right-0 absolute rounded-2xl bg-blue-100 blur-3xl"></div> */}
           <div class="z-10 mx-10 rounded-box w-full md:w-4/5 lg:w-2/5 bg-transparent transition-all transform hover:scale-110 hover:cursor-ew-resize">
             <div class="carousel carousel-center w-full  rounded-box space-x-4">
-              <div class="carousel-item">
-                <img
-                  alt=""
-                  src="https://preview.redd.it/ouodm9z9ycp51.png?auto=webp&s=51b2940b6d7fb31275465303a10fa104192e003f"
-                  class="rounded-box w-96"
-                />
-              </div>
-              <div class="carousel-item">
-                <img
-                  alt=""
-                  src="https://preview.redd.it/ouodm9z9ycp51.png?auto=webp&s=51b2940b6d7fb31275465303a10fa104192e003f"
-                  class="rounded-box w-96"
-                />
-              </div>
-              <div class="carousel-item">
-                <img
-                  alt=""
-                  src="https://preview.redd.it/ouodm9z9ycp51.png?auto=webp&s=51b2940b6d7fb31275465303a10fa104192e003f"
-                  class="rounded-box w-96"
-                />
-              </div>
+              <CarouselItem
+                carouselPictureProps={require("./components/screenHeader.jpeg")}
+              />
+              <CarouselItem
+                carouselPictureProps={require("./components/screenHeader.jpeg")}
+              />
+              <CarouselItem
+                carouselPictureProps={require("./components/screenHeader.jpeg")}
+              />
             </div>
           </div>
         </div>

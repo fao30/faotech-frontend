@@ -8,7 +8,7 @@ const OurWorkSelector = () => {
   return (
     <div
       id="ourWorkSelector"
-      class="text-primary-content grid place-items-center items-end from-white to-primary-300 bg-gradient-to-r"
+      class="text-primary-content grid place-items-center items-end"
     >
       <div class="my-6 lg:mt-20 lg:mb-80 z-10 md:w-4/5 lg:w-full">
         <div>
