@@ -4,13 +4,9 @@ import Header from "../Home/components/Header";
 
 const Portfolio = () => {
   return (
-    <motion.div
-      initial={{ opacity: 0.5 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
-    >
+    <div>
       <Header />
-    </motion.div>
+    </div>
   );
 };
 

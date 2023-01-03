@@ -3,15 +3,7 @@ import { React } from "react";
 import Header from "../Home/components/Header";
 
 const AboutUs = () => {
-  return (
-    <motion.div
-      initial={{ opacity: 0.5 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
-    >
-      About
-    </motion.div>
-  );
+  return <div>About</div>;
 };
 
 export default AboutUs;

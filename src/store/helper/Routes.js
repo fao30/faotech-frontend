@@ -9,7 +9,7 @@ export const routesOptions = [
     element: <App />,
   },
   {
-    path: "/contact-us",
+    path: "/contact",
     element: <Contact />,
   },
   {
