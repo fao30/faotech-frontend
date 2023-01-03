@@ -14,7 +14,7 @@ const OurWorkSelector = () => {
         <div>
           <div class="flex flex-col justify-center flex-wrap items-center mb-6">
             <h1 class="text-xl  text-primary-100 font-bold">
-              Solutions is Here!
+              Solutions are Here!
             </h1>
             <h1 class="text-4xl md:lg:text-5xl font-bold text-black text-center">
               Our Work Selector

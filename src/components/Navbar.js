@@ -62,7 +62,9 @@ const Navbar = () => {
                     <NavLink
                       to={e.to}
                       className={({ isActive }) =>
-                        isActive ? activeClassNameDropdown : "my-0.5"
+                        isActive
+                          ? activeClassNameDropdown
+                          : "my-0.5 text-[#393737]"
                       }
                       onClick={() => {
                         scrollToTop();
