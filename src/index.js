@@ -12,7 +12,7 @@ import { routesOptions } from "./store/helper/Routes";
 export default function Routing() {
   const [loading, setLoading] = useState(false);
   useEffect(() => {
-    let loadingTimer = setTimeout(() => setLoading(true), 1.1 * 1000);
+    let loadingTimer = setTimeout(() => setLoading(true), 0.75 * 1000);
     return () => {
       clearTimeout(loadingTimer);
     };
