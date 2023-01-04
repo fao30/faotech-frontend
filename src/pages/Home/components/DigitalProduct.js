@@ -3,7 +3,7 @@ import React from "react";
 const DigitalProduct = () => {
   return (
     <div class="grid place-items-center items-end">
-      <div class="my-6 z-10 w-full">
+      <div class="my-12 z-10 w-full">
         <div class="flex justify-between flex-wrap items-center mx-10 md:mx-20 lg:mx-[9.5rem] mb-12 md:mb-24">
           {/* HEADER TITLE, Digital Product Made By Us*/}
           <div class="w-full lg:w-[45%] md:w-4/5">

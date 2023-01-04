@@ -4,7 +4,7 @@ import React from "react";
 const HeaderAbout = () => {
   return (
     <div class="grid place-items-center items-end">
-      <div class="my-10 lg:my-16 z-10 w-full">
+      <div class="my-10 lg:my-28 z-10 w-full">
         <div class="flex justify-between flex-wrap items-center mx-10 md:mx-20 lg:mx-[9.6rem] mb-12 md:mb-0">
           {/* HEADER TITLE, Digital Product Made By Us*/}
           <motion.div
@@ -34,7 +34,7 @@ const HeaderAbout = () => {
           </motion.div>
           <img
             alt="coding"
-            class="hidden lg:flex w-full lg:w-5/12  shadow-xl md:ml-6 md:mt-6 ml-0 mt-12 lg:mt-0"
+            class="hidden min-[1280px]:flex  w-3/4 min-[1280px]:w-5/12  shadow-xl md:ml-6 md:mt-6 ml-0 mt-12 lg:mt-0"
             src={require("./alvinAbout.jpeg")}
           />
         </div>
@@ -42,7 +42,7 @@ const HeaderAbout = () => {
         <div class="flex justify-center">
           <img
             alt="coding"
-            class="md:lg:hidden  shadow-xl w-[80%] md:mt-8"
+            class="max-[1280px]:flex hidden shadow-xl w-[80%] md:mt-8"
             src={require("./alvinAbout.jpeg")}
           ></img>
         </div>
