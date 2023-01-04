@@ -22,7 +22,6 @@ const Contact = () => {
               height="25"
             />
           </span>
-
           <span class="relative group-hover:-translate-x-5 ease duration-300 group-hover:transform">
             Back to Homepage
           </span>
