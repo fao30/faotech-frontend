@@ -4,18 +4,18 @@ export const footerOptions = [
     to: "/",
     label: "Home",
   },
-  // {
-  //   to: "/about",
-  //   label: "About",
-  // },
+  {
+    to: "/about",
+    label: "About",
+  },
   // {
   //   to: "/portfolio",
   //   label: "Portfolio",
   // },
-  // {
-  //   to: "/contact",
-  //   label: "Contact Us",
-  // },
+  {
+    to: "/contact",
+    label: "Contact Us",
+  },
 ];
 
 export const dropdownOptions = [
@@ -38,10 +38,10 @@ export const navbarWithoutContact = [
     to: "/",
     label: "Home",
   },
-  // {
-  //   to: "/about",
-  //   label: "About",
-  // },
+  {
+    to: "/about",
+    label: "About",
+  },
   // {
   //   to: "/portfolio",
   //   label: "Portfolio",

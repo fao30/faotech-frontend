@@ -80,8 +80,8 @@ const Navbar = () => {
           <p
             class={`${
               location.pathname === "/contact"
-                ? "ml-8 md:ml-3 sm:lg:ml-3 normal-case lg:text-2xl sm:text-2xl text-2xl font-extrabold md:flex lg:flex"
-                : "ml-3 normal-case lg:text-2xl sm:text-2xl text-2xl font-extrabold hidden md:flex lg:flex"
+                ? "ml-8 md:ml-[0.8rem] sm:lg:ml-3 normal-case lg:text-2xl sm:text-2xl text-2xl font-extrabold md:flex lg:flex"
+                : "ml-[0.8rem] normal-case lg:text-2xl sm:text-2xl text-2xl font-extrabold hidden md:flex lg:flex"
             } `}
           >
             Fao<span className="font-semibold normal-case">Tech</span>
@@ -123,7 +123,7 @@ const Navbar = () => {
                     );
                   })}
                   <a
-                    // href="/#/contact"
+                    href
                     class="btn btn-ghost rounded-2xl mx-0.5 normal-case border-none  text-[#393737] hover:bg-primary-100 hover:text-white active:bg-primary-200 hover:shadow-xl"
                     onClick={() => {
                       navigate("/contact");

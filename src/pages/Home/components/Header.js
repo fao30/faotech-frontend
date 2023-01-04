@@ -6,8 +6,8 @@ import CarouselItem from "./components/CarouselItem";
 
 const Header = () => {
   return (
-    <div class="text-primary-content grid place-items-center items-end">
-      <div class="my-6 lg:my-[11rem] z-10">
+    <div class=" grid place-items-center items-end">
+      <div class="my-6 lg:my-16 z-10">
         <div class="flex lg:justify-around justify-center flex-wrap items-center">
           {/* HEADER TITLE */}
           <div class="mx-10 w-full lg:w-96 md:w-4/5">
@@ -29,7 +29,7 @@ const Header = () => {
               </h1>
             </motion.div>
             <div class="flex justify-start">
-              <button class="text-white  hover:bg-primary-200 rounded-2xl bg-primary-100 shadow-xl btn border-none normal-case w-full lg:w-full mb-12 lg:mb-0">
+              <button class="text-white  hover:bg-primary-400 rounded-2xl bg-primary-100 shadow-xl btn border-none normal-case w-full lg:w-full mb-12 lg:mb-0">
                 Start Your Journey
               </button>
             </div>
