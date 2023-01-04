@@ -1,8 +1,7 @@
 import { motion } from "framer-motion";
-import { React } from "react";
-// import Header from "../Home/components/Header";
+import React from "react";
 
-const AboutUs = () => {
+const HeaderAbout = () => {
   return (
     <div class="grid place-items-center items-end">
       <div class="my-10 lg:my-16 z-10 w-full">
@@ -36,7 +35,7 @@ const AboutUs = () => {
           <img
             alt="coding"
             class="hidden lg:flex w-full lg:w-5/12  shadow-xl md:ml-6 md:mt-6 ml-0 mt-12 lg:mt-0"
-            src={require("./components/alvinAbout.jpeg")}
+            src={require("./alvinAbout.jpeg")}
           />
         </div>
         {/* IMG FOR MOBILE DEVICES */}
@@ -44,7 +43,7 @@ const AboutUs = () => {
           <img
             alt="coding"
             class="md:lg:hidden  shadow-xl w-[80%] md:mt-8"
-            src={require("./components/alvinAbout.jpeg")}
+            src={require("./alvinAbout.jpeg")}
           ></img>
         </div>
       </div>
@@ -52,4 +51,4 @@ const AboutUs = () => {
   );
 };
 
-export default AboutUs;
+export default HeaderAbout;

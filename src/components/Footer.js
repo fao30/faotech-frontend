@@ -19,9 +19,7 @@ const Footer = () => {
             <span class="font-extrabold">Fao</span> <span>Tech</span>
           </div>
           <p class="text-footer-100">© 2023. All rights reserved.</p>
-          <p class="text-footer-100">
-            Lets’s create future for your better business
-          </p>
+          <p class="text-footer-100">Lets’s</p>
           <div class="flex justify-start items-center ">
             <a
               href="https://www.google.com"
