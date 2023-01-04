@@ -75,7 +75,7 @@ relative inline-flex items-center overflow-hidden"
             group-hover:transition group:hover:duration-700 group-hover:ease-in-out"
                 > */}{" "}
                 {/* <span class="absolute left-0 block w-full r-0 transition-all  opacity-100 group-hover:h-full top-1/2 group-hover:top-0 duration-400 ease"></span> */}
-                <span class="absolute right-0 flex items-center justify-start w-10 h-10 duration-300 transform translate-y-full group-hover:translate-y-0 ease">
+                <span class="right-0 duration-300 transform translate-y-full group-hover:translate-y-0 ease absolute flex items-center justify-start w-10 h-10">
                   <Icon
                     icon="mdi:rocket-launch"
                     color="#4c6bdc"

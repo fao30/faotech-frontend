@@ -1,5 +1,4 @@
 import React from "react";
-// import "./custom.css";
 
 const CardWork = ({ cardIconProps, cardTitleProps }) => {
   return (
