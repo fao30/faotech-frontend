@@ -17,7 +17,7 @@ const StartHere = () => {
             <span class="pl-[0.5rem] invisible group-hover:visible scale-0 group-hover:scale-110 absolute right-[2.2rem] md:right-[4.7rem] flex items-center justify-start  w-10 h-10 duration-300 transform">
               {" "}
               <Icon
-                icon="mdi:rocket-launch"
+                icon="material-symbols:emoji-people"
                 color="white"
                 width="24"
                 height="24"
