@@ -14,15 +14,18 @@ const Contact = () => {
           class="btn hover:bg-[#4C6BDC] border-none normal-case relative inline-flex items-center px-[3.5rem] py-[0.75rem] overflow-hidden  text-[#393737] shadow-md hover:text-white rounded-tr-3xl rounded-bl-3xl bg-[#FFFFFF] group"
           onClick={() => navigate("/")}
         >
-          <span class="absolute right-0 flex items-center justify-start  w-10 h-10 duration-300 transform translate-x-full group-hover:translate-x-0 ease">
+          <span class="absolute right-0 flex items-center justify-start  w-10 h-10 duration-300 transform translate-x-full group-hover:-translate-x-8 ease">
             <Icon
               icon="material-symbols:arrow-right-alt-rounded"
               color="white"
-              width="20"
-              height="20"
+              width="25"
+              height="25"
             />
           </span>
-          <span class="relative">Back to Homepage</span>
+
+          <span class="relative group-hover:-translate-x-5 ease duration-300 group-hover:transform">
+            Back to Homepage
+          </span>
         </button>
       </div>
       <div className="flex flex-col z-10 xl:mx-auto pt-2">

@@ -1,6 +1,7 @@
 import React from "react";
 import { Icon } from "@iconify/react";
 import CardTech from "./components/CardTech";
+import "./custom.css";
 
 const TechStack = () => {
   return (
@@ -69,13 +70,17 @@ const TechStack = () => {
                 class="mt-4 lg:mt-0 btn text-sm lg:text-base  hover:bg-white normal-case font-semibold rounded-lg border-none bg-white text-[#4C6BDC] w-40 group 
 relative inline-flex items-center overflow-hidden"
               >
-                Go!
-                {/* <span
-                  class="ml-1.5 hidden group-hover:flex
-            group-hover:transition group:hover:duration-700 group-hover:ease-in-out"
-                > */}{" "}
-                {/* <span class="absolute left-0 block w-full r-0 transition-all  opacity-100 group-hover:h-full top-1/2 group-hover:top-0 duration-400 ease"></span> */}
-                <span class="right-0 duration-300 transform translate-y-full group-hover:translate-y-0 ease absolute flex items-center justify-start w-10 h-10">
+                <span class='relative group-hover:-translate-x-3 ease duration-300 group-hover:transform"'>
+                  Go!
+                </span>
+                {/* <span class="transform translate-x-full group-hover:-translate-y-[2.7rem] btn-rocket right-[4.7rem]  -bottom-12 duration-300 group-hover:scale-110 ease-in absolute w-10 h-10">  <Icon
+                    icon="mdi:rocket-launch"
+                    color="#4c6bdc"
+                    width="24"
+                    height="24"
+                  />
+                </span>*/}
+                <span class="hidden group-hover:flex transition-all transform group-hover:scale-105">
                   <Icon
                     icon="mdi:rocket-launch"
                     color="#4c6bdc"
