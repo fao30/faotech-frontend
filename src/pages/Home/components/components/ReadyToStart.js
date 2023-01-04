@@ -8,7 +8,7 @@ const ReadyToStart = () => {
         <div class="flex justify-between items-center w-full">
           <div class="md:text-lg w-full mr-6">
             <p class="text-[#FCFDFF] font-bold text-2xl">Ready to Start?</p>
-            <p class="mt-2 text-[#FCFDFF] font-light text-sm">
+            <p class="mt-2 text-[#FCFDFF] font-light text-sm sm:text-l">
               Let's get connected and discuss about your project and possible
               partnerships.
             </p>
