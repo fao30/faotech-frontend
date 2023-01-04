@@ -2,7 +2,6 @@ import { motion } from "framer-motion";
 import { React } from "react";
 // import Header from "../Home/components/Header";
 import CompanyProfile from "./CompanyProfile";
-import StartCard from "./StartCard";
 
 const AboutUs = () => {
   return (

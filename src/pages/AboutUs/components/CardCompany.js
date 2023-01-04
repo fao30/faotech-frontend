@@ -3,8 +3,8 @@ import React from "react";
 const CardCompany = ({ cardDescProps, cardTitleProps }) => {
   return (
     <div class="bg-[#FEFEFF] text-ourWork-100 font-bold mx-5 my-3 shadow-xl rounded-2xl">
-      <div class="flex flex-row flex-wrap justify-start items-center w-80 lg:w-[25rem] h-32 ml-4">
-        <div class="mr-5 text-s sm:text-base md:lg:text-base font-normal ml-5">
+      <div class="flex flex-row space-x-4flex-wrap justify-start items-center w-80 lg:w-[25rem] h-32 ml-4">
+        <div class="mr-5 text-s sm:text-base md:lg:text-base font-normal ">
           <h1 class="font-intern text-[#1363DF] text-center text-xl">
             {cardTitleProps}
           </h1>
