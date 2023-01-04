@@ -35,7 +35,7 @@ const AboutUs = () => {
           </motion.div>
           <img
             alt="coding"
-            class="hidden lg:flex w-full lg:w-5/12 rounded-2xl shadow-xl md:ml-6 md:mt-6 ml-0 mt-12 lg:mt-0"
+            class="hidden lg:flex w-full lg:w-5/12  shadow-xl md:ml-6 md:mt-6 ml-0 mt-12 lg:mt-0"
             src={require("./components/alvinAbout.jpeg")}
           />
         </div>
@@ -43,7 +43,7 @@ const AboutUs = () => {
         <div class="flex justify-center">
           <img
             alt="coding"
-            class="md:lg:hidden rounded-2xl shadow-xl w-[80%] md:mt-8"
+            class="md:lg:hidden  shadow-xl w-[80%] md:mt-8"
             src={require("./components/alvinAbout.jpeg")}
           ></img>
         </div>
