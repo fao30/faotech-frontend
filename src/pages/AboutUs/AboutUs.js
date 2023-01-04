@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
 import { React } from "react";
 // import Header from "../Home/components/Header";
+import CompanyProfile from "./CompanyProfile";
+import StartCard from "./StartCard";
 
 const AboutUs = () => {
   return (
@@ -17,7 +19,7 @@ const AboutUs = () => {
                 About Us
               </h1>
             </div>
-            <div class="md:w-96 lg:w-[27.7rem] text-[#757575] text-[16px] mt-6">
+            <div class="md:w-96 lg:w-[27.7rem] text-[#757575] text-[16px] mt-6 ">
               <h1>
                 We are a technology company that is moving forward to build a
                 technology ecosystem to help humanity maximize its work. we
@@ -47,6 +49,12 @@ const AboutUs = () => {
             src={require("./components/alvinAbout.jpeg")}
           ></img>
         </div>
+      </div>
+
+      {/* card */}
+
+      <div>
+        <CompanyProfile />
       </div>
     </div>
   );
