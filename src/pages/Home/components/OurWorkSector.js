@@ -17,8 +17,8 @@ const OurWorkSector = () => {
 
   return (
     <div>
-      <div class="px-[2rem] md:px-[6rem] lg:px-[8rem] grid place-items-center items-end">
-        <div class="mt-6 lg:mb-2 lg:mt-[4rem] z-10 md:w-4/5 lg:w-full">
+      <div class="px-[0.5rem] md:px-[4rem] lg:px-[8rem] grid place-items-center items-end">
+        <div class="mt-6 lg:mb-2 lg:mt-[4rem] z-10 lg:w-full">
           <div>
             <div class="flex flex-col justify-center flex-wrap items-center mb-6">
               <h1 class="text-[28px] text-primary-100 font-bold">
@@ -28,7 +28,7 @@ const OurWorkSector = () => {
                 Our Work Sector
               </h1>
             </div>
-            <div class="flex flex-wrap justify-center items-center">
+            <div class="w-full flex flex-wrap justify-center items-center">
               {/* {cardWork.map((e)=>{
                 return (
                   <CardWork cardIconProps={

@@ -3,7 +3,7 @@ import React from "react";
 
 const HeaderAbout = () => {
   return (
-    <div class="px-[2rem] md:px-[6rem] lg:px-[8rem] grid place-items-center items-end">
+    <div class="px-[2rem] md:px-[4rem] lg:px-[8rem] grid place-items-center items-end">
       <div class="my-10 lg:my-28 z-10 w-full">
         <div class="flex justify-between flex-wrap items-center mb-12 md:mb-0">
           {/* HEADER TITLE, Digital Product Made By Us*/}
@@ -16,7 +16,7 @@ const HeaderAbout = () => {
                 About Us
               </h1>
             </div>
-            <div class="md:w-96 lg:w-[27.7rem] text-[#757575] text-[16px] md:text-[20px] mt-6">
+            <div class="md:w-full lg:w-[27.7rem] text-[#757575] text-[16px] md:text-[20px] mt-6">
               <h1>
                 We are a technology company that is moving forward to build a
                 technology ecosystem to help humanity maximize its work. we

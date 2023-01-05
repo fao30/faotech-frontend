@@ -43,7 +43,7 @@ const Navbar = () => {
           : "invisible"
       }`}
     >
-      <div class="navbar flex justify-center px-[1rem] md:px-[6rem] lg:px-[7.2rem]">
+      <div class="navbar flex justify-center px-[1rem] md:px-[3.2rem] lg:px-[8rem]">
         <div class="navbar-start">
           <div
             class={`${
@@ -99,8 +99,8 @@ const Navbar = () => {
           <p
             class={`${
               location.pathname === "/contact"
-                ? "ml-8 md:ml-[0.8rem] sm:lg:ml-3 normal-case lg:text-2xl sm:text-2xl text-2xl font-extrabold md:flex lg:flex"
-                : "ml-[0.8rem] normal-case lg:text-2xl sm:text-2xl text-2xl font-extrabold hidden md:flex lg:flex"
+                ? " normal-case lg:text-2xl sm:text-2xl text-2xl font-extrabold md:flex lg:flex"
+                : " normal-case lg:text-2xl sm:text-2xl text-2xl font-extrabold hidden md:flex lg:flex"
             } `}
           >
             Fao<span className="font-semibold normal-case">Tech</span>

@@ -6,11 +6,11 @@ import CarouselItem from "./components/CarouselItem";
 
 const Header = () => {
   return (
-    <div class="px-[2rem] md:px-[6rem] lg:px-[8rem] grid place-items-center items-end">
+    <div class="px-[2rem] md:px-[4rem] lg:px-[8rem] grid place-items-center items-end">
       <div class="my-6 lg:mb-40 lg:mt-20 z-10">
         <div class="flex justify-between flex-wrap items-center">
           {/* HEADER TITLE */}
-          <div class="z-20  w-full lg:w-[39rem] md:w-4/5">
+          <div class="z-20  w-full lg:w-[39rem]">
             <motion.div
               initial={{ x: "-20%" }}
               animate={{ x: "calc(100% - 100%)" }}
@@ -39,7 +39,7 @@ const Header = () => {
           {/* <div class="hidden lg:md:sm:flex absolute w-7/12 top-20 h-full right-0 bg-primary-300 blur-3xl rounded-tl-full"></div>
           <div class="md:lg:hidden w-1/5 h-2/5 top-3/4 right-0 absolute rounded-2xl bg-blue-100 blur-3xl"></div> */}
           {/* carousel */}
-          <div class="lg:ml-12 lg:mt-12 z-10 rounded-box w-full md:w-4/5 lg:w-2/5 bg-transparent transition-all transform hover:scale-110 hover:cursor-ew-resize">
+          <div class="lg:ml-12 lg:mt-12 z-10 rounded-box w-full lg:w-2/5 bg-transparent transition-all transform hover:scale-110 hover:cursor-ew-resize">
             <div class=" carousel carousel-center w-full  rounded-box space-x-4">
               <CarouselItem
                 carouselPictureProps={require("./components/screenHeader.jpeg")}

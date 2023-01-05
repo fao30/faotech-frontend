@@ -2,7 +2,7 @@ import React from "react";
 
 const DigitalProduct = () => {
   return (
-    <div class="px-[2rem] md:px-[6rem] lg:px-[8rem] grid place-items-center items-end">
+    <div class="px-[2rem] md:px-[4rem] lg:px-[8rem] grid place-items-center items-end">
       <div class="lg:mt-10 mb-12 z-10 w-full">
         <div class="flex justify-between flex-wrap items-center mb-12 md:mb-24">
           {/* HEADER TITLE, Digital Product Made By Us*/}

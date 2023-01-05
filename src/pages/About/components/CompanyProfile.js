@@ -3,7 +3,7 @@ import CardCompany from "./CardCompany";
 
 const CompanyProfile = () => {
   return (
-    <div class="w-full px-[2rem] md:px-[6rem] lg:px-[8rem]">
+    <div class="w-full px-[2rem] md:px-[4rem] lg:px-[8rem]">
       <div class="mt-12 flex justify-center flex-col items-center text-center md:mb-0">
         <h1 class="md:lg:text-5xl text-4xl font-bold text-[#1363DF] ">
           Our Company Philosophy

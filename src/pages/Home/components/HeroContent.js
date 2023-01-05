@@ -6,11 +6,11 @@ import CardHero from "./components/CardHero";
 
 const HeroContent = () => {
   return (
-    <div class="px-[2rem] md:px-[6rem] lg:px-[8rem] flex flex-col justify-around">
+    <div class="px-[2rem] md:px-[4rem] lg:px-[8rem] flex flex-col justify-around">
       <div class="my-6 lg:my-[10rem] z-10">
         <div class="flex lg:justify-between justify-center flex-wrap items-center">
           {/* HERO TITLE */}
-          <div class="z-20 w-full lg:w-[45rem] md:w-4/5">
+          <div class="z-20 w-full lg:w-[45rem]">
             <motion.div
               initial={{ x: "-20%" }}
               animate={{ x: "calc(100% - 100%)" }}
