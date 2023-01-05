@@ -13,7 +13,7 @@ const Footer = () => {
   };
   return (
     <div class="bg-white text-base-content border-t-2 ">
-      <footer class="footer py-12 pl-12 lg:px-38 md:px-18 flex flex-wrap justify-between">
+      <footer class="footer py-12 pl-12 lg:px-40 md:px-[5rem] flex flex-wrap justify-between">
         <div class="w-4/6">
           <div class="font-title text-black inline-flex text-3xl">
             <span class="font-extrabold">Fao</span> <span>Tech</span>

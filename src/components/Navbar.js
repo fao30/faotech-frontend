@@ -112,7 +112,7 @@ const Navbar = () => {
                         className={({ isActive }) =>
                           isActive
                             ? activeClassName
-                            : "btn btn-ghost border-none rounded-2xl mx-0.5 normal-case text-[#393737] "
+                            : "btn btn-ghost hover:bg-transparent border-none rounded-2xl mx-0.5 normal-case text-[#393737] "
                         }
                         onClick={() => {
                           scrollToTop();

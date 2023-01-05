@@ -4,7 +4,7 @@ import React from "react";
 const ReadyToStart = () => {
   return (
     <div class="w-full">
-      <div class="my-16 md:mx-[5rem] lg:mx-[9.5rem] mx-10 px-12 flex sm:justify-start md:lg:justify-between content-center flex-wrap items-center rounded-xl h-60 md:h-48 lg:h-[120px] bg-[#4C6BDC] ">
+      <div class="my-16 md:mx-[5rem] lg:mx-[9.5rem] mx-10 px-12 flex sm:justify-start md:lg:justify-between content-center flex-wrap items-center rounded-xl h-72 lg:h-[120px] bg-[#4C6BDC] ">
         <div class="flex justify-between items-center w-full">
           <div class="md:text-lg w-full mr-6">
             <p class="text-[#FCFDFF] font-bold text-3xl">Ready to Start?</p>

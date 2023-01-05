@@ -10,7 +10,7 @@ const HeroContent = () => {
       <div class="my-6 lg:my-[10rem] z-10">
         <div class="flex lg:justify-around justify-center flex-wrap items-center">
           {/* HERO TITLE */}
-          <div class="z-20 mx-10 lg:pl-[3.7rem] w-full lg:w-[39rem] md:w-4/5">
+          <div class="z-20 mx-10 lg:px-[5.2rem] w-full lg:w-[45rem] md:w-4/5">
             <motion.div
               initial={{ x: "-20%" }}
               animate={{ x: "calc(100% - 100%)" }}
@@ -18,7 +18,7 @@ const HeroContent = () => {
               <h1 class="text-xl my-2 text-primary-100 font-bold">
                 For Your Business Future
               </h1>
-              <h1 class="md:lg:text-5xl text-4xl font-bold text-black">
+              <h1 class="md:lg:text-6xl text-4xl font-bold text-black">
                 We are building the best for your Digital Product as comfortable
                 as you wish!
               </h1>

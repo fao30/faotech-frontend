@@ -27,7 +27,7 @@ const DigitalProduct = () => {
             </h1>
             <div class=" text-[#757575] mt-6">
               <h1 class="text-[16px] lg:text-[20px]">
-                B2B-ONE.COM - it is an effective platform for communication
+                B2B-ONE.COM — it is an effective platform for communication
                 between exporters and importers, sellers and buyers of goods and
                 services around the world. Find a partner, conduct video
                 negotiations and agree on a good deal!
