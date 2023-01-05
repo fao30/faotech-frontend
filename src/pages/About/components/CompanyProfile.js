@@ -8,15 +8,15 @@ const CompanyProfile = () => {
         <h1 class="md:lg:text-5xl text-4xl font-bold text-[#1363DF] ">
           Our Company Philosophy
         </h1>
-        <p class="w-[60%] text-[#757575] mt-4 text-[16px]">
-          we are obliged to fulfill the maximum potential of your enterprises
+        <p class="w-[20rem] sm:w-[42rem] lg:w-[70%] text-[#757575] mt-4 text-[16px] lg:text-[20px]">
+          We are obliged to fulfill the maximum potential of your enterprises
           and business. Conduct research on every variable that exists,
           determine the direction in solving problems, generate ideas in
           progress development, and create digital products as a complete
           solution.
         </p>
       </div>
-      <div class="w-full mb-32 mt-12 lg:mt-48">
+      <div class="w-full mb-32 mt-2 sm:mt-12 lg:mt-36">
         <div class="flex justify-center min-[1280px]:justify-between flex-wrap items-center mx-10 lg:mx-[9.6rem]">
           <CardCompany
             cardDescProps={

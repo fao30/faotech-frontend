@@ -1,9 +1,20 @@
-import { React } from "react";
+import { React, useState, useEffect } from "react";
 import CardWork from "./components/CardWork";
 import { Icon } from "@iconify/react";
 // from-white to-blue-200  bg-gradient-to-r
 
+// const BASE_URL =
+
 const OurWorkSector = () => {
+  // const [cardWork, setCardWork] = useState([])
+  // useEffect(() => {
+  //   fetch(BASE_URL)
+  //   .then (res => res.json())
+  //   .then (data => {
+  //     setCardWork(data)
+  //   })
+  // }, [])
+
   return (
     <div>
       <div id="ourWorkSelector" class="grid place-items-center items-end">
@@ -18,6 +29,16 @@ const OurWorkSector = () => {
               </h1>
             </div>
             <div class="flex flex-wrap justify-center items-center">
+              {/* {cardWork.map((e)=>{
+                return (
+                  <CardWork cardIconProps={
+                    <Icon icon={e.icon}   color="#4c6bdc"
+                    width="30"
+                    height="30"
+                  />
+                  } cardTitleProps={e.label} />
+                )
+              })} */}
               <CardWork
                 cardIconProps={
                   <Icon

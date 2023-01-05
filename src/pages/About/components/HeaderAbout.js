@@ -16,7 +16,7 @@ const HeaderAbout = () => {
                 About Us
               </h1>
             </div>
-            <div class="md:w-96 lg:w-[27.7rem] text-[#757575] text-[16px] mt-6">
+            <div class="md:w-96 lg:w-[27.7rem] text-[#757575] text-[16px] md:text-[20px] mt-6">
               <h1>
                 We are a technology company that is moving forward to build a
                 technology ecosystem to help humanity maximize its work. we
