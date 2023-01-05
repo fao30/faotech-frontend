@@ -7,7 +7,7 @@ const OurWorkSector = () => {
   return (
     <div>
       <div id="ourWorkSelector" class="grid place-items-center items-end">
-        <div class="mt-6 lg:mb-2 lg:mt-[7rem] z-10 md:w-4/5 lg:w-full">
+        <div class="mt-6 lg:mb-2 lg:mt-[4rem] z-10 md:w-4/5 lg:w-full">
           <div>
             <div class="flex flex-col justify-center flex-wrap items-center mb-6">
               <h1 class="text-xl  text-primary-100 font-bold">
