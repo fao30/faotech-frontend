@@ -1,4 +1,4 @@
-import React from "react";
+import { React, useState, useEffect } from "react";
 import useReadingProgress from "./UseReadingProgress";
 import { NavLink, useNavigate, useLocation } from "react-router-dom";
 import {
@@ -7,6 +7,27 @@ import {
 } from "../store/helper/NavbarOptions";
 
 const Navbar = () => {
+  const [prevScrollPos, setPrevScrollPos] = useState(0);
+  const [visible, setVisible] = useState(true);
+
+  const handleScroll = () => {
+    const currentScrollPos = window.scrollY;
+
+    if (currentScrollPos > prevScrollPos) {
+      setVisible(false);
+    } else {
+      setVisible(true);
+    }
+
+    setPrevScrollPos(currentScrollPos);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  });
+
   const location = useLocation();
   const navigate = useNavigate();
   const scrollToTop = () => {
@@ -20,7 +41,13 @@ const Navbar = () => {
     "btn bg-transparent hover:bg-transparent border-none rounded-2xl text-primary-100 mx-0.5 normal-case";
   let activeClassNameDropdown = "bg-transparent text-primary-100 my-0.5";
   return (
-    <div class="sticky top-0 z-30 h-16 bg-white text-black shadow ">
+    <div
+      class={`${
+        visible
+          ? "sticky top-0 z-30 h-16 bg-white text-black shadow"
+          : "invisible"
+      }`}
+    >
       <div
         class="navbar flex justify-center lg:px-34 md:px-18
       "

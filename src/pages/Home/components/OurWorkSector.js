@@ -21,7 +21,7 @@ const OurWorkSector = () => {
         <div class="mt-6 lg:mb-2 lg:mt-[4rem] z-10 md:w-4/5 lg:w-full">
           <div>
             <div class="flex flex-col justify-center flex-wrap items-center mb-6">
-              <h1 class="text-xl  text-primary-100 font-bold">
+              <h1 class="text-[28px] text-primary-100 font-bold">
                 Solutions are Here!
               </h1>
               <h1 class="text-4xl md:lg:text-5xl font-bold text-black text-center">

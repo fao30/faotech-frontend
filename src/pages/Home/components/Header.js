@@ -15,7 +15,7 @@ const Header = () => {
               initial={{ x: "-20%" }}
               animate={{ x: "calc(100% - 100%)" }}
             >
-              <h1 class="text-[30px] my-2 text-primary-100 font-bold">
+              <h1 class="text-[28px] my-2 text-primary-100 font-bold">
                 Fast, Trust, Number 1
               </h1>
               <h1 class="md:lg:text-6xl text-4xl font-bold text-black">
