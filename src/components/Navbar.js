@@ -50,7 +50,9 @@ const Navbar = () => {
   return (
     <div
       class={`${
-        show ? "sticky top-0 z-30 h-16 bg-white text-black shadow" : "invisible"
+        show
+          ? "flex sticky top-0 z-30 h-16 bg-white text-black shadow"
+          : "hidden"
       }`}
     >
       <div class="navbar flex justify-center px-[1rem] md:px-[4rem] lg:px-[8rem]">
