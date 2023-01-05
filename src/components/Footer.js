@@ -92,12 +92,12 @@ const Footer = () => {
               height="24"
             />
             <a
-              href
+              href="tel:+6287762023382"
               rel="noreferrer"
               target="_blank"
               class="link link-hover text-gray-500 ml-2"
             >
-              +6287762023382
+              +62 877-6202-3382
             </a>
           </div>
           <div class="flex justify-center items-start">
