@@ -12,8 +12,8 @@ const Footer = () => {
     });
   };
   return (
-    <div class="bg-white text-base-content lg:mx-0 md:mx-9 border-t-2 ">
-      <footer class="footer px-12 lg:px-56 py-12 flex flex-wrap justify-between md:px-12 ">
+    <div class="bg-white text-base-content border-t-2 ">
+      <footer class="footer py-12 px-[2rem] md:px-[4rem] lg:px-[8rem] flex flex-wrap justify-between">
         <div class="w-4/6">
           <div class="font-title text-black inline-flex text-3xl">
             <span class="font-extrabold">Fao</span> <span>Tech</span>
@@ -66,7 +66,7 @@ const Footer = () => {
             );
           })}
         </div>
-        <div class="w-40 lg:space-y-4">
+        <div class="w-42 lg:space-y-4">
           <span class="text-lg">Contact</span>
           <div class="flex justify-center items-start">
             <Icon
@@ -92,12 +92,12 @@ const Footer = () => {
               height="24"
             />
             <a
-              href
+              href="tel:+6287762023382"
               rel="noreferrer"
               target="_blank"
               class="link link-hover text-gray-500 ml-2"
             >
-              +6287762023382
+              +62 877-6202-3382
             </a>
           </div>
           <div class="flex justify-center items-start">
@@ -108,7 +108,7 @@ const Footer = () => {
               height="24"
             />
             <a href class="link link-hover text-gray-500 ml-2">
-              Jl. Bima Citra 16 No.2,
+              Jl. Bima Citra 16 No. 2,
               <br />
               Tambun, Bekasi,
               <br />

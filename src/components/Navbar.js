@@ -1,4 +1,4 @@
-import React from "react";
+import { React, useState, useEffect } from "react";
 import useReadingProgress from "./UseReadingProgress";
 import { NavLink, useNavigate, useLocation } from "react-router-dom";
 import {
@@ -7,6 +7,34 @@ import {
 } from "../store/helper/NavbarOptions";
 
 const Navbar = () => {
+  const [show, setShow] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
+
+  const controlNavbar = () => {
+    if (typeof window !== "undefined") {
+      if (window.scrollY > lastScrollY) {
+        // if scroll down hide the navbar
+        setShow(false);
+      } else {
+        // if scroll up show the navbar
+        setShow(true);
+      }
+      // remember current page location to use in the next move
+      setLastScrollY(window.scrollY);
+    }
+  };
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      window.addEventListener("scroll", controlNavbar);
+
+      // cleanup function
+      return () => {
+        window.removeEventListener("scroll", controlNavbar);
+      };
+    }
+  }, [lastScrollY]);
+
   const location = useLocation();
   const navigate = useNavigate();
   const scrollToTop = () => {
@@ -20,17 +48,18 @@ const Navbar = () => {
     "btn bg-transparent hover:bg-transparent border-none rounded-2xl text-primary-100 mx-0.5 normal-case";
   let activeClassNameDropdown = "bg-transparent text-primary-100 my-0.5";
   return (
-    <div class="sticky top-0 z-30 h-16 bg-white text-black shadow ">
-      <div
-        class="navbar flex justify-center lg:px-34 md:px-18
-      "
-      >
+    <div
+      class={`${
+        show ? "sticky top-0 z-30 h-16 bg-white text-black shadow" : "invisible"
+      }`}
+    >
+      <div class="navbar flex justify-center px-[1rem] md:px-[4rem] lg:px-[8rem]">
         <div class="navbar-start">
           <div
             class={`${
               location.pathname === "/contact"
                 ? "hidden"
-                : "dropdown lg:hidden md:hidden ml-4"
+                : "dropdown lg:hidden md:hidden"
             }`}
           >
             <label
@@ -80,8 +109,8 @@ const Navbar = () => {
           <p
             class={`${
               location.pathname === "/contact"
-                ? "ml-8 md:ml-[0.8rem] sm:lg:ml-3 normal-case lg:text-2xl sm:text-2xl text-2xl font-extrabold md:flex lg:flex"
-                : "ml-[0.8rem] normal-case lg:text-2xl sm:text-2xl text-2xl font-extrabold hidden md:flex lg:flex"
+                ? "max-md:ml-4 normal-case lg:text-2xl sm:text-2xl text-2xl font-extrabold md:flex lg:flex"
+                : "normal-case lg:text-2xl sm:text-2xl text-2xl font-extrabold hidden md:flex lg:flex"
             } `}
           >
             Fao<span className="font-semibold normal-case">Tech</span>
@@ -112,7 +141,7 @@ const Navbar = () => {
                         className={({ isActive }) =>
                           isActive
                             ? activeClassName
-                            : "btn btn-ghost border-none rounded-2xl mx-0.5 normal-case text-[#393737] "
+                            : "btn btn-ghost hover:bg-transparent border-none rounded-2xl mx-0.5 normal-case text-[#393737] "
                         }
                         onClick={() => {
                           scrollToTop();
