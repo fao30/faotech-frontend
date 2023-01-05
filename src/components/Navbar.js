@@ -7,33 +7,34 @@ import {
 } from "../store/helper/NavbarOptions";
 
 const Navbar = () => {
-  const [show, setShow] = useState(true);
-  const [lastScrollY, setLastScrollY] = useState(0);
+  // THIS FEATURE IS POORLY WORKS ON MOBILE DEVICES
+  // const [show, setShow] = useState(true);
+  // const [lastScrollY, setLastScrollY] = useState(0);
 
-  const controlNavbar = () => {
-    if (typeof window !== "undefined") {
-      if (window.scrollY > lastScrollY) {
-        // if scroll down hide the navbar
-        setShow(false);
-      } else {
-        // if scroll up show the navbar
-        setShow(true);
-      }
-      // remember current page location to use in the next move
-      setLastScrollY(window.scrollY);
-    }
-  };
+  // const controlNavbar = () => {
+  //   if (typeof window !== "undefined") {
+  //     if (window.scrollY > lastScrollY) {
+  //       // if scroll down hide the navbar
+  //       setShow(false);
+  //     } else {
+  //       // if scroll up show the navbar
+  //       setShow(true);
+  //     }
+  //     // remember current page location to use in the next move
+  //     setLastScrollY(window.scrollY);
+  //   }
+  // };
 
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      window.addEventListener("scroll", controlNavbar);
+  // useEffect(() => {
+  //   if (typeof window !== "undefined") {
+  //     window.addEventListener("scroll", controlNavbar);
 
-      // cleanup function
-      return () => {
-        window.removeEventListener("scroll", controlNavbar);
-      };
-    }
-  }, [lastScrollY]);
+  //     // cleanup function
+  //     return () => {
+  //       window.removeEventListener("scroll", controlNavbar);
+  //     };
+  //   }
+  // }, [lastScrollY]);
 
   const location = useLocation();
   const navigate = useNavigate();
@@ -48,13 +49,7 @@ const Navbar = () => {
     "btn bg-transparent hover:bg-transparent border-none rounded-2xl text-primary-100 mx-0.5 normal-case";
   let activeClassNameDropdown = "bg-transparent text-primary-100 my-0.5";
   return (
-    <div
-      class={
-        show
-          ? "visible sticky top-0 z-30 h-16 bg-white text-black shadow navbar flex justify-center px-[1rem] md:px-[4rem] lg:px-[8rem]"
-          : "invisible"
-      }
-    >
+    <div class="z-30 sticky top-0 h-16 bg-white text-black shadow navbar flex justify-center px-[1rem] md:px-[4rem] lg:px-[8rem] active">
       <div class="navbar-start">
         <div
           class={`${
