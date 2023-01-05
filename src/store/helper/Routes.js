@@ -1,5 +1,5 @@
 import App from "../../App";
-import AboutUs from "../../pages/AboutUs/AboutUs";
+import About from "../../pages/About/About";
 import Contact from "../../pages/Contact/Contact";
 import Portfolio from "../../pages/Portfolio/Portfolio";
 
@@ -18,7 +18,7 @@ export const routesOptions = [
   },
   {
     path: "/about",
-    element: <AboutUs />,
+    element: <About />,
   },
   {
     path: "*",

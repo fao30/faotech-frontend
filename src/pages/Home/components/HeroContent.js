@@ -7,7 +7,7 @@ import CardHero from "./components/CardHero";
 const HeroContent = () => {
   return (
     <div class="flex flex-col justify-around">
-      <div class="my-6 lg:mb-16 z-10">
+      <div class="my-6 lg:my-[10rem] z-10">
         <div class="flex lg:justify-around justify-center flex-wrap items-center">
           {/* HERO TITLE */}
           <div class="z-20 mx-10 lg:pl-14 w-full lg:w-[39rem] md:w-4/5">

@@ -22,7 +22,7 @@ const Navbar = () => {
   return (
     <div class="sticky top-0 z-30 h-16 bg-white text-black shadow ">
       <div
-        class="navbar flex justify-center lg:px-34 md:px-18 px-2  
+        class="navbar flex justify-center lg:px-34 md:px-18
       "
       >
         <div class="navbar-start">
