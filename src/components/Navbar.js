@@ -43,7 +43,7 @@ const Navbar = () => {
           : "invisible"
       }`}
     >
-      <div class="navbar flex justify-center px-[1rem] md:px-[3.2rem] lg:px-[8rem]">
+      <div class="navbar flex justify-center px-[1rem] md:px-[4rem] lg:px-[8rem]">
         <div class="navbar-start">
           <div
             class={`${
