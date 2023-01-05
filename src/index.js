@@ -12,7 +12,7 @@ import { routesOptions } from "./store/helper/Routes";
 export default function Routing() {
   const [loading, setLoading] = useState(false);
   useEffect(() => {
-    let loadingTimer = setTimeout(() => setLoading(true), 0.75 * 1000);
+    let loadingTimer = setTimeout(() => setLoading(true), 1 * 1000);
     return () => {
       clearTimeout(loadingTimer);
     };
@@ -20,11 +20,12 @@ export default function Routing() {
   return (
     <HashRouter>
       {loading ? (
-        <motion.div
-          initial={{ opacity: 0.5 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-        >
+        // <motion.div
+        //   initial={{ opacity: 0.5 }}
+        //   animate={{ opacity: 1 }}
+        //   exit={{ opacity: 0 }}
+        // >
+        <div>
           <Navbar />
           <Routes>
             {routesOptions.map((e) => {
@@ -33,8 +34,9 @@ export default function Routing() {
           </Routes>
           <Footer />
           <LoadToTop />
-        </motion.div>
+        </div>
       ) : (
+        // </motion.div>
         <Loading loading background="white" loaderColor="#4C6BDC" />
       )}
     </HashRouter>

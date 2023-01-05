@@ -60,7 +60,7 @@ const Navbar = () => {
                     className={({ isActive }) =>
                       isActive
                         ? activeClassNameDropdown
-                        : "my-0.5 text-[#393737]"
+                        : "my-0.5 text-[#393737] active:bg-primary-100 active:text-white"
                     }
                     onClick={() => {
                       scrollToTop();
