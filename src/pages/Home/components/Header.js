@@ -7,7 +7,7 @@ import CarouselItem from "./components/CarouselItem";
 const Header = () => {
   return (
     <div class="px-[2rem] md:px-[4rem] lg:px-[8rem] grid place-items-center items-end">
-      <div class="my-6 lg:mb-40 lg:mt-20 z-10">
+      <div class="my-6 lg:mb-40 lg:mt-20 z-10 w-full">
         <div class="flex justify-between flex-wrap items-center">
           {/* HEADER TITLE */}
           <div class="z-20  w-full lg:w-[39rem]">
