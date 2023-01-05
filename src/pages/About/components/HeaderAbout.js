@@ -3,9 +3,9 @@ import React from "react";
 
 const HeaderAbout = () => {
   return (
-    <div class="grid place-items-center items-end">
+    <div class="px-[2rem] md:px-[6rem] lg:px-[8rem] grid place-items-center items-end">
       <div class="my-10 lg:my-28 z-10 w-full">
-        <div class="flex justify-between flex-wrap items-center mx-10 md:mx-20 lg:mx-[9.6rem] mb-12 md:mb-0">
+        <div class="flex justify-between flex-wrap items-center mb-12 md:mb-0">
           {/* HEADER TITLE, Digital Product Made By Us*/}
           <motion.div
             initial={{ x: "-20%" }}

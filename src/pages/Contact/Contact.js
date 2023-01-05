@@ -7,7 +7,7 @@ const Contact = () => {
   const navigate = useNavigate();
 
   return (
-    <section className="flex flex-col space-y-3 pb-20 sm:pb-96 px-[2.5rem] md:px-[5rem] lg:px-[9.5rem] border-b-2">
+    <section className="flex flex-col space-y-3 pb-20 sm:pb-96 px-[2rem] md:px-[6rem] lg:px-[8rem] border-b-2">
       <div className="flex justify-end mt-10 z-20 xl:w-[60rem] xl:mx-auto ">
         {/* Button Back to Homepage */}
         <button

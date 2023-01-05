@@ -2,9 +2,9 @@ import React from "react";
 
 const DigitalProduct = () => {
   return (
-    <div class="grid place-items-center items-end">
+    <div class="px-[2rem] md:px-[6rem] lg:px-[8rem] grid place-items-center items-end">
       <div class="lg:mt-10 mb-12 z-10 w-full">
-        <div class="flex justify-between flex-wrap items-center mx-10 md:mx-20 lg:mx-[9.5rem] mb-12 md:mb-24">
+        <div class="flex justify-between flex-wrap items-center mb-12 md:mb-24">
           {/* HEADER TITLE, Digital Product Made By Us*/}
           <div class="w-full lg:w-[48%] md:w-4/5">
             <h1 class="md:lg:text-5xl text-4xl font-bold text-black">
@@ -19,7 +19,7 @@ const DigitalProduct = () => {
           </div>
         </div>
         {/* Communication Platform for Business to Business Partners */}
-        <div class="flex justify-center lg:justify-between flex-wrap items-center mx-10 md:mx-20 lg:mx-[9.5rem]">
+        <div class="flex justify-center lg:justify-between flex-wrap items-center">
           {/* HEADER TITLE */}
           <div class="w-full lg:w-2/5 md:w-4/5">
             <h1 class="md:lg:text-3xl text-xl font-semibold text-black">

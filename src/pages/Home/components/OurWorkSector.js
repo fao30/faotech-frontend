@@ -17,7 +17,7 @@ const OurWorkSector = () => {
 
   return (
     <div>
-      <div id="ourWorkSelector" class="grid place-items-center items-end">
+      <div class="px-[2rem] md:px-[6rem] lg:px-[8rem] grid place-items-center items-end">
         <div class="mt-6 lg:mb-2 lg:mt-[4rem] z-10 md:w-4/5 lg:w-full">
           <div>
             <div class="flex flex-col justify-center flex-wrap items-center mb-6">

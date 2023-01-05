@@ -3,8 +3,8 @@ import { Icon } from "@iconify/react";
 
 const ReachUs = () => {
   return (
-    <div class="w-full">
-      <div class="mb-16 lg:mb-32 mt-16 md:mx-[5rem] lg:mx-[9.5rem] mx-10 px-12 flex sm:justify-start md:lg:justify-between content-center flex-wrap items-center rounded-xl h-60 md:h-48 lg:h-[120px] bg-[#4C6BDC] ">
+    <div class="w-full px-[2rem] md:px-[6rem] lg:px-[8rem]">
+      <div class="mb-16 lg:mb-32 mt-16 px-12 flex sm:justify-start md:lg:justify-between content-center flex-wrap items-center rounded-xl h-60 md:h-48 lg:h-[120px] bg-[#4C6BDC] ">
         <div class="flex justify-between items-center w-full">
           <div class="md:text-lg w-full mr-6">
             <p class="text-[#FEFEFF] font-bold ">
