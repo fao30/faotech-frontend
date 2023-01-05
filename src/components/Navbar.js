@@ -109,8 +109,8 @@ const Navbar = () => {
           <p
             class={`${
               location.pathname === "/contact"
-                ? " normal-case lg:text-2xl sm:text-2xl text-2xl font-extrabold md:flex lg:flex"
-                : " normal-case lg:text-2xl sm:text-2xl text-2xl font-extrabold hidden md:flex lg:flex"
+                ? "max-md:ml-4 normal-case lg:text-2xl sm:text-2xl text-2xl font-extrabold md:flex lg:flex"
+                : "normal-case lg:text-2xl sm:text-2xl text-2xl font-extrabold hidden md:flex lg:flex"
             } `}
           >
             Fao<span className="font-semibold normal-case">Tech</span>
