@@ -7,21 +7,33 @@ import {
 } from "../store/helper/NavbarOptions";
 
 const Navbar = () => {
-  const [prevScrollPos, setPrevScrollPos] = useState(0);
-  const [visible, setVisible] = useState(true);
-  const handleScroll = () => {
-    const currentScrollPos = window.scrollY;
-    if (currentScrollPos > prevScrollPos) {
-      setVisible(false);
-    } else {
-      setVisible(true);
+  const [show, setShow] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
+
+  const controlNavbar = () => {
+    if (typeof window !== "undefined") {
+      if (window.scrollY > lastScrollY) {
+        // if scroll down hide the navbar
+        setShow(false);
+      } else {
+        // if scroll up show the navbar
+        setShow(true);
+      }
+      // remember current page location to use in the next move
+      setLastScrollY(window.scrollY);
     }
-    setPrevScrollPos(currentScrollPos);
   };
+
   useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  });
+    if (typeof window !== "undefined") {
+      window.addEventListener("scroll", controlNavbar);
+
+      // cleanup function
+      return () => {
+        window.removeEventListener("scroll", controlNavbar);
+      };
+    }
+  }, [lastScrollY]);
 
   const location = useLocation();
   const navigate = useNavigate();
@@ -38,9 +50,7 @@ const Navbar = () => {
   return (
     <div
       class={`${
-        visible
-          ? "sticky top-0 z-30 h-16 bg-white text-black shadow"
-          : "invisible"
+        show ? "sticky top-0 z-30 h-16 bg-white text-black shadow" : "invisible"
       }`}
     >
       <div class="navbar flex justify-center px-[1rem] md:px-[4rem] lg:px-[8rem]">
