@@ -4,11 +4,11 @@ import CardCompany from "./CardCompany";
 const CompanyProfile = () => {
   return (
     <div class="w-full">
-      <div class="mt-20 flex justify-center flex-col items-center text-center mx-10 md:mx-20 lg:mx-[9.6rem] md:mb-0">
+      <div class="mt-12 flex justify-center flex-col items-center text-center mx-10 md:mx-20 lg:mx-[9.6rem] md:mb-0">
         <h1 class="md:lg:text-5xl text-4xl font-bold text-[#1363DF] ">
           Our Company Philosophy
         </h1>
-        <p class="w-[82%] text-[#757575] mt-4 indent-8 text-[16px]">
+        <p class="w-[60%] text-[#757575] mt-4 text-[16px]">
           we are obliged to fulfill the maximum potential of your enterprises
           and business. Conduct research on every variable that exists,
           determine the direction in solving problems, generate ideas in
@@ -16,7 +16,7 @@ const CompanyProfile = () => {
           solution.
         </p>
       </div>
-      <div class="w-full mb-32 mt-12 md:mt-48">
+      <div class="w-full mb-32 mt-12 lg:mt-48">
         <div class="flex justify-center min-[1280px]:justify-between flex-wrap items-center mx-10 lg:mx-[9.6rem]">
           <CardCompany
             cardDescProps={
