@@ -2,7 +2,7 @@ import React from "react";
 
 const DigitalProduct = () => {
   return (
-    <div class="px-[8vw] my-[4vw] lg:my-[8vw] w-full z-10">
+    <div class="px-[8vw] mt-[12vw] mb-[4vw] lg:my-[8vw] w-full z-10">
       <div class="flex justify-between flex-wrap items-center mb-12 md:mb-24">
         {/* HEADER TITLE, Digital Product Made By Us*/}
         <div class="w-full md:w-[40%]">
