@@ -1,7 +1,6 @@
-import { React, useState, useEffect } from "react";
+import { React } from "react";
 import CardWork from "./components/CardWork";
 import { Icon } from "@iconify/react";
-import { motion, useScroll, useTransform } from "framer-motion";
 
 // from-white to-blue-200  bg-gradient-to-r
 
@@ -20,13 +19,6 @@ const OurWorkSector = () => {
   // const scale = useTransform(scrollYProgress, [0, 0.5], [0.75, 0.99]);
 
   return (
-    // <motion.div style={{ scale }}>
-    //   {" "}
-    //   <motion.div
-    //     style={{
-    //       scaleY: scrollYProgress,
-    //     }}
-    //   />
     <div class="px-[1rem] md:px-[4rem] lg:px-[8rem] grid place-items-center items-end">
       <div class="mt-6 lg:mb-2 lg:mt-[4rem] z-10 lg:w-full">
         <div>
@@ -185,7 +177,6 @@ const OurWorkSector = () => {
         </div>
       </div>
     </div>
-    // </motion.div>
   );
 };
 
