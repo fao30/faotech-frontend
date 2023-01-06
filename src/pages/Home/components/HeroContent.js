@@ -1,8 +1,6 @@
 import { Icon } from "@iconify/react";
 import { React } from "react";
 import CardHero from "./components/CardHero";
-import { motion } from "framer-motion";
-// from-white to-blue-200  bg-gradient-to-r
 
 const HeroContent = () => {
   return (
@@ -11,21 +9,16 @@ const HeroContent = () => {
         <div class="flex lg:justify-between justify-center flex-wrap items-center">
           {/* HERO TITLE */}
           <div class="z-20 w-full lg:w-[45rem]">
-            <motion.div
-              initial={{ x: "-20%" }}
-              animate={{ x: "calc(100% - 100%)" }}
-            >
-              <h1 class="text-[28px] my-2 text-primary-100 font-bold">
-                For Your Business Future
-              </h1>
-              <h1 class="md:lg:text-6xl text-4xl font-bold text-black">
-                We are building the best for your Digital Product as comfortable
-                as you wish!
-              </h1>
-              <h1 class="text-l my-6 text-[#757575] text-[16px] lg:text-[20px]">
-                Everything's in our service like you need.
-              </h1>
-            </motion.div>
+            <h1 class="text-[28px] my-2 text-primary-100 font-bold">
+              For Your Business Future
+            </h1>
+            <h1 class="md:lg:text-6xl text-4xl font-bold text-black">
+              We are building the best for your Digital Product as comfortable
+              as you wish!
+            </h1>
+            <h1 class="text-l my-6 text-[#757575] text-[16px] lg:text-[20px]">
+              Everything's in our service like you need.
+            </h1>
           </div>
 
           {/* DON'T DELETE CODES BELOW */}
