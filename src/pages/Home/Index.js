@@ -1,4 +1,4 @@
-import { React, useEffect } from "react";
+import React from "react";
 import ReachUs from "./components/components/ReachUs";
 import DigitalProduct from "./components/DigitalProduct";
 import Header from "./components/Header";
@@ -6,7 +6,6 @@ import HeroContent from "./components/HeroContent";
 import OurWorkSector from "./components/OurWorkSector";
 import TechStack from "./components/TechStack";
 import "./components/custom.css";
-import { motion, useScroll, useTransform } from "framer-motion";
 
 const Index = () => {
   return (
