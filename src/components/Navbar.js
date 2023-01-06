@@ -76,7 +76,7 @@ const Navbar = () => {
         <p
           class={`${
             location.pathname === "/contact"
-              ? "max-md:ml-[1.1rem] normal-case lg:text-2xl sm:text-2xl text-2xl font-extrabold md:flex lg:flex"
+              ? "max-md:ml-[1.4rem] normal-case lg:text-2xl sm:text-2xl text-2xl font-extrabold md:flex lg:flex"
               : "normal-case lg:text-2xl sm:text-2xl text-2xl font-extrabold hidden md:flex lg:flex"
           } `}
         >

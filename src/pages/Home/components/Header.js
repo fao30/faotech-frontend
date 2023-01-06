@@ -1,8 +1,8 @@
+import { Icon } from "@iconify/react";
 import { motion } from "framer-motion";
 import { React } from "react";
 import { useNavigate } from "react-router-dom";
 import CarouselItem from "./components/CarouselItem";
-import "../../custom.css";
 
 // from-white to-blue-200  bg-gradient-to-r
 
@@ -17,9 +17,9 @@ const Header = () => {
             initial={{ y: "-20%" }}
             animate={{ y: "calc(100% - 100%)" }}
           >
-            <h1 class="text-[28px] my-2 text-primary-100 font-bold">
+            <h2 class="text-[28px] mb-2 text-primary-100 font-bold">
               Fast, Trust, Number 1
-            </h1>
+            </h2>
             <h1 class="md:lg:text-5xl text-4xl font-bold text-black">
               We Help You Develop Through Digitalization
             </h1>
@@ -59,6 +59,14 @@ const Header = () => {
             />
           </div>
         </div>
+        {/* <div class="w-full  justify-center mt-1 max-md:flex hidden">
+          <Icon
+            icon="ic:outline-view-carousel"
+            width="25"
+            height="25"
+            hFlip={true}
+          />
+        </div> */}
       </div>
     </div>
   );

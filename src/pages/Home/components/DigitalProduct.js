@@ -2,10 +2,10 @@ import React from "react";
 
 const DigitalProduct = () => {
   return (
-    <div class="px-[8vw] mt-[12vw] mb-[4vw] lg:my-[8vw] w-full z-10">
+    <div class="px-[8vw] my-[6vw] lg:my-[8vw] w-full z-10">
       <div class="flex justify-between flex-wrap items-center mb-12 md:mb-24">
         {/* HEADER TITLE, Digital Product Made By Us*/}
-        <div class="w-full md:w-[40%]">
+        <div class="w-full md:w-[40%] max-sm:mt-6">
           <h1 class="md:lg:text-5xl text-4xl font-bold text-black">
             Digital Product Made By Us For Your Business Transformation
           </h1>
@@ -43,7 +43,7 @@ const DigitalProduct = () => {
       <div class="flex justify-center">
         <img
           alt="b2b"
-          class="md:lg:hidden w-11/12 transition-all transform hover:scale-125 hover:cursor-zoom-in mt-12"
+          class="md:lg:hidden w-full transition-all transform hover:scale-[1.15] hover:cursor-zoom-in mt-12"
           src={require("./components/b2b.png")}
         ></img>
       </div>
