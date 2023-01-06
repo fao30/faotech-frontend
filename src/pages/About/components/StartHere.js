@@ -3,7 +3,7 @@ import { Icon } from "@iconify/react";
 
 const StartHere = () => {
   return (
-    <div class="px-[8vw] my-[6vw] lg:my-[8vw] w-full z-10">
+    <div class="px-[8vw] mb-20 lg:my-[8vw] w-full z-10">
       <div class="flex justify-center w-full flex-wrap items-end rounded-xl  bg-white border-2 shadow-xl p-12">
         <div className="flex justify-center flex-col items-center w-full">
           <h1 class=" md:lg:text-5xl text-4xl  font-[700] leading-[36px]  text-[#1363DF]  sm:text-center text-left">
