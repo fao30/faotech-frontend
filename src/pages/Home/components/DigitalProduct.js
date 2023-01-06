@@ -11,8 +11,8 @@ const DigitalProduct = () => {
               Digital Product Made By Us For Your Business Transformation
             </h1>
           </div>
-          <div class="w-72 text-[#757575] text-[16px] mt-6">
-            <h1 class="text-[16px] lg:text-[20px]">
+          <div class=" w-80 text-[#757575] text-[16px] mt-6">
+            <h1 class="text-[16px] md:text-[20px]">
               We experienced in digitalizing various business and enterprises
               across industries with our product.
             </h1>
@@ -26,7 +26,7 @@ const DigitalProduct = () => {
               Communication Platform for Business to Business Partners
             </h1>
             <div class=" text-[#757575] mt-6">
-              <h1 class="text-[16px] md:text-[18px] ">
+              <h1 class="text-[16px] md:text-[20px] ">
                 B2B-ONE.COM — it is an effective platform for communication
                 between exporters and importers, sellers and buyers of goods and
                 services around the world. Find a partner, conduct video

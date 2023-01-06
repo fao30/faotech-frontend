@@ -8,7 +8,7 @@ const CompanyProfile = () => {
         <h1 class="md:lg:text-5xl text-4xl font-bold text-[#1363DF] ">
           Our Company Philosophy
         </h1>
-        <p class=" lg:w-[70%] text-[#757575] mt-4 text-[16px] md:text-[18px] ">
+        <p class=" lg:w-[70%] text-[#757575] mt-4 text-[16px] md:text-[20px]">
           We are obliged to fulfill the maximum potential of your enterprises
           and business. Conduct research on every variable that exists,
           determine the direction in solving problems, generate ideas in

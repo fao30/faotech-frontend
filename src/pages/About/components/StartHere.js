@@ -9,7 +9,7 @@ const StartHere = () => {
           <h1 class="lg:mt-6 md:lg:text-5xl text-4xl  font-[700] leading-[36px] md:leading-[48px] lg:leading-[48px] text-[#1363DF]  pb-1 sm:text-center text-left">
             Let’s create something amazing together
           </h1>
-          <p class=" text-[#757575] text-[16px] md:text-[21px] font-[400] mt-3 text-left">
+          <p class=" text-[#757575] text-[16px] md:text-[20px] font-[400] mt-3 text-left">
             Hit the button, we are there waiting for you!
           </p>
           <button class="md:w-72 w-48 mt-12 mb-8 font-[500] hover:bg-[#4C6BDC] hover:text-white normal-case text-[15px] lg:text-[20px] btn border-none relative inline-flex items-center overflow-hidden text-md text-[white] shadow-md bg-[#4C6BDC] group">
