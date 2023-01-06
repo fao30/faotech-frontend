@@ -44,7 +44,7 @@ const DigitalProduct = () => {
         <div class="flex justify-center">
           <img
             alt="b2b"
-            class="md:lg:hidden w-11/12 transition-all transform hover:scale-110 hover:cursor-zoom-in mt-12"
+            class="md:lg:hidden w-11/12 transition-all transform hover:scale-125 hover:cursor-zoom-in mt-12"
             src={require("./components/b2b.png")}
           ></img>
         </div>
