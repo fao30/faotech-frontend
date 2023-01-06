@@ -13,23 +13,23 @@ const Header = () => {
         <div class="flex justify-between flex-wrap items-center">
           {/* HEADER TITLE */}
           <div class="z-20  w-full lg:w-[39rem]">
-            <motion.div
+            {/* <motion.div
               initial={{ x: "-20%" }}
               animate={{ x: "calc(100% - 100%)" }}
-            >
-              <h1 class="text-[28px] my-2 text-primary-100 font-bold">
-                Fast, Trust, Number 1
-              </h1>
-              <h1 class="md:lg:text-6xl text-4xl font-bold text-black">
-                We Help You Develop Through Digitalization
-              </h1>
-              <h1 class="text-l my-6 text-[#757575] text-[16px] lg:text-[20px]">
-                FaoTech — a technology company engaged in industrial
-                digitization located in Kazan. We focus on helping you to
-                digitalize your business from the first scratch until a digital
-                product ready to use!
-              </h1>
-            </motion.div>
+            > */}
+            <h1 class="text-[28px] my-2 text-primary-100 font-bold">
+              Fast, Trust, Number 1
+            </h1>
+            <h1 class="md:lg:text-6xl text-4xl font-bold text-black">
+              We Help You Develop Through Digitalization
+            </h1>
+            <h1 class="text-l my-6 text-[#757575] text-[16px] lg:text-[20px]">
+              FaoTech — a technology company engaged in industrial digitization
+              located in Kazan. We focus on helping you to digitalize your
+              business from the first scratch until a digital product ready to
+              use!
+            </h1>
+            {/* </motion.div> */}
             <div class="flex justify-start">
               <button
                 onClick={() => navigate("/contact")}
