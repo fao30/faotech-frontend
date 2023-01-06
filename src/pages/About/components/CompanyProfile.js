@@ -3,8 +3,8 @@ import CardCompany from "./CardCompany";
 
 const CompanyProfile = () => {
   return (
-    <div class="w-full px-[2rem] md:px-[4rem] lg:px-[8rem]">
-      <div class="mt-12 flex justify-center flex-col items-center text-center md:mb-0">
+    <div class="px-[8vw] my-[6vw] lg:my-[8vw] w-full z-10">
+      <div class="flex justify-center flex-col items-center text-center">
         <h1 class="md:lg:text-5xl text-4xl font-bold text-[#1363DF] ">
           Our Company Philosophy
         </h1>
@@ -16,21 +16,19 @@ const CompanyProfile = () => {
           solution.
         </p>
       </div>
-      <div class="w-full mb-32 mt-2 sm:mt-12 lg:mt-36">
-        <div class="flex justify-center flex-wrap items-center">
-          <CardCompany
-            cardDescProps={
-              "Creating era of digitalization for industry at any level of society in order to develop together and living the  best future together"
-            }
-            cardTitleProps={"Vision"}
-          />
-          <CardCompany
-            cardDescProps={
-              "Becoming client partner in technology reformation in achieving the highest potential of company performance"
-            }
-            cardTitleProps={"Mission"}
-          />
-        </div>
+      <div class="w-full mt-4 lg:mt-24 flex justify-around flex-wrap items-center">
+        <CardCompany
+          cardDescProps={
+            "Creating era of digitalization for industry at any level of society in order to develop together and living the  best future together"
+          }
+          cardTitleProps={"Vision"}
+        />
+        <CardCompany
+          cardDescProps={
+            "Becoming client partner in technology reformation in achieving the highest potential of company performance"
+          }
+          cardTitleProps={"Mission"}
+        />
       </div>
     </div>
   );

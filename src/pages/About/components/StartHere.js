@@ -3,18 +3,18 @@ import { Icon } from "@iconify/react";
 
 const StartHere = () => {
   return (
-    <div class="w-full lg:my-72 mb-40 px-[2rem] md:px-[4rem] lg:px-[8rem]">
-      <div class="my-16 px-6 flex justify-center content-center flex-wrap items-center rounded-xl  bg-white border-2 shadow-xl ">
-        <div className="mt-8 lg:mt-3 px-[2rem] md:px-2 flex justify-center flex-col items-center">
-          <h1 class="lg:mt-6 md:lg:text-5xl text-4xl  font-[700] leading-[36px] md:leading-[48px] lg:leading-[48px] text-[#1363DF]  pb-1 sm:text-center text-left">
+    <div class="px-[8vw] my-[6vw] lg:my-[8vw] w-full z-10">
+      <div class="flex justify-center w-full flex-wrap items-end rounded-xl  bg-white border-2 shadow-xl p-12">
+        <div className="flex justify-center flex-col items-center w-full">
+          <h1 class=" md:lg:text-5xl text-4xl  font-[700] leading-[36px]  text-[#1363DF]  sm:text-center text-left">
             Let’s create something amazing together
           </h1>
-          <p class=" text-[#757575] text-[16px] md:text-[20px] font-[400] mt-3 text-left">
+          <p class=" text-[#757575] text-[16px] md:text-[20px] font-[400] text-left my-6">
             Hit the button, we are there waiting for you!
           </p>
-          <button class="md:w-72 w-48 mt-12 mb-8 font-[500] hover:bg-[#4C6BDC] hover:text-white normal-case text-[15px] lg:text-[20px] btn border-none relative inline-flex items-center overflow-hidden text-md text-[white] shadow-md bg-[#4C6BDC] group">
+          <button class=" mt-6 md:w-72 w-48 font-[500] hover:bg-[#4C6BDC] hover:text-white normal-case text-[15px] lg:text-[20px] btn border-none relative inline-flex items-center overflow-hidden text-md text-[white] shadow-md bg-[#4C6BDC] group">
             <span class=" h-full w-0 group-hover:w-full absolute block transition-all bg-[#3F58B5] opacity-100 duration-500 ease"></span>
-            <span class="pl-[0.5rem] invisible group-hover:visible scale-0 group-hover:scale-110 absolute right-[2.2rem] md:right-[4.7rem] flex items-center justify-start  w-10 h-10 duration-300 transform">
+            <span class="invisible group-hover:visible scale-0 group-hover:scale-110 absolute right-[2.2rem] md:right-[4.7rem] flex items-center justify-start  w-10 h-10 duration-300 transform">
               {" "}
               <Icon
                 icon="material-symbols:emoji-people"

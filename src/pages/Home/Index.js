@@ -17,7 +17,6 @@ const Index = () => {
       <Header />
       <HeroContent />
       <OurWorkSector />
-      <ReachUs />
       <DigitalProduct /> <TechStack />
     </div>
   );

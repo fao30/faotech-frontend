@@ -20,7 +20,7 @@ const Navbar = () => {
     "btn bg-transparent hover:bg-transparent border-none rounded-2xl text-primary-100 mx-0.5 normal-case";
   let activeClassNameDropdown = "bg-transparent text-primary-100 my-0.5";
   return (
-    <div class="z-30 sticky top-0 h-16 bg-white text-black shadow navbar flex justify-center px-[1rem] md:px-[4rem] lg:px-[8rem] active">
+    <div class="px-[3.5vw] md:px-[8vw] z-30 sticky top-0 h-16 bg-white text-black shadow navbar flex justify-center ">
       <div class="navbar-start">
         <div
           class={`${
@@ -76,7 +76,7 @@ const Navbar = () => {
         <p
           class={`${
             location.pathname === "/contact"
-              ? "max-md:ml-4 normal-case lg:text-2xl sm:text-2xl text-2xl font-extrabold md:flex lg:flex"
+              ? "max-md:ml-[1.1rem] normal-case lg:text-2xl sm:text-2xl text-2xl font-extrabold md:flex lg:flex"
               : "normal-case lg:text-2xl sm:text-2xl text-2xl font-extrabold hidden md:flex lg:flex"
           } `}
         >
