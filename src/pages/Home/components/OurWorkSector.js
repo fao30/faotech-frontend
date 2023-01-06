@@ -1,6 +1,8 @@
 import { React, useState, useEffect } from "react";
 import CardWork from "./components/CardWork";
 import { Icon } from "@iconify/react";
+import { motion, useScroll, useTransform } from "framer-motion";
+
 // from-white to-blue-200  bg-gradient-to-r
 
 // const BASE_URL =
@@ -14,9 +16,17 @@ const OurWorkSector = () => {
   //     setCardWork(data)
   //   })
   // }, [])
+  const { scrollYProgress } = useScroll();
+  const scale = useTransform(scrollYProgress, [0, 0.5], [0.75, 0.99]);
 
   return (
-    <div>
+    <motion.div style={{ scale }}>
+      {" "}
+      <motion.div
+        style={{
+          scaleY: scrollYProgress,
+        }}
+      />
       <div class="px-[1rem] md:px-[4rem] lg:px-[8rem] grid place-items-center items-end">
         <div class="mt-6 lg:mb-2 lg:mt-[4rem] z-10 lg:w-full">
           <div>
@@ -28,6 +38,7 @@ const OurWorkSector = () => {
                 Our Work Sector
               </h1>
             </div>
+
             <div class="w-full flex flex-wrap justify-center items-center">
               {/* {cardWork.map((e)=>{
                 return (
@@ -175,7 +186,7 @@ const OurWorkSector = () => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
