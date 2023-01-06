@@ -36,7 +36,7 @@ const Contact = () => {
             Let’s discuss your project with our team
           </p>
         </motion.div>
-        <p className="text-[#A1A1A1] text-base md:lg:text-[1.25rem] leading-[1.4] mt-2">
+        <p className="text-[#A1A1A1] text-[16px] md:text-[18px]  leading-[1.4] mt-2">
           We would love to hear from you! Send us an email and we will respond
           within 24 hours.
         </p>

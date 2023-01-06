@@ -10,7 +10,7 @@ const CardHero = ({ cardDescProps, cardIconProps, cardTitleProps }) => {
             <h1 class="font-bold text-[1.3rem] mb-[0.3rem]">
               {cardTitleProps}
             </h1>
-            <p class=" text-sm text-[#766868] text-[14px] lg:text-[16px]">
+            <p class=" text-sm text-[#766868] text-[16px] md:text-[16px] lg:text-[18px] ">
               {cardDescProps}
             </p>
           </div>

@@ -5,8 +5,8 @@ const StartHere = () => {
   return (
     <div class="w-full lg:my-72 mb-40 px-[2rem] md:px-[4rem] lg:px-[8rem]">
       <div class="my-16 px-6 flex justify-center content-center flex-wrap items-center rounded-xl  bg-white border-2 shadow-xl ">
-        <div className="mt-8 lg:mt-3 px-[2rem] md:px-2 mb-2 flex justify-center flex-col items-center">
-          <h1 class="mt-4 md:lg:text-5xl text-4xl  font-[700] leading-[36px] md:leading-[48px] lg:leading-[48px] text-[#1363DF]  pb-1 sm:text-center text-left">
+        <div className="mt-8 lg:mt-3 px-[2rem] md:px-2 flex justify-center flex-col items-center">
+          <h1 class="lg:mt-6 md:lg:text-5xl text-4xl  font-[700] leading-[36px] md:leading-[48px] lg:leading-[48px] text-[#1363DF]  pb-1 sm:text-center text-left">
             Let’s create something amazing together
           </h1>
           <p class=" text-[#757575] text-[16px] md:text-[21px] font-[400] mt-3 text-left">

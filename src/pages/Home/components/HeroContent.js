@@ -25,7 +25,7 @@ const HeroContent = () => {
                 We are building the best for your Digital Product as comfortable
                 as you wish!
               </h1>
-              <h1 class="text-l my-6 text-[#757575] text-[16px] lg:text-[20px]">
+              <h1 class="text-l my-6 text-[#757575] text-[16px] md:text-[18px]">
                 Everything's in our service like you need.
               </h1>
             </div>

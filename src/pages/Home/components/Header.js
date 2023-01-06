@@ -12,7 +12,7 @@ const Header = () => {
       <div class="my-6 lg:mb-40 lg:mt-20 z-10 w-full">
         <div class="flex justify-between flex-wrap items-center">
           {/* HEADER TITLE */}
-          <div class="z-20  w-full lg:w-[39rem]">
+          <div class="z-20  w-full lg:w-[31rem]">
             <motion.div
               initial={{ y: "-20%" }}
               animate={{ y: "calc(100% - 100%)" }}
@@ -23,7 +23,7 @@ const Header = () => {
               <h1 class="md:lg:text-5xl text-4xl font-bold text-black">
                 We Help You Develop Through Digitalization
               </h1>
-              <h1 class="text-l my-6 text-[#757575] text-[16px] lg:text-[20px]">
+              <h1 class="text-l my-6 text-[#757575] text-[16px] md:text-[18px]">
                 FaoTech — a technology company engaged in industrial
                 digitization located in Kazan. We focus on helping you to
                 digitalize your business from the first scratch until a digital
