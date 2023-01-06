@@ -3,7 +3,7 @@ import React from "react";
 
 const HeaderAbout = () => {
   return (
-    <div class="px-[8vw] my-[6vw] lg:my-[8vw] w-full z-10 ">
+    <div class="px-[8vw] my-[6vw] lg:my-[6vw] w-full z-10 ">
       <div class="flex justify-between flex-wrap items-center w-full ">
         {/* HEADER TITLE, Digital Product Made By Us*/}
         <div class="w-full md:w-[50%] text-[#757575] text-[16px] md:text-[20px]">
