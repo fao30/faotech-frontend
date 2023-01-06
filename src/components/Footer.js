@@ -12,8 +12,8 @@ const Footer = () => {
     });
   };
   return (
-    <div class="bg-white text-base-content border-t-2 ">
-      <footer class="footer py-12 px-[2rem] md:px-[4rem] lg:px-[8rem] flex flex-wrap justify-between">
+    <div class="px-[8vw] py-6 md:py-12 bg-white text-base-content border-t-2 ">
+      <footer class="footer flex flex-wrap justify-between items-start">
         <div class="w-4/6">
           <div class="font-title text-black inline-flex text-3xl">
             <span class="font-extrabold">Fao</span> <span>Tech</span>
@@ -66,7 +66,7 @@ const Footer = () => {
             );
           })}
         </div>
-        <div class="w-42 lg:space-y-4">
+        <div class="w-42 lg:space-y-4 items-center">
           <span class="text-lg">Contact</span>
           <div class="flex justify-center items-start">
             <Icon

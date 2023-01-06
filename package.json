@@ -11,16 +11,10 @@
     "daisyui": "^2.46.1",
     "framer-motion": "^8.1.9",
     "react": "^18.2.0",
-    "react-animated-popup": "^0.1.8",
-    "react-cards-stack": "^1.1.1",
-    "react-carousel-dots": "^0.1.0",
     "react-dom": "^18.2.0",
     "react-fullscreen-loading": "^0.0.4",
     "react-scripts": "5.0.1",
-    "react-spring": "^9.6.1",
-    "reshake": "^1.2.4",
-    "theme-change": "^2.2.0",
-    "web-vitals": "^2.1.4"
+    "react-spring": "^9.6.1"
   },
   "scripts": {
     "predeploy": "npm run build",

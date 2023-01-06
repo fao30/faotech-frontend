@@ -7,7 +7,7 @@ const Contact = () => {
   const navigate = useNavigate();
 
   return (
-    <section className="flex flex-col space-y-3 pb-20 sm:pb-96 px-[2rem] md:px-[6rem] lg:px-[8rem] border-b-2">
+    <section className="flex flex-col space-y-3 pb-20 sm:pb-96 px-[8vw] border-b-2">
       <div className="flex justify-end mt-10 z-20 xl:w-[60rem] xl:mx-auto ">
         {/* Button Back to Homepage */}
         <button
@@ -27,7 +27,7 @@ const Contact = () => {
           </span>
         </button>
       </div>
-      <div className="flex flex-col z-10 xl:mx-auto pt-2">
+      <div className="flex flex-col z-10 xl:mx-auto pt-2 ">
         <motion.div
           initial={{ x: "-20%" }}
           animate={{ x: "calc(100% - 100%)" }}
@@ -35,11 +35,11 @@ const Contact = () => {
           <p className="text-[#4C6BDC] md:lg:text-5xl text-4xl font-bold leading-[1.1]">
             Let’s discuss your project with our team
           </p>
-          <p className="text-[#A1A1A1] text-base md:lg:text-[1.25rem] leading-[1.4] mt-2">
-            We would love to hear from you! Send us an email and we will respond
-            within 24 hours.
-          </p>
         </motion.div>
+        <p className="text-[#A1A1A1] text-[16px] md:text-[18px]  leading-[1.4] mt-2">
+          We would love to hear from you! Send us an email and we will respond
+          within 24 hours.
+        </p>
         {/* Background  */}
         <div class="flex absolute w-6/12 right-0 lg:-right-10 sm:mr-10 h-[90%] top-20 bg-[#eaf0fa] blur-3xl -z-10 rounded-tl-full rounded-bl-full"></div>
 

@@ -1,20 +1,15 @@
-import { motion } from "framer-motion";
 import React from "react";
 
 const CardHero = ({ cardDescProps, cardIconProps, cardTitleProps }) => {
   return (
-    <div class="flex justify-between items-center transition-all transform hover:scale-105 hover:cursor-pointer">
-      <div class="bg-white text-ourWork-100 font-bold mx-5 my-3 shadow-xl rounded-2xl">
-        <div class="flex flex-row flex-wrap justify-start items-center w-80 lg:w-[25rem] h-36 ml-4">
-          <div class="fixed ml-3"> {cardIconProps} </div>
-          <div class="ml-24 text-s sm:text-base md:lg:text-base font-normal mr-5">
-            <h1 class="font-bold text-[1.5rem] mb-[0.3rem]">
-              {cardTitleProps}
-            </h1>
-            <p class=" text-sm text-[#766868] text-[16px] lg:text-[18px]">
-              {cardDescProps}
-            </p>
-          </div>
+    <div class="w-full lg:w-[75%] bg-white text-ourWork-100 font-bold m-2 shadow-xl rounded-2xl transition-all transform hover:scale-105 hover:cursor-pointer">
+      <div class="px-6 flex flex-row flex-wrap justify-start items-center w-full h-36">
+        <div class="fixed"> {cardIconProps} </div>
+        <div class="ml-20 text-s sm:text-base md:lg:text-base font-normal ">
+          <h1 class="font-bold text-[1.3rem] mb-[0.3rem]">{cardTitleProps}</h1>
+          <p class=" text-sm text-[#766868] text-[16px] lg:text-[18px]">
+            {cardDescProps}
+          </p>
         </div>
       </div>
     </div>
