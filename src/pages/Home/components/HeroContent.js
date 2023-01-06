@@ -1,7 +1,7 @@
 import { Icon } from "@iconify/react";
-import { motion } from "framer-motion";
 import { React } from "react";
 import CardHero from "./components/CardHero";
+import { motion } from "framer-motion";
 // from-white to-blue-200  bg-gradient-to-r
 
 const HeroContent = () => {
@@ -78,6 +78,7 @@ const HeroContent = () => {
         </div>
       </div>
     </div>
+    // </motion.div>
   );
 };
 

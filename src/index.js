@@ -4,7 +4,6 @@ import "./index.css";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import { HashRouter, Routes, Route } from "react-router-dom";
-import { motion } from "framer-motion";
 import LoadToTop from "./components/LoadToTop";
 import Loading from "react-fullscreen-loading";
 import { routesOptions } from "./store/helper/Routes";
@@ -12,7 +11,7 @@ import { routesOptions } from "./store/helper/Routes";
 export default function Routing() {
   const [loading, setLoading] = useState(false);
   useEffect(() => {
-    let loadingTimer = setTimeout(() => setLoading(true), 0.75 * 1000);
+    let loadingTimer = setTimeout(() => setLoading(true), 1 * 1000);
     return () => {
       clearTimeout(loadingTimer);
     };
@@ -20,11 +19,7 @@ export default function Routing() {
   return (
     <HashRouter>
       {loading ? (
-        <motion.div
-          initial={{ opacity: 0.5 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-        >
+        <div>
           <Navbar />
           <Routes>
             {routesOptions.map((e) => {
@@ -33,7 +28,7 @@ export default function Routing() {
           </Routes>
           <Footer />
           <LoadToTop />
-        </motion.div>
+        </div>
       ) : (
         <Loading loading background="white" loaderColor="#4C6BDC" />
       )}

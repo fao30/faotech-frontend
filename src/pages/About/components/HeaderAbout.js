@@ -4,19 +4,18 @@ import React from "react";
 const HeaderAbout = () => {
   return (
     <div class="px-[2rem] md:px-[4rem] lg:px-[8rem] grid place-items-center items-end">
-      <div class="my-10 lg:my-28 z-10 w-full">
+      <div class="my-10 lg:my-[6.5rem] z-10 w-full">
         <div class="flex justify-between flex-wrap items-center mb-12 md:mb-0">
           {/* HEADER TITLE, Digital Product Made By Us*/}
           <motion.div
             initial={{ x: "-20%" }}
             animate={{ x: "calc(100% - 100%)" }}
           >
-            <div class="w-full lg:w-[60%] md:w-4/5">
-              <h1 class="md:lg:text-5xl text-4xl font-bold text-[#1363DF]">
+            <div class="md:w-full lg:w-[27.7rem] text-[#757575] text-[16px] md:text-[20px] mt-6">
+              <h1 class="w-full md:lg:text-5xl text-4xl font-bold text-[#1363DF]">
                 About Us
               </h1>
-            </div>
-            <div class="md:w-full lg:w-[27.7rem] text-[#757575] text-[16px] md:text-[20px] mt-6">
+              <br />
               <h1>
                 We are a technology company that is moving forward to build a
                 technology ecosystem to help humanity maximize its work. we

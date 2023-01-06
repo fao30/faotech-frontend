@@ -9,7 +9,7 @@ const useReadingProgress = () => {
       const scrollHeight = document.body.scrollHeight - window.innerHeight;
       if (scrollHeight) {
         setCompletion(
-          Number((currentProgress / scrollHeight).toFixed(100)) * 100
+          Number((currentProgress / scrollHeight).toFixed(25)) * 100
         );
       }
     };
