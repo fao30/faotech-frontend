@@ -2,6 +2,7 @@ import { useNavigate } from "react-router-dom";
 import { Icon } from "@iconify/react";
 import FormContact from "./components/FormContact";
 import { motion } from "framer-motion";
+import "../../custom.css";
 
 const Contact = () => {
   const navigate = useNavigate();
@@ -11,7 +12,7 @@ const Contact = () => {
       <div className="flex justify-end mt-10 z-20 xl:w-[60rem] xl:mx-auto ">
         {/* Button Back to Homepage */}
         <button
-          class="btn hover:bg-[#4C6BDC] border-none normal-case relative inline-flex items-center px-[3.5rem] py-[0.75rem] overflow-hidden  text-[#393737] shadow-md hover:text-white rounded-tr-3xl rounded-bl-3xl bg-[#FFFFFF] group"
+          class=" font-medium hover:bg-[#4C6BDC] border-none normal-case relative inline-flex items-center px-[3.5rem] py-[0.75rem] overflow-hidden  text-[#393737] shadow-[0_2px_3px_gray] hover:text-white rounded-tr-3xl rounded-bl-3xl bg-[#FFFFFF] group"
           onClick={() => navigate("/")}
         >
           <span class="absolute right-0 flex items-center justify-start  w-10 h-10 duration-300 transform translate-x-full group-hover:-translate-x-4 ease">
