@@ -4,6 +4,7 @@ import { Icon } from "@iconify/react";
 import { footerOptions } from "../store/helper/NavbarOptions";
 
 const Footer = () => {
+  const logo = require("./assets/faoTech.png");
   const navigate = useNavigate();
   const scrollToTop = () => {
     window.scrollTo({
@@ -16,7 +17,7 @@ const Footer = () => {
       <footer class="footer flex flex-wrap justify-between items-start">
         <div class="w-4/6">
           <div class="font-title text-black inline-flex text-3xl">
-            <span class="font-extrabold">Fao</span> <span>Tech</span>
+            <img src={logo} class="w-36" />
           </div>
           <p class="text-footer-100">© 2023. All rights reserved.</p>
           <p class="text-footer-100">Lets’s</p>

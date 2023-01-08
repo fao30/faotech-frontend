@@ -28,10 +28,7 @@ const HeroContent = () => {
             Everything's in our service like you need.
           </h3>
         </div>
-
-        {/* DON'T DELETE CODES BELOW */}
-        {/* <div class="hidden lg:md:sm:flex absolute w-7/12 h-3/4 right-0 bg-primary-300 blur-3xl"></div>
-        <div class="md:lg:hidden w-1/5 h-2/5 top-3/4 right-0 absolute rounded-2xl bg-blue-100 blur-3xl rounded-tl-full"></div> */}
+        {/* CARDS */}
         <div class="rounded-box w-full md:w-[55%] flex flex-wrap justify-center items-center">
           <CardHero
             cardDescProps={

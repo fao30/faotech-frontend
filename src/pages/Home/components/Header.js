@@ -24,7 +24,7 @@ const Header = () => {
               We Help You Develop Through Digitalization
             </h1>
             <h1 class="text-l my-6 text-[#757575] text-[16px] md:text-[20px]">
-              FaoTech — a technology company engaged in industrial digitization
+              faoTech — a technology company engaged in industrial digitization
               located in Kazan. We focus on helping you to digitalize your
               business from the first scratch until a digital product ready to
               use!
@@ -35,17 +35,13 @@ const Header = () => {
               onClick={() => {
                 navigate("/contact");
               }}
-              class="text-white  hover:bg-primary-400 rounded-2xl bg-primary-100 shadow-xl btn border-none normal-case w-full mb-12 lg:mb-0"
+              class="text-white  hover:bg-primary-400 rounded-2xl bg-primary-100 shadow-xl btn border-none normal-case w-full mb-12 md:mb-0"
             >
               Start Your Journey
             </button>
           </div>
         </div>
-        {/* DON'T DELETE CODES BELOW */}
-        {/* BACKGROUND */}
-        {/* <div class="hidden lg:md:sm:flex absolute w-7/12 top-20 h-full right-0 bg-primary-300 blur-3xl rounded-tl-full"></div>
-          <div class="md:lg:hidden w-1/5 h-2/5 top-3/4 right-0 absolute rounded-2xl bg-blue-100 blur-3xl"></div> */}
-        {/* carousel */}
+        {/* CAROUSEL */}
         <div class="w-full md:w-[55%] transition-all transform hover:scale-110 hover:cursor-ew-resize">
           <div class="carousel carousel-center rounded-box space-x-4">
             <CarouselItem
@@ -59,14 +55,6 @@ const Header = () => {
             />
           </div>
         </div>
-        {/* <div class="w-full  justify-center mt-1 max-md:flex hidden">
-          <Icon
-            icon="ic:outline-view-carousel"
-            width="25"
-            height="25"
-            hFlip={true}
-          />
-        </div> */}
       </div>
     </div>
   );

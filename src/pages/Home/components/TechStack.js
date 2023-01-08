@@ -1,7 +1,6 @@
 import React from "react";
 import { Icon } from "@iconify/react";
 import CardTech from "./components/CardTech";
-import "./custom.css";
 import ReadyToStart from "./components/ReadyToStart";
 
 const TechStack = () => {
