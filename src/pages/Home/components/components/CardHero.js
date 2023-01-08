@@ -6,8 +6,10 @@ const CardHero = ({ cardDescProps, cardIconProps, cardTitleProps }) => {
       <div class="px-6 flex flex-row flex-wrap justify-start items-center w-full h-36">
         <div class="fixed"> {cardIconProps} </div>
         <div class="ml-20 text-s sm:text-base md:lg:text-base font-normal ">
-          <h1 class="font-bold text-[1.3rem] mb-[0.3rem]">{cardTitleProps}</h1>
-          <p class=" text-sm text-[#766868] text-[16px] lg:text-[18px]">
+          <h1 class="font-bold text-[16px] md:text-[20px] ">
+            {cardTitleProps}
+          </h1>
+          <p class=" text-sm text-[#766868] text-[16px] md:text-[17px] lg:text-[18px]">
             {cardDescProps}
           </p>
         </div>
