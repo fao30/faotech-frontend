@@ -8,6 +8,7 @@ const Contact = () => {
 
   return (
     <section className="flex flex-col space-y-3 pb-20 sm:pb-96 px-[8vw]">
+      <div class="flex absolute w-6/12 right-0 lg:-right-10 sm:mr-10 h-[90%] top-20 bg-[#eaf0fa] blur-3xl -z-10 rounded-tl-full rounded-bl-full"></div>
       <div className="flex justify-end mt-10 z-20 xl:w-[60rem] xl:mx-auto ">
         {/* Button Back to Homepage */}
         <button
@@ -29,13 +30,14 @@ const Contact = () => {
       </div>
       <div className="flex flex-col z-10 xl:mx-auto pt-2 ">
         <motion.div
+          class="w-full md:w-[40%]"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 1 }}
           transition={{ delay: 0.25, duration: 0.5 }}
           variants={{
-            hidden: { opacity: 0, x: 50 },
-            visible: { opacity: 1, x: 0 },
+            hidden: { opacity: 0, y: -50 },
+            visible: { opacity: 1, y: 0 },
           }}
         >
           <p className="text-[#4C6BDC] md:lg:text-5xl text-4xl font-bold leading-[1.1]">
@@ -46,9 +48,6 @@ const Contact = () => {
             within 24 hours.
           </p>
         </motion.div>
-
-        {/* Background  */}
-        <div class="flex absolute w-6/12 right-0 lg:-right-10 sm:mr-10 h-[90%] top-20 bg-[#eaf0fa] blur-3xl -z-10 rounded-tl-full rounded-bl-full"></div>
         {/* FORM */}
         <FormContact />
       </div>

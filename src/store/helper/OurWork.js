@@ -45,6 +45,6 @@ const OurWork = [
   },
   {
     label: "AI Automation",
-    icon: "ph:device-mobile-speaker-bold",
+    icon: "eos-icons:ai-operator",
   },
 ];
