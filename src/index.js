@@ -8,23 +8,22 @@ import LoadToTop from "./components/LoadToTop";
 import Loading from "react-fullscreen-loading";
 import { routesOptions } from "./store/helper/Routes";
 import { motion } from "framer-motion";
+import Preloader from "./components/Loader";
 
 export default function Routing() {
   const [loading, setLoading] = useState(false);
   useEffect(() => {
-    let loadingTimer = setTimeout(() => setLoading(true), 1 * 1000);
-    return () => {
-      clearTimeout(loadingTimer);
-    };
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 1000);
   }, []);
   return (
     <HashRouter>
       {loading ? (
-        <motion.div
-          initial={{ opacity: 0.5 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-        >
+        <Preloader />
+      ) : (
+        <>
           <Navbar />
           <Routes>
             {routesOptions.map((e) => {
@@ -32,10 +31,8 @@ export default function Routing() {
             })}
           </Routes>
           <Footer />
-          <LoadToTop />
-        </motion.div>
-      ) : (
-        <Loading loading background="white" loaderColor="#4C6BDC" />
+          {/* <LoadToTop /> */}
+        </>
       )}
     </HashRouter>
   );
