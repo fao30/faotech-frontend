@@ -27,24 +27,30 @@ const Contact = () => {
           </span>
         </button>
       </div>
-      <div className="flex flex-col z-10 xl:mx-auto pt-2 ">
-        <motion.div
-          initial={{ x: "-20%" }}
-          animate={{ x: "calc(100% - 100%)" }}
-        >
-          <p className="text-[#4C6BDC] md:lg:text-5xl text-4xl font-bold leading-[1.1]">
-            Let’s discuss your project with our team
-          </p>
-        </motion.div>
+      <motion.div
+        class="flex flex-col z-10 xl:mx-auto pt-2"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 1 }}
+        transition={{ delay: 0.25, duration: 0.5 }}
+        variants={{
+          hidden: { opacity: 0, x: 50 },
+          visible: { opacity: 1, x: 0 },
+        }}
+      >
+        <p className="text-[#4C6BDC] md:lg:text-5xl text-4xl font-bold leading-[1.1]">
+          Let’s discuss your project with our team
+        </p>
         <p className="text-[#A1A1A1] text-[16px] md:text-[18px]  leading-[1.4] mt-2">
           We would love to hear from you! Send us an email and we will respond
           within 24 hours.
         </p>
-        {/* Background  */}
-        <div class="flex absolute w-6/12 right-0 lg:-right-10 sm:mr-10 h-[90%] top-20 bg-[#eaf0fa] blur-3xl -z-10 rounded-tl-full rounded-bl-full"></div>
-        {/* FORM */}
-        <FormContact />
-      </div>
+      </motion.div>
+
+      {/* Background  */}
+      <div class="flex absolute w-6/12 right-0 lg:-right-10 sm:mr-10 h-[90%] top-20 bg-[#eaf0fa] blur-3xl -z-10 rounded-tl-full rounded-bl-full"></div>
+      {/* FORM */}
+      <FormContact />
     </section>
   );
 };
