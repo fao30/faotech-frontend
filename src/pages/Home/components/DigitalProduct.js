@@ -26,10 +26,10 @@ const DigitalProduct = () => {
           </h3>
           <div class=" text-[#757575] mt-6">
             <h3 class="text-[16px] md:text-[20px] ">
-              B2B-ONE.COM — it is an effective platform for communication
-              between exporters and importers, sellers and buyers of goods and
-              services around the world. Find a partner, conduct video
-              negotiations and agree on a good deal!
+              B2B-ONE.COM — it's an effective platform for communication between
+              exporters and importers, sellers and buyers of goods and services
+              around the world. Find a partner, conduct video negotiations and
+              agree on a good deal!
             </h3>
           </div>
         </div>

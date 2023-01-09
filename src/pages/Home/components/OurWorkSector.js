@@ -4,14 +4,10 @@ import { Icon } from "@iconify/react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import ReachUs from "./components/ReachUs";
 
-// from-white to-blue-200  bg-gradient-to-r
-
-// const BASE_URL =
-
 const OurWorkSector = () => {
   // const [cardWork, setCardWork] = useState([])
   // useEffect(() => {
-  //   fetch(BASE_URL)
+  //   fetch("BASE_URL")
   //   .then (res => res.json())
   //   .then (data => {
   //     setCardWork(data)
@@ -47,6 +43,7 @@ const OurWorkSector = () => {
                   } cardTitleProps={e.label} />
                 )
               })} */}
+
         <CardWork
           cardIconProps={
             <Icon
@@ -180,7 +177,6 @@ const OurWorkSector = () => {
           cardTitleProps={"Blockchain Development"}
         />
       </div>
-
       <ReachUs />
     </div>
   );

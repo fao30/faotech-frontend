@@ -5,8 +5,10 @@ import {
   dropdownOptions,
   navbarWithoutContact,
 } from "../store/helper/NavbarOptions";
+import "../custom.css";
 
 const Navbar = () => {
+  const logo = require("./assets/faoTech.png");
   const location = useLocation();
   const navigate = useNavigate();
   const scrollToTop = () => {
@@ -20,19 +22,14 @@ const Navbar = () => {
     "btn bg-transparent hover:bg-transparent border-none rounded-2xl text-primary-100 mx-0.5 normal-case";
   let activeClassNameDropdown = "bg-transparent text-primary-100 my-0.5";
   return (
-    <div class="px-[3.5vw] md:px-[8vw] z-30 sticky top-0 h-16 bg-white text-black shadow navbar flex justify-center ">
+    <div class="px-[3vw] md:px-[8vw] z-30 sticky top-0 h-16 bg-white text-black shadow navbar flex justify-center ">
       <div class="navbar-start">
         <div
           class={`${
-            location.pathname === "/contact"
-              ? "hidden"
-              : "dropdown lg:hidden md:hidden"
+            location.pathname === "/contact" ? "hidden" : "dropdown md:hidden"
           }`}
         >
-          <label
-            tabindex="0"
-            class="btn btn-ghost rounded-2xl lg:hidden md:hidden"
-          >
+          <label tabindex="0" class="btn btn-ghost rounded-2xl">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               class="h-5 w-5"
@@ -74,26 +71,25 @@ const Navbar = () => {
           </ul>
         </div>
         <p
-          class={`${
+          class={`
+          ${
             location.pathname === "/contact"
-              ? "max-md:ml-[1.4rem] normal-case lg:text-2xl sm:text-2xl text-2xl font-extrabold md:flex lg:flex"
-              : "normal-case lg:text-2xl sm:text-2xl text-2xl font-extrabold hidden md:flex lg:flex"
+              ? "max-md:ml-[4.5vw] md:flex"
+              : "hidden md:flex"
           } `}
         >
-          Fao<span className="font-semibold normal-case">Tech</span>
+          <img src={logo} class="w-36" />
         </p>
         <p
           onClick={() => {
             navigate("/");
             scrollToTop();
           }}
-          class={`${
-            location.pathname === "/contact"
-              ? "hidden"
-              : "mr-3 normal-case lg:text-2xl sm:text-2xl text-2xl font-extrabold btn btn-ghost md:hidden lg:hidden"
+          class={`btn btn-ghost md:hidden ${
+            location.pathname === "/contact" ? "hidden" : ""
           }`}
         >
-          Fao<span className="font-semibold normal-case">Tech</span>
+          <img src={logo} class="w-36" />
         </p>
       </div>
       <div class="navbar-end">

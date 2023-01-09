@@ -1,7 +1,6 @@
 import React from "react";
 import { Icon } from "@iconify/react";
 import CardTech from "./components/CardTech";
-import "./custom.css";
 import ReadyToStart from "./components/ReadyToStart";
 
 const TechStack = () => {
@@ -12,7 +11,7 @@ const TechStack = () => {
           <h1 class="md:lg:text-5xl text-4xl  font-bold text-black text-center">
             Tech Stack
           </h1>
-          <h2 class="text-center text-[#757575] w-full md:w-10/12 lg:w-[45%] mt-4 text-[16px] lg:text-[20px]">
+          <h2 class="text-center text-[#757575] w-full md:w-10/12 lg:w-[45%] mt-4 text-[16px] md:text-[20px] ">
             There is no right answer when choosing the right tech stack for you.
             We take into account your long term goal, development timeline,
             speed and budget.

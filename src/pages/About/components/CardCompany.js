@@ -7,7 +7,7 @@ const CardCompany = ({ cardDescProps, cardTitleProps }) => {
         <h1 class=" text-[#1363DF] text-center md:lg:text-3xl text-3xl font-[600] mb-4">
           {cardTitleProps}
         </h1>
-        <p class=" text-[#757575] text-center text-[16px] md:text-[18px]  font-[400]">
+        <p class=" text-[#757575] text-center text-[16px] md:text-[17px] lg:text-[18px] font-[400]">
           {cardDescProps}
         </p>
       </div>

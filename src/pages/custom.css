@@ -1,8 +1,0 @@
-.text-title {
-  font-size: 3rem;
-}
-
-.grid-header {
-  display: grid;
-  grid-template-rows: repeat(auto-fit, minmax(40%, 1fr));
-}
