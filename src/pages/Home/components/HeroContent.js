@@ -1,32 +1,14 @@
 import { Icon } from "@iconify/react";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion } from "framer-motion";
 import { React } from "react";
 import CardHero from "./components/CardHero";
 
 const HeroContent = () => {
-  const { scrollYProgress } = useScroll();
-  const scale = useTransform(scrollYProgress, [0, 0.5], [1, 0.8]);
   return (
-    // <motion.div style={{ scale }}>
-    //   <motion.div
-    //     style={{
-    //       scaleY: scrollYProgress,
-    //     }}
-    //   />
     <div class="px-[8vw] my-[6vw] lg:my-[8vw] w-full z-10">
       <div class="flex w-full justify-between flex-wrap items-center">
         {/* HERO TITLE */}
-        <motion.div
-          class="w-full md:w-[40%]"
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 1 }}
-          transition={{ delay: 0.25, duration: 0.5 }}
-          variants={{
-            hidden: { opacity: 0, y: -50 },
-            visible: { opacity: 1, y: 0 },
-          }}
-        >
+        <div class="w-full md:w-[40%]">
           <h2 class="text-[28px] my-2 text-primary-100 font-bold">
             For Your Business Future
           </h2>
@@ -37,18 +19,18 @@ const HeroContent = () => {
           <h3 class="my-6 text-[#757575] text-[16px] md:text-[20px]">
             Everything's in our service like you need.
           </h3>
-        </motion.div>
+        </div>
         {/* CARDS */}
         <div class="rounded-box w-full md:w-[55%] flex flex-wrap justify-center items-center">
           <motion.div
             class="flex justify-center"
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, amount: 1 }}
-            transition={{ delay: 0.5, duration: 1 }}
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ delay: 0.5, duration: 0.5 }}
             variants={{
-              hidden: { opacity: 0, y: 50 },
-              visible: { opacity: 1, y: 0 },
+              hidden: { opacity: 0, scale: 0.5 },
+              visible: { opacity: 1, scale: 1 },
             }}
           >
             <CardHero
@@ -70,11 +52,11 @@ const HeroContent = () => {
             class="flex justify-center"
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, amount: 1 }}
-            transition={{ delay: 0.6, duration: 1 }}
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ delay: 0.6, duration: 0.5 }}
             variants={{
-              hidden: { opacity: 0, y: 50 },
-              visible: { opacity: 1, y: 0 },
+              hidden: { opacity: 0, scale: 0.5 },
+              visible: { opacity: 1, scale: 1 },
             }}
           >
             <CardHero
@@ -96,11 +78,11 @@ const HeroContent = () => {
             class="flex justify-center"
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, amount: 1 }}
-            transition={{ delay: 0.7, duration: 1 }}
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ delay: 0.7, duration: 0.5 }}
             variants={{
-              hidden: { opacity: 0, y: 50 },
-              visible: { opacity: 1, y: 0 },
+              hidden: { opacity: 0, scale: 0.5 },
+              visible: { opacity: 1, scale: 1 },
             }}
           >
             <CardHero

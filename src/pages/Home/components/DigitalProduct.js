@@ -1,7 +1,16 @@
 import React from "react";
+import { motion, useScroll, useTransform } from "framer-motion";
 
 const DigitalProduct = () => {
+  const { scrollYProgress } = useScroll();
+  const scale = useTransform(scrollYProgress, [0, 1], [1, 0.8]);
   return (
+    // <motion.div style={{ scale }}>
+    //   <motion.div
+    //     style={{
+    //       scaleY: scrollYProgress,
+    //     }}
+    //   />
     <div class="px-[8vw] my-[6vw] lg:my-[8vw] w-full z-10">
       <div class="flex justify-between flex-wrap items-center mb-12 md:mb-24">
         {/* HEADER TITLE, Digital Product Made By Us*/}
@@ -48,6 +57,7 @@ const DigitalProduct = () => {
         ></img>
       </div>
     </div>
+    // </motion.div>
   );
 };
 
