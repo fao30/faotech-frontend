@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 const StartHere = () => {
   return (
     <motion.div
-      class="px-[8vw] mb-20 lg:my-[8vw] w-full z-10"
+      class="px-[8vw] mb-24 lg:my-[8vw] w-full z-10"
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 1 }}

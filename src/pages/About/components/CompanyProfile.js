@@ -4,13 +4,13 @@ import CardCompany from "./CardCompany";
 
 const CompanyProfile = () => {
   return (
-    <div class="px-[8vw] my-[6vw] lg:my-[8vw] w-full z-10">
+    <div class="px-[8vw] my-[8vw] lg:my-[10vw] w-full z-10">
       <motion.div
         class="flex justify-center flex-col items-center text-center"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.5 }}
-        transition={{ delay: 0.6, duration: 0.5 }}
+        transition={{ delay: 0.25, duration: 0.5 }}
         variants={{
           hidden: { opacity: 0.5, scale: 0.5 },
           visible: { opacity: 1, scale: 1 },
@@ -32,7 +32,7 @@ const CompanyProfile = () => {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 1 }}
-        transition={{ delay: 0.2, duration: 0.4 }}
+        transition={{ delay: 0.25, duration: 0.5 }}
         variants={{
           hidden: { opacity: 0, y: 50 },
           visible: { opacity: 1, y: 0 },
