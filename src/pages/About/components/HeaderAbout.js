@@ -8,8 +8,14 @@ const HeaderAbout = () => {
         {/* HEADER TITLE, Digital Product Made By Us*/}
         <div class="w-full md:w-[50%] text-[#757575] text-[16px] md:text-[20px]">
           <motion.div
-            initial={{ y: "20%" }}
-            animate={{ y: "calc(100% - 100%)" }}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 1 }}
+            transition={{ delay: 0.25, duration: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, y: -50 },
+              visible: { opacity: 1, y: 0 },
+            }}
           >
             <h1 class="md:lg:text-5xl text-4xl font-bold text-[#1363DF]">
               About Us
@@ -30,6 +36,7 @@ const HeaderAbout = () => {
             </p>
           </motion.div>
         </div>
+
         <div class="w-full md:w-[40%] max-md:mt-6">
           <img alt="coding" src={require("./alvinAbout.jpeg")} />
         </div>

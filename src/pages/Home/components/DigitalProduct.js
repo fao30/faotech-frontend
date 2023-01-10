@@ -1,10 +1,29 @@
 import React from "react";
+import { motion, useScroll, useTransform } from "framer-motion";
 
 const DigitalProduct = () => {
+  const { scrollYProgress } = useScroll();
+  const scale = useTransform(scrollYProgress, [0, 1], [1, 0.8]);
   return (
+    // <motion.div style={{ scale }}>
+    //   <motion.div
+    //     style={{
+    //       scaleY: scrollYProgress,
+    //     }}
+    //   />
     <div class="px-[8vw] my-[6vw] lg:my-[8vw] w-full z-10">
-      <div class="flex justify-between flex-wrap items-center mb-12 md:mb-24">
-        {/* HEADER TITLE, Digital Product Made By Us*/}
+      {/* HEADER TITLE, Digital Product Made By Us*/}
+      <motion.div
+        class="flex justify-between flex-wrap items-center mb-12 md:mb-24"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 1 }}
+        transition={{ delay: 0.25, duration: 0.5 }}
+        variants={{
+          hidden: { opacity: 0, y: 50 },
+          visible: { opacity: 1, y: 0 },
+        }}
+      >
         <div class="w-full md:w-[40%] max-sm:mt-6">
           <h1 class="md:lg:text-5xl text-4xl font-bold text-black">
             Digital Product Made By Us For Your Business Transformation
@@ -16,11 +35,21 @@ const DigitalProduct = () => {
             across industries with our product.
           </h3>
         </div>
-      </div>
+      </motion.div>
       {/* Communication Platform for Business to Business Partners */}
       <div class="flex justify-center lg:justify-between flex-wrap items-center">
         {/* HEADER TITLE */}
-        <div class="w-full lg:w-[40%]">
+        <motion.div
+          class="w-full lg:w-[40%]"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 1 }}
+          transition={{ delay: 0.25, duration: 0.5 }}
+          variants={{
+            hidden: { opacity: 0, y: 50 },
+            visible: { opacity: 1, y: 0 },
+          }}
+        >
           <h3 class="md:lg:text-3xl text-xl font-semibold text-black">
             Communication Platform for Business to Business Partners
           </h3>
@@ -32,7 +61,7 @@ const DigitalProduct = () => {
               agree on a good deal!
             </h3>
           </div>
-        </div>
+        </motion.div>
         <img
           alt="b2b"
           class="hidden lg:flex w-full lg:w-6/12 transition-all transform hover:scale-125 hover:cursor-zoom-in mt-12 lg:mt-0"

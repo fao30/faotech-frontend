@@ -1,10 +1,21 @@
+import { motion } from "framer-motion";
 import { React } from "react";
 import CardCompany from "./CardCompany";
 
 const CompanyProfile = () => {
   return (
-    <div class="px-[8vw] my-[6vw] lg:my-[8vw] w-full z-10">
-      <div class="flex justify-center flex-col items-center text-center">
+    <div class="px-[8vw] my-[8vw] lg:my-[10vw] w-full z-10">
+      <motion.div
+        class="flex justify-center flex-col items-center text-center"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.5 }}
+        transition={{ delay: 0.25, duration: 0.5 }}
+        variants={{
+          hidden: { opacity: 0.5, scale: 0.5 },
+          visible: { opacity: 1, scale: 1 },
+        }}
+      >
         <h1 class="md:lg:text-5xl text-4xl font-bold text-[#1363DF] ">
           Our Company Philosophy
         </h1>
@@ -15,8 +26,18 @@ const CompanyProfile = () => {
           progress development, and create digital products as a complete
           solution.
         </p>
-      </div>
-      <div class="w-full mt-4 lg:mt-24 flex justify-around flex-wrap items-center">
+      </motion.div>
+      <motion.div
+        class="w-full mt-4 lg:mt-24 flex justify-around flex-wrap items-center"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 1 }}
+        transition={{ delay: 0.25, duration: 0.5 }}
+        variants={{
+          hidden: { opacity: 0, y: 50 },
+          visible: { opacity: 1, y: 0 },
+        }}
+      >
         <CardCompany
           cardDescProps={
             "Creating era of digitalization for industry at any level of society in order to develop together and living the  best future together"
@@ -29,7 +50,7 @@ const CompanyProfile = () => {
           }
           cardTitleProps={"Mission"}
         />
-      </div>
+      </motion.div>
     </div>
   );
 };

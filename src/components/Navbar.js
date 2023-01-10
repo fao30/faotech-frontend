@@ -17,7 +17,7 @@ const Navbar = () => {
       behavior: "smooth",
     });
   };
-  const completion = useReadingProgress();
+  // const completion = useReadingProgress();
   let activeClassName =
     "btn bg-transparent hover:bg-transparent border-none rounded-2xl text-primary-100 mx-0.5 normal-case";
   let activeClassNameDropdown = "bg-transparent text-primary-100 my-0.5";
@@ -74,23 +74,29 @@ const Navbar = () => {
           class={`
           ${
             location.pathname === "/contact"
-              ? "max-md:ml-[4.5vw] md:flex"
-              : "hidden md:flex"
+              ? "max-md:ml-[4.5vw]"
+              : "md:flex hidden"
           } `}
         >
-          <img src={logo} class="w-36" />
+          <h1 class="font-bold text-3xl text-primary-100 shadowit flex justify-center items-center">
+            <img src={logo} class="w-7 h-7 items-center mr-1" /> faoTech.
+          </h1>
         </p>
-        <p
+        <a
           onClick={() => {
             navigate("/");
             scrollToTop();
           }}
-          class={`btn btn-ghost md:hidden ${
-            location.pathname === "/contact" ? "hidden" : ""
+          class={` ${
+            location.pathname === "/contact"
+              ? "hidden"
+              : "btn btn-ghost md:hidden normal-case"
           }`}
         >
-          <img src={logo} class="w-36" />
-        </p>
+          <h1 class="font-bold text-3xl text-primary-100 shadowit flex justify-center items-center">
+            <img src={logo} class="w-7 h-7 items-center mr-1" /> faoTech.
+          </h1>
+        </a>
       </div>
       <div class="navbar-end">
         <div class={`${location.pathname === "/contact" ? "hidden" : ""}`}>
@@ -129,10 +135,10 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      <span
+      {/* <span
         style={{ transform: `translateX(${completion - 100.1}%)` }}
         class="absolute bg-primary-100 h-1 w-full bottom-0"
-      />
+      /> */}
     </div>
   );
 };

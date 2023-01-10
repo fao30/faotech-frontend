@@ -1,9 +1,20 @@
 import { Icon } from "@iconify/react";
+import { motion } from "framer-motion";
 import React from "react";
 
 const ReadyToStart = () => {
   return (
-    <div class="w-full">
+    <motion.div
+      class="w-full"
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 1 }}
+      transition={{ delay: 0.25, duration: 0.5 }}
+      variants={{
+        hidden: { opacity: 0.5, scale: 0.8 },
+        visible: { opacity: 1, scale: 1 },
+      }}
+    >
       <div class="p-12 my-16 flex sm:justify-start md:lg:justify-between content-center flex-wrap items-center rounded-xl bg-[#4C6BDC] ">
         <div class="flex justify-between items-center w-full">
           <div class="md:text-lg w-full">
@@ -51,7 +62,7 @@ relative items-center overflow-hidden"
           </button>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

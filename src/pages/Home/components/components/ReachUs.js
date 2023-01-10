@@ -1,9 +1,20 @@
 import React from "react";
 import { Icon } from "@iconify/react";
+import { motion } from "framer-motion";
 
 const ReachUs = () => {
   return (
-    <div class="mt-12 lg:mt-24 w-full">
+    <motion.div
+      class="mt-12 lg:mt-24 w-full"
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 1 }}
+      transition={{ delay: 0.25, duration: 0.5 }}
+      variants={{
+        hidden: { opacity: 0.5, scale: 0.8 },
+        visible: { opacity: 1, scale: 1 },
+      }}
+    >
       <div class="p-12 flex sm:justify-start md:lg:justify-between content-center flex-wrap items-center rounded-xl bg-[#4C6BDC] ">
         <div class="flex justify-between items-center w-full">
           <div class="md:text-lg w-full mr-6">
@@ -40,7 +51,7 @@ const ReachUs = () => {
           </button>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

@@ -1,9 +1,20 @@
 import React from "react";
 import { Icon } from "@iconify/react";
+import { motion } from "framer-motion";
 
 const StartHere = () => {
   return (
-    <div class="px-[8vw] mb-20 lg:my-[8vw] w-full z-10">
+    <motion.div
+      class="px-[8vw] mb-24 lg:my-[8vw] w-full z-10"
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 1 }}
+      transition={{ delay: 0.25, duration: 0.5 }}
+      variants={{
+        hidden: { opacity: 0.5, scale: 0.8 },
+        visible: { opacity: 1, scale: 1 },
+      }}
+    >
       <div class="flex justify-center w-full flex-wrap items-end rounded-xl  bg-white border-2 shadow-xl p-12">
         <div className="flex justify-center flex-col items-center w-full">
           <h1 class=" md:lg:text-5xl text-4xl  font-[700] leading-[36px]  text-[#1363DF]  sm:text-center text-left">
@@ -29,7 +40,7 @@ const StartHere = () => {
           </button>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

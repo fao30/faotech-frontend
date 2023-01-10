@@ -4,15 +4,12 @@ import { React } from "react";
 import { useNavigate } from "react-router-dom";
 import CarouselItem from "./components/CarouselItem";
 
-// from-white to-blue-200  bg-gradient-to-r
-
 const Header = () => {
   const navigate = useNavigate();
   return (
     <div class="px-[8vw] my-[6vw] lg:my-[8vw] w-full z-10">
       <div class="w-full flex justify-between flex-wrap items-center">
         {/* HEADER TITLE */}
-
         <motion.div
           class="w-full md:w-[40%]"
           initial="hidden"
@@ -50,17 +47,7 @@ const Header = () => {
 
         {/* CAROUSEL */}
         <div class="w-full md:w-[55%] transition-all transform hover:scale-110 hover:cursor-ew-resize">
-          <motion.div
-            class="carousel carousel-center rounded-box space-x-4"
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 1 }}
-            transition={{ delay: 0.5, duration: 1.25 }}
-            variants={{
-              hidden: { opacity: 0, x: 50 },
-              visible: { opacity: 1, x: 0 },
-            }}
-          >
+          <div class="carousel carousel-center rounded-box space-x-4">
             {" "}
             <CarouselItem
               carouselPictureProps={require("./components/screenHeader.jpeg")}
@@ -71,7 +58,7 @@ const Header = () => {
             <CarouselItem
               carouselPictureProps={require("./components/screenHeader.jpeg")}
             />
-          </motion.div>
+          </div>
         </div>
       </div>
     </div>
