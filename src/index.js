@@ -5,7 +5,6 @@ import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import { HashRouter, Routes, Route } from "react-router-dom";
 import LoadToTop from "./components/LoadToTop";
-import Loading from "react-fullscreen-loading";
 import { routesOptions } from "./store/helper/Routes";
 import { motion } from "framer-motion";
 import Preloader from "./components/Loader";
