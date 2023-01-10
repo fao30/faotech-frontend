@@ -17,9 +17,8 @@ const Footer = () => {
       <footer class="footer flex flex-wrap justify-between items-start">
         <div class="w-4/6">
           <div class="font-title text-black flex items-center text-3xl">
-            <img src={logo} class="w-7 h-7 items-center" />
-            <h1 class="ml-1 font-bold text-3xl text-primary-100 drop-shadow-[0px_0.5px_0.75px_gray]">
-              faoTech.
+            <h1 class="font-bold text-3xl text-primary-100 drop-shadow-[0px_0.5px_0.75px_gray] flex justify-center items-center">
+              <img src={logo} class="w-7 h-7 items-center mr-1" /> faoTech.
             </h1>
           </div>
           <p class="text-footer-100">© 2023. All rights reserved.</p>

@@ -74,13 +74,12 @@ const Navbar = () => {
           class={`
           ${
             location.pathname === "/contact"
-              ? "max-md:ml-[4.5vw] md:flex items-center justify-center"
-              : "hidden md:flex  items-center justify-center"
+              ? "max-md:ml-[4.5vw] md:flex"
+              : "hidden md:flex"
           } `}
         >
-          <img src={logo} class="w-7 h-7 items-center" />
-          <h1 class="ml-1 font-bold text-3xl text-primary-100 drop-shadow-[0px_0.5px_0.75px_gray]">
-            faoTech.
+          <h1 class="font-bold text-3xl text-primary-100 drop-shadow-[0px_0.5px_0.75px_gray] flex justify-center items-center">
+            <img src={logo} class="w-7 h-7 items-center mr-1" /> faoTech.
           </h1>
         </p>
         <button
@@ -88,14 +87,13 @@ const Navbar = () => {
             navigate("/");
             scrollToTop();
           }}
-          class={`btn btn-ghost md:hidden normal-case ${
+          class={`btn btn-ghost md:hidden normal-case flex justify-center ${
             location.pathname === "/contact" ? "hidden" : ""
           }`}
         >
-          <img src={logo} class="w-7 h-7 items-center" />
-          <a class="ml-1 font-bold text-3xl text-primary-100 drop-shadow-[0px_0.5px_0.75px_gray]">
-            faoTech.
-          </a>
+          <h1 class="font-bold text-3xl text-primary-100 drop-shadow-[0px_0.5px_0.75px_gray] flex justify-center items-center">
+            <img src={logo} class="w-7 h-7 items-center mr-1" /> faoTech.
+          </h1>
         </button>
       </div>
       <div class="navbar-end">

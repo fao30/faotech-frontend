@@ -15,7 +15,7 @@ const Index = () => {
       <div class="flex absolute blur-3xl rounded-full w-full md:top-[185rem] top-[225rem] h-[26rem] lg:h-[20rem] lg:top-[215rem]   bg-[#eaf0fa] -z-10"></div>
       <Header />
       <HeroContent />
-      <OurWorkSector />
+      {/* <OurWorkSector /> */}
       <DigitalProduct /> <TechStack />
     </div>
   );
