@@ -30,7 +30,7 @@ export default function Routing() {
             })}
           </Routes>
           <Footer />
-          {/* <LoadToTop /> */}
+          <LoadToTop />
         </>
       )}
     </HashRouter>

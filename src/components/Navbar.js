@@ -17,7 +17,7 @@ const Navbar = () => {
       behavior: "smooth",
     });
   };
-  // const completion = useReadingProgress();
+  const completion = useReadingProgress();
   let activeClassName =
     "btn bg-transparent hover:bg-transparent border-none rounded-2xl text-primary-100 mx-0.5 normal-case";
   let activeClassNameDropdown = "bg-transparent text-primary-100 my-0.5";
@@ -135,10 +135,10 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      {/* <span
+      <span
         style={{ transform: `translateX(${completion - 100.1}%)` }}
         class="absolute bg-primary-100 h-1 w-full bottom-0"
-      /> */}
+      />
     </div>
   );
 };
