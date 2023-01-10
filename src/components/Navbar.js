@@ -71,32 +71,32 @@ const Navbar = () => {
           </ul>
         </div>
         <p
-          class={` md:flex flex justify-center items-center
+          class={`
           ${
-            location.pathname === "/contact" ? "max-md:ml-[4.5vw]" : "hidden"
+            location.pathname === "/contact"
+              ? "max-md:ml-[4.5vw]"
+              : "md:flex hidden"
           } `}
         >
-          {" "}
-          <img src={logo} class="w-7 h-7 items-center mr-1" />
-          <h1 class="font-bold text-3xl text-primary-100 drop-shadow-[0px_0.5px_0.75px_gray] flex justify-between items-center">
-            faoTech.
+          <h1 class="font-bold text-3xl text-primary-100 drop-shadow-[0px_0.5px_0.75px_gray] flex justify-center items-center">
+            <img src={logo} class="w-7 h-7 items-center mr-1" /> faoTech.
           </h1>
         </p>
-        <button
+        <a
           onClick={() => {
             navigate("/");
             scrollToTop();
           }}
-          class={`btn btn-ghost md:hidden normal-case flex justify-center ${
-            location.pathname === "/contact" ? "hidden" : ""
+          class={` ${
+            location.pathname === "/contact"
+              ? "hidden"
+              : "btn btn-ghost md:hidden normal-case"
           }`}
         >
-          <img src={logo} class="w-7 h-7 items-center mr-1" />
-          <h1 class="font-bold text-3xl text-primary-100 drop-shadow-[0px_0.5px_0.75px_gray] flex justify-between items-center">
-            {" "}
-            faoTech.
+          <h1 class="font-bold text-3xl text-primary-100 drop-shadow-[0px_0.5px_0.75px_gray] flex justify-center items-center">
+            <img src={logo} class="w-7 h-7 items-center mr-1" /> faoTech.
           </h1>
-        </button>
+        </a>
       </div>
       <div class="navbar-end">
         <div class={`${location.pathname === "/contact" ? "hidden" : ""}`}>

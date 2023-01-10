@@ -46,6 +46,8 @@ const Contact = () => {
             within 24 hours.
           </p>
         </motion.div>
+        {/* Background */}
+        <div class="flex absolute w-6/12 right-0 lg:-right-10 sm:mr-10 h-[90%] top-20 bg-[#eaf0fa] blur-3xl -z-10 rounded-tl-full rounded-bl-full"></div>
         {/* FORM */}
         <FormContact />
       </div>
