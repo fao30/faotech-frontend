@@ -74,22 +74,28 @@ const Navbar = () => {
           class={`
           ${
             location.pathname === "/contact"
-              ? "max-md:ml-[4.5vw] md:flex"
-              : "hidden md:flex"
+              ? "max-md:ml-[4.5vw] md:flex items-center justify-center"
+              : "hidden md:flex  items-center justify-center"
           } `}
         >
-          <img src={logo} class="w-36" />
+          <img src={logo} class="w-7 h-7 items-center" />
+          <h1 class="ml-1 font-bold text-3xl text-primary-100 drop-shadow-[0px_0.5px_0.75px_gray]">
+            faoTech.
+          </h1>
         </p>
         <p
           onClick={() => {
             navigate("/");
             scrollToTop();
           }}
-          class={`btn btn-ghost md:hidden ${
+          class={`btn btn-ghost md:hidden normal-case ${
             location.pathname === "/contact" ? "hidden" : ""
           }`}
         >
-          <img src={logo} class="w-36" />
+          <img src={logo} class="w-7 h-7 items-center" />
+          <h1 class="ml-1 font-bold text-3xl text-primary-100 drop-shadow-[0px_0.5px_0.75px_gray]">
+            faoTech.
+          </h1>
         </p>
       </div>
       <div class="navbar-end">
