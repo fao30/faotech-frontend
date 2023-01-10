@@ -78,7 +78,7 @@ const Navbar = () => {
               : "md:flex hidden"
           } `}
         >
-          <h1 class="font-bold text-3xl text-primary-100 drop-shadow-[0px_0.5px_0.75px_gray] flex justify-center items-center">
+          <h1 class="font-bold text-3xl text-primary-100 shadowit flex justify-center items-center">
             <img src={logo} class="w-7 h-7 items-center mr-1" /> faoTech.
           </h1>
         </p>
@@ -93,7 +93,7 @@ const Navbar = () => {
               : "btn btn-ghost md:hidden normal-case"
           }`}
         >
-          <h1 class="font-bold text-3xl text-primary-100 drop-shadow-[0px_0.5px_0.75px_gray] flex justify-center items-center">
+          <h1 class="font-bold text-3xl text-primary-100 shadowit flex justify-center items-center">
             <img src={logo} class="w-7 h-7 items-center mr-1" /> faoTech.
           </h1>
         </a>
