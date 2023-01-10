@@ -71,15 +71,15 @@ const Navbar = () => {
           </ul>
         </div>
         <p
-          class={`
+          class={` md:flex flex justify-center items-center
           ${
-            location.pathname === "/contact"
-              ? "max-md:ml-[4.5vw] md:flex"
-              : "hidden md:flex"
+            location.pathname === "/contact" ? "max-md:ml-[4.5vw]" : "hidden"
           } `}
         >
-          <h1 class="font-bold text-3xl text-primary-100 drop-shadow-[0px_0.5px_0.75px_gray] flex justify-center items-center">
-            <img src={logo} class="w-7 h-7 items-center mr-1" /> faoTech.
+          {" "}
+          <img src={logo} class="w-7 h-7 items-center mr-1" />
+          <h1 class="font-bold text-3xl text-primary-100 drop-shadow-[0px_0.5px_0.75px_gray] flex justify-between items-center">
+            faoTech.
           </h1>
         </p>
         <button
@@ -91,8 +91,10 @@ const Navbar = () => {
             location.pathname === "/contact" ? "hidden" : ""
           }`}
         >
-          <h1 class="font-bold text-3xl text-primary-100 drop-shadow-[0px_0.5px_0.75px_gray] flex justify-center items-center">
-            <img src={logo} class="w-7 h-7 items-center mr-1" /> faoTech.
+          <img src={logo} class="w-7 h-7 items-center mr-1" />
+          <h1 class="font-bold text-3xl text-primary-100 drop-shadow-[0px_0.5px_0.75px_gray] flex justify-between items-center">
+            {" "}
+            faoTech.
           </h1>
         </button>
       </div>
