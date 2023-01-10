@@ -1,5 +1,5 @@
 import { BarLoader } from "react-spinners";
-const logo = require("./assets/logo.png");
+const logo = require("./assets/faoTech.png");
 
 const Preloader = () => {
   return (
