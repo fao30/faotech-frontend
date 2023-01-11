@@ -5,25 +5,25 @@ import CardHero from "./components/CardHero";
 
 const HeroContent = () => {
   return (
-    <div class="px-[8vw] my-[6vw] lg:my-[8vw] w-full z-10">
-      <div class="flex w-full justify-between flex-wrap items-center">
+    <div className="px-[8vw] my-[6vw] lg:my-[8vw] w-full z-10">
+      <div className="flex w-full justify-between flex-wrap items-center">
         {/* HERO TITLE */}
-        <div class="w-full md:w-[40%]">
-          <h2 class="text-[28px] my-2 text-primary-100 font-bold">
+        <div className="w-full md:w-[40%]">
+          <h2 className="text-[28px] my-2 text-primary-100 font-bold">
             For Your Business Future
           </h2>
-          <h1 class="md:lg:text-5xl text-4xl font-bold text-black">
+          <h1 className="md:lg:text-5xl text-4xl font-bold text-black">
             We are building the best for your Digital Product as comfortable as
             you wish!
           </h1>
-          <h3 class="my-6 text-[#757575] text-[16px] md:text-[20px]">
+          <h3 className="my-6 text-[#757575] text-[16px] md:text-[20px]">
             Everything's in our service like you need.
           </h3>
         </div>
         {/* CARDS */}
-        <div class="rounded-box w-full md:w-[55%] flex flex-wrap justify-center items-center">
+        <div className="rounded-box w-full md:w-[55%] flex flex-wrap justify-center items-center">
           <motion.div
-            class="flex justify-center"
+            className="flex justify-center"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 1 }}
@@ -49,7 +49,7 @@ const HeroContent = () => {
             />
           </motion.div>
           <motion.div
-            class="flex justify-center"
+            className="flex justify-center"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 1 }}
@@ -75,7 +75,7 @@ const HeroContent = () => {
             />
           </motion.div>
           <motion.div
-            class="flex justify-center"
+            className="flex justify-center"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 1 }}

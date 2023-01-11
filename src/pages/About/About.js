@@ -7,8 +7,8 @@ const About = () => {
   return (
     <div>
       {/* BACKGROUND */}
-      <div class="about-bg1 "></div>
-      <div class="about-bg2"></div>
+      <div className="about-bg1 "></div>
+      <div className="about-bg2"></div>
       <HeaderAbout />
       <CompanyProfile />
       <StartHere />

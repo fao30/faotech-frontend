@@ -24,7 +24,7 @@ const LoadToTop = () => {
 
   return (
     <div
-      class={
+      className={
         visible
           ? "flex justify-center items-center fixed bottom-0 right-0 mb-7 z-10 transition-all transform scale-120 btn btn-ghost hover:bg-transparent"
           : "hidden"
@@ -34,7 +34,7 @@ const LoadToTop = () => {
         <a
           href
           onClick={scrollToTop}
-          class="block transition-all transform hover:scale-110 hover:-translate-y-2 duration-400 cursor-pointer "
+          className="block transition-all transform hover:scale-110 hover:-translate-y-2 duration-400 cursor-pointer "
         >
           <Icon icon="uil:top-arrow-to-top" width="40" height="40" />
         </a>

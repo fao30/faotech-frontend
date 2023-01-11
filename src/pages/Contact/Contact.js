@@ -11,10 +11,10 @@ const Contact = () => {
       <div className="flex justify-end mt-10 z-20 xl:w-[60rem] xl:mx-auto">
         {/* Button Back to Homepage */}
         <button
-          class="btn hover:bg-[#4C6BDC] border-none normal-case relative inline-flex items-center px-[3.5rem] py-[0.75rem] overflow-hidden  text-[#393737] shadow-[0_2px_3px_gray] hover:text-white rounded-br-none rounded-tl-none rounded-tr-3xl rounded-bl-3xl bg-[#FFFFFF] group"
+          className="btn hover:bg-[#4C6BDC] border-none normal-case relative inline-flex items-center px-[3.5rem] py-[0.75rem] overflow-hidden  text-[#393737] shadow-[0_2px_3px_gray] hover:text-white rounded-br-none rounded-tl-none rounded-tr-3xl rounded-bl-3xl bg-[#FFFFFF] group"
           onClick={() => navigate("/")}
         >
-          <span class="absolute right-0 flex items-center justify-start  w-10 h-10 duration-300 transform translate-x-full group-hover:-translate-x-4 ease">
+          <span className="absolute right-0 flex items-center justify-start  w-10 h-10 duration-300 transform translate-x-full group-hover:-translate-x-4 ease">
             <Icon
               icon="material-symbols:arrow-right-alt-rounded"
               color="white"
@@ -22,7 +22,7 @@ const Contact = () => {
               height="25"
             />
           </span>
-          <span class="relative  group-hover:-translate-x-2 ease duration-100 group-hover:transform">
+          <span className="relative  group-hover:-translate-x-2 ease duration-100 group-hover:transform">
             Back to Homepage
           </span>
         </button>
@@ -47,7 +47,7 @@ const Contact = () => {
           </p>
         </motion.div>
         {/* Background */}
-        <div class="contact-bg"></div>
+        <div className="contact-bg"></div>
         {/* FORM */}
         <FormContact />
       </div>

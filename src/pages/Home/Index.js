@@ -10,9 +10,9 @@ const Index = () => {
   return (
     <div>
       {/* BACKGROUND */}
-      <div class="header-bg1"></div>
-      <div class="header-bg2"></div>
-      <div class="header-bg3"></div>
+      <div className="header-bg1"></div>
+      <div className="header-bg2"></div>
+      <div className="header-bg3"></div>
       <Header />
       <HeroContent />
       <OurWorkSector />

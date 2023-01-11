@@ -23,17 +23,17 @@ const OurWorkSector = () => {
     //       scaleY: scrollYProgress,
     //     }}
     //   />
-    <div class="px-[8vw] my-[6vw] lg:my-[8vw] w-full z-10">
-      <div class="flex flex-col justify-center flex-wrap items-center mb-12">
-        <h2 class="text-[28px] text-primary-100 font-bold max-sm:mt-6">
+    <div className="px-[8vw] my-[6vw] lg:my-[8vw] w-full z-10">
+      <div className="flex flex-col justify-center flex-wrap items-center mb-12">
+        <h2 className="text-[28px] text-primary-100 font-bold max-sm:mt-6">
           Solutions are Here!
         </h2>
-        <h1 class="text-4xl md:lg:text-5xl font-bold text-black text-center">
+        <h1 className="text-4xl md:lg:text-5xl font-bold text-black text-center">
           Our Work Sector
         </h1>
       </div>
       <motion.div
-        class="flex flex-wrap justify-around items-center w-full"
+        className="flex flex-wrap justify-around items-center w-full"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 1 }}
