@@ -4,7 +4,7 @@ import CardCompany from "./CardCompany";
 
 const CompanyProfile = () => {
   return (
-    <div className="px-[8vw] max-lg:pt-[5vw] pb-[8vw] lg:pb-[8vw] w-full z-10">
+    <div className="px-[8vw] max-lg:pt-[4vw] pb-[7vw] w-full z-10">
       <motion.div
         className="flex justify-center flex-col items-center text-center"
         initial="hidden"
