@@ -18,7 +18,7 @@ const DigitalProduct = () => {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 1 }}
-        transition={{ delay: 0.2, duration: 0.3 }}
+        transition={{ delay: 0.3, duration: 0.3 }}
         variants={{
           hidden: { opacity: 0, y: 50 },
           visible: { opacity: 1, y: 0 },
@@ -44,7 +44,7 @@ const DigitalProduct = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 1 }}
-          transition={{ delay: 0.2, duration: 0.3 }}
+          transition={{ delay: 0.3, duration: 0.3 }}
           variants={{
             hidden: { opacity: 0, y: 50 },
             visible: { opacity: 1, y: 0 },

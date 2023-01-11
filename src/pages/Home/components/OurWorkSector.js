@@ -13,8 +13,8 @@ const OurWorkSector = () => {
   //     setCardWork(data)
   //   })
   // }, [])
-  const { scrollYProgress } = useScroll();
-  const scale = useTransform(scrollYProgress, [0, 0.5], [0.8, 1]);
+  // const { scrollYProgress } = useScroll();
+  // const scale = useTransform(scrollYProgress, [0, 0.5], [0.8, 1]);
 
   return (
     // <motion.div style={{ scale }}>
@@ -37,7 +37,7 @@ const OurWorkSector = () => {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 1 }}
-        transition={{ delay: 0.25, duration: 0.5 }}
+        transition={{ delay: 0.3, duration: 0.3 }}
         variants={{
           hidden: { opacity: 0.75, y: 50 },
           visible: { opacity: 1, y: 0 },

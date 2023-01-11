@@ -9,7 +9,7 @@ const ReachUs = () => {
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 1 }}
-      transition={{ delay: 0.25, duration: 0.5 }}
+      transition={{ delay: 0.3, duration: 0.3 }}
       variants={{
         hidden: { opacity: 0.5, scale: 0.8 },
         visible: { opacity: 1, scale: 1 },
