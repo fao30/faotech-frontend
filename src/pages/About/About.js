@@ -7,11 +7,15 @@ const About = () => {
   return (
     <div>
       {/* BACKGROUND */}
-      <div class="about-bg1 "></div>
-      <div class="about-bg2"></div>
-      <HeaderAbout />
-      <CompanyProfile />
-      <StartHere />
+      <div className="about-bg1 "></div>
+      <div className="about-bg2"></div>
+      <div className="from-white via-white to-blue-100 max-lg:bg-gradient-to-br">
+        <HeaderAbout />
+      </div>
+      <div className="from-white via-white to-blue-100 max-lg:bg-gradient-to-tr">
+        <CompanyProfile />
+        <StartHere />
+      </div>
     </div>
   );
 };

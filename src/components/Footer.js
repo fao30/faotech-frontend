@@ -13,20 +13,20 @@ const Footer = () => {
     });
   };
   return (
-    <div class="px-[8vw] py-6 md:py-12 bg-white text-base-content border-t-2 ">
-      <footer class="footer flex flex-wrap justify-between items-start">
-        <div class="w-4/6">
-          <h1 class="font-bold text-3xl text-primary-100 shadowit flex justify-center items-center">
-            <img src={logo} class="w-7 h-7 items-center mr-1" /> faoTech.
+    <div className="px-[8vw] py-6 md:py-12 bg-white text-base-content border-t-2 ">
+      <footer className="footer flex flex-wrap justify-between items-start">
+        <div className="w-4/6">
+          <h1 className="font-bold text-3xl text-primary-100 shadowit flex justify-center items-center">
+            <img src={logo} className="w-7 h-7 items-center mr-1" /> faoTech.
           </h1>
-          <p class="text-footer-100">© 2023. All rights reserved.</p>
-          <p class="text-footer-100">Lets’s</p>
-          <div class="flex justify-start items-center ">
+          <p className="text-footer-100">© 2023. All rights reserved.</p>
+          <p className="text-footer-100">Lets’s</p>
+          <div className="flex justify-start items-center ">
             <a
               href="https://www.google.com"
               rel="noreferrer"
               target="_blank"
-              class="transition-all transform hover:scale-110"
+              className="transition-all transform hover:scale-110"
             >
               <Icon
                 icon="mdi:linkedin"
@@ -39,7 +39,7 @@ const Footer = () => {
               href="https://www.google.com"
               rel="noreferrer"
               target="_blank"
-              class="ml-0.5 transition-all transform hover:scale-110"
+              className="ml-0.5 transition-all transform hover:scale-110"
             >
               <Icon
                 icon="mdi:instagram"
@@ -50,8 +50,8 @@ const Footer = () => {
             </a>
           </div>
         </div>
-        <div class="w-96 md:w-96 lg:w-32 pr-12 lg:space-y-4">
-          <span class="text-lg">Features</span>
+        <div className="w-96 md:w-96 lg:w-32 pr-12 lg:space-y-4">
+          <span className="text-lg">Features</span>
           {footerOptions.map((e) => {
             return (
               <a
@@ -60,16 +60,16 @@ const Footer = () => {
                   navigate(`${e.to}`);
                   scrollToTop();
                 }}
-                class=" text-footer-100 link link-hover"
+                className=" text-footer-100 link link-hover"
               >
                 {e.label}
               </a>
             );
           })}
         </div>
-        <div class="w-42 lg:space-y-4 items-center">
-          <span class="text-lg">Contact</span>
-          <div class="flex justify-center items-start">
+        <div className="w-42 lg:space-y-4 items-center">
+          <span className="text-lg">Contact</span>
+          <div className="flex justify-center items-start">
             <Icon
               icon="material-symbols:mail-outline"
               color="#757575"
@@ -80,12 +80,12 @@ const Footer = () => {
               rel="noreferrer"
               target="_blank"
               href="mailto:contact@faotech.com"
-              class="link link-hover text-gray-500 ml-2"
+              className="link link-hover text-gray-500 ml-2"
             >
               contact@faotech.com
             </a>
           </div>
-          <div class="flex justify-center items-start">
+          <div className="flex justify-center items-start">
             <Icon
               icon="material-symbols:call"
               color="#757575"
@@ -96,19 +96,19 @@ const Footer = () => {
               href="tel:+6287762023382"
               rel="noreferrer"
               target="_blank"
-              class="link link-hover text-gray-500 ml-2"
+              className="link link-hover text-gray-500 ml-2"
             >
               +62 877-6202-3382
             </a>
           </div>
-          <div class="flex justify-center items-start">
+          <div className="flex justify-center items-start">
             <Icon
               icon="mdi:home-city-outline"
               color="#757575"
               width="24"
               height="24"
             />
-            <a href class="link link-hover text-gray-500 ml-2">
+            <a href className="link link-hover text-gray-500 ml-2">
               Jl. Bima Citra 16 No. 2,
               <br />
               Tambun, Bekasi,

@@ -10,13 +10,19 @@ const Index = () => {
   return (
     <div>
       {/* BACKGROUND */}
-      <div class="header-bg1"></div>
-      <div class="header-bg2"></div>
-      <div class="header-bg3"></div>
-      <Header />
-      <HeroContent />
-      <OurWorkSector />
-      <DigitalProduct /> <TechStack />
+      <div className="header-bg1"></div>
+      <div className="header-bg2"></div>
+      <div className="header-bg3"></div>
+      <div className="from-white via-white to-blue-100 max-lg:bg-gradient-to-br">
+        <Header />
+        <HeroContent />
+      </div>
+      <div className="from-white via-white to-blue-100 max-lg:bg-gradient-to-tr">
+        <OurWorkSector />
+      </div>
+      <div className="from-white via-white to-blue-100 max-lg:bg-gradient-to-bl">
+        <DigitalProduct /> <TechStack />{" "}
+      </div>
     </div>
   );
 };

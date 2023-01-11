@@ -22,17 +22,17 @@ const Navbar = () => {
     "btn bg-transparent hover:bg-transparent border-none rounded-2xl text-primary-100 mx-0.5 normal-case";
   let activeClassNameDropdown = "bg-transparent text-primary-100 my-0.5";
   return (
-    <div class="px-[3vw] md:px-[8vw] z-30 sticky top-0 h-16 bg-white text-black shadow navbar flex justify-center ">
-      <div class="navbar-start">
+    <div className="px-[3vw] md:px-[8vw] z-30 sticky top-0 h-16 bg-white text-black shadow navbar flex justify-center ">
+      <div className="navbar-start">
         <div
-          class={`${
+          className={`${
             location.pathname === "/contact" ? "hidden" : "dropdown md:hidden"
           }`}
         >
-          <label tabindex="0" class="btn btn-ghost rounded-2xl">
+          <label tabindex="0" className="btn btn-ghost rounded-2xl">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="h-5 w-5"
+              className="h-5 w-5"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -47,7 +47,7 @@ const Navbar = () => {
           </label>
           <ul
             tabindex="0"
-            class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-white hover:bg-white rounded-box w-52 "
+            className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-white hover:bg-white rounded-box w-52 "
           >
             <li>
               {dropdownOptions.map((e) => {
@@ -71,15 +71,15 @@ const Navbar = () => {
           </ul>
         </div>
         <p
-          class={`
+          className={`
           ${
             location.pathname === "/contact"
               ? "max-md:ml-[4.5vw]"
               : "md:flex hidden"
           } `}
         >
-          <h1 class="font-bold text-3xl text-primary-100 shadowit flex justify-center items-center">
-            <img src={logo} class="w-7 h-7 items-center mr-1" /> faoTech.
+          <h1 className="font-bold text-3xl text-primary-100 shadowit flex justify-center items-center">
+            <img src={logo} className="w-7 h-7 items-center mr-1" /> faoTech.
           </h1>
         </p>
         <a
@@ -87,21 +87,21 @@ const Navbar = () => {
             navigate("/");
             scrollToTop();
           }}
-          class={` ${
+          className={` ${
             location.pathname === "/contact"
               ? "hidden"
               : "btn btn-ghost md:hidden normal-case"
           }`}
         >
-          <h1 class="font-bold text-3xl text-primary-100 shadowit flex justify-center items-center">
-            <img src={logo} class="w-7 h-7 items-center mr-1" /> faoTech.
+          <h1 className="font-bold text-3xl text-primary-100 shadowit flex justify-center items-center">
+            <img src={logo} className="w-7 h-7 items-center mr-1" /> faoTech.
           </h1>
         </a>
       </div>
-      <div class="navbar-end">
-        <div class={`${location.pathname === "/contact" ? "hidden" : ""}`}>
-          <div class="hidden md:flex lg:flex">
-            <ul class=" menu-horizontal">
+      <div className="navbar-end">
+        <div className={`${location.pathname === "/contact" ? "hidden" : ""}`}>
+          <div className="hidden md:flex lg:flex">
+            <ul className=" menu-horizontal">
               <li>
                 {navbarWithoutContact.map((e) => {
                   return (
@@ -122,7 +122,7 @@ const Navbar = () => {
                 })}
                 <a
                   href
-                  class="btn btn-ghost rounded-2xl mx-0.5 normal-case border-none  text-[#393737] hover:bg-primary-100 hover:text-white active:bg-primary-200 hover:shadow-xl"
+                  className="btn btn-ghost rounded-2xl mx-0.5 normal-case border-none  text-[#393737] hover:bg-primary-100 hover:text-white active:bg-primary-200 hover:shadow-xl"
                   onClick={() => {
                     navigate("/contact");
                     scrollToTop();
@@ -137,7 +137,7 @@ const Navbar = () => {
       </div>
       <span
         style={{ transform: `translateX(${completion - 100.1}%)` }}
-        class="absolute bg-primary-100 h-1 w-full bottom-0"
+        className="absolute bg-primary-100 h-1 w-full bottom-0"
       />
     </div>
   );
