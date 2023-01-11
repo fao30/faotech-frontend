@@ -5,7 +5,7 @@ import CardHero from "./components/CardHero";
 
 const HeroContent = () => {
   return (
-    <div className="px-[8vw] my-[6vw] lg:my-[8vw] w-full z-10">
+    <div className="px-[8vw] pb-[6vw] lg:pb-[8vw] w-full z-10">
       <div className="flex w-full justify-between flex-wrap items-center">
         {/* HERO TITLE */}
         <div className="w-full md:w-[40%]">

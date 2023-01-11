@@ -7,7 +7,7 @@ import CarouselItem from "./components/CarouselItem";
 const Header = () => {
   const navigate = useNavigate();
   return (
-    <div className="px-[8vw] my-[6vw] lg:my-[8vw] w-full z-10">
+    <div className="px-[8vw] py-[6vw] lg:py-[8vw] w-full z-10">
       <div className="w-full flex justify-between flex-wrap items-center">
         {/* HEADER TITLE */}
         <motion.div

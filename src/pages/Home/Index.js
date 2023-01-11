@@ -13,10 +13,16 @@ const Index = () => {
       <div className="header-bg1"></div>
       <div className="header-bg2"></div>
       <div className="header-bg3"></div>
-      <Header />
-      <HeroContent />
-      <OurWorkSector />
-      <DigitalProduct /> <TechStack />
+      <div className="from-white via-white to-blue-100 max-lg:bg-gradient-to-br">
+        <Header />
+        <HeroContent />
+      </div>
+      <div className="from-white via-white to-blue-100 max-lg:bg-gradient-to-tr">
+        <OurWorkSector />
+      </div>
+      <div className="from-white via-white to-blue-100 max-lg:bg-gradient-to-bl">
+        <DigitalProduct /> <TechStack />{" "}
+      </div>
     </div>
   );
 };

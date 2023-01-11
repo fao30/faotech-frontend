@@ -23,7 +23,7 @@ const OurWorkSector = () => {
     //       scaleY: scrollYProgress,
     //     }}
     //   />
-    <div className="px-[8vw] my-[6vw] lg:my-[8vw] w-full z-10">
+    <div className="px-[8vw] pb-[6vw] lg:pb-[8vw] w-full z-10">
       <div className="flex flex-col justify-center flex-wrap items-center mb-12">
         <h2 className="text-[28px] text-primary-100 font-bold max-sm:mt-6">
           Solutions are Here!
