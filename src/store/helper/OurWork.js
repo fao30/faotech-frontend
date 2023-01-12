@@ -1,4 +1,4 @@
-const OurWork = [
+export const ourWorkData = [
   {
     label: "Mobile Development",
     icon: "ph:device-mobile-speaker-bold",
@@ -25,7 +25,7 @@ const OurWork = [
   },
   {
     label: "Wireframing",
-    icon: "openmoji:wireframes",
+    icon: "fa-solid:network-wired",
   },
   {
     label: "Smart Contract",

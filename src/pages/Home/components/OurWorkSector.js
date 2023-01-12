@@ -3,6 +3,7 @@ import CardWork from "./components/CardWork";
 import { Icon } from "@iconify/react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import ReachUs from "./components/ReachUs";
+import { ourWorkData } from "../../../store/helper/OurWork";
 
 const OurWorkSector = () => {
   // const [cardWork, setCardWork] = useState([])
@@ -43,149 +44,16 @@ const OurWorkSector = () => {
           visible: { opacity: 1, y: 0 },
         }}
       >
-        {/* {cardWork.map((e)=>{
-                return (
-                  <CardWork cardIconProps={
-                    <Icon icon={e.icon}   color="#4c6bdc"
-                    width="30"
-                    height="30"
-                  />
-                  } cardTitleProps={e.label} />
-                )
-              })} */}
-
-        <CardWork
-          cardIconProps={
-            <Icon
-              icon="icon-park-outline:blockchain"
-              color="#4c6bdc"
-              width="30"
-              height="30"
+        {ourWorkData?.map((e) => {
+          return (
+            <CardWork
+              cardIconProps={
+                <Icon icon={e.icon} color="#4c6bdc" width="30" height="30" />
+              }
+              cardTitleProps={e.label}
             />
-          }
-          cardTitleProps={"Mobile Development"}
-        />
-        <CardWork
-          cardIconProps={
-            <Icon
-              icon="icon-park-outline:blockchain"
-              color="#4c6bdc"
-              width="30"
-              height="30"
-            />
-          }
-          cardTitleProps={"Software Architecture"}
-        />
-        <CardWork
-          cardIconProps={
-            <Icon
-              icon="icon-park-outline:blockchain"
-              color="#4c6bdc"
-              width="30"
-              height="30"
-            />
-          }
-          cardTitleProps={"Blockchain Development"}
-        />
-        <CardWork
-          cardIconProps={
-            <Icon
-              icon="icon-park-outline:blockchain"
-              color="#4c6bdc"
-              width="30"
-              height="30"
-            />
-          }
-          cardTitleProps={"Blockchain Development"}
-        />
-        <CardWork
-          cardIconProps={
-            <Icon
-              icon="icon-park-outline:blockchain"
-              color="#4c6bdc"
-              width="30"
-              height="30"
-            />
-          }
-          cardTitleProps={"Blockchain Development"}
-        />
-        <CardWork
-          cardIconProps={
-            <Icon
-              icon="icon-park-outline:blockchain"
-              color="#4c6bdc"
-              width="30"
-              height="30"
-            />
-          }
-          cardTitleProps={"Blockchain Development"}
-        />
-        <CardWork
-          cardIconProps={
-            <Icon
-              icon="icon-park-outline:blockchain"
-              color="#4c6bdc"
-              width="30"
-              height="30"
-            />
-          }
-          cardTitleProps={"Blockchain Development"}
-        />
-        <CardWork
-          cardIconProps={
-            <Icon
-              icon="icon-park-outline:blockchain"
-              color="#4c6bdc"
-              width="30"
-              height="30"
-            />
-          }
-          cardTitleProps={"Blockchain Development"}
-        />
-        <CardWork
-          cardIconProps={
-            <Icon
-              icon="icon-park-outline:blockchain"
-              color="#4c6bdc"
-              width="30"
-              height="30"
-            />
-          }
-          cardTitleProps={"Blockchain Development"}
-        />
-        <CardWork
-          cardIconProps={
-            <Icon
-              icon="icon-park-outline:blockchain"
-              color="#4c6bdc"
-              width="30"
-              height="30"
-            />
-          }
-          cardTitleProps={"Blockchain Development"}
-        />
-        <CardWork
-          cardIconProps={
-            <Icon
-              icon="icon-park-outline:blockchain"
-              color="#4c6bdc"
-              width="30"
-              height="30"
-            />
-          }
-          cardTitleProps={"Blockchain Development"}
-        />
-        <CardWork
-          cardIconProps={
-            <Icon
-              icon="icon-park-outline:blockchain"
-              color="#4c6bdc"
-              width="30"
-              height="30"
-            />
-          }
-          cardTitleProps={"Blockchain Development"}
-        />
+          );
+        })}
       </motion.div>
       <ReachUs />
     </div>
