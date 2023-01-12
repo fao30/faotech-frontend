@@ -136,7 +136,7 @@ const Navbar = () => {
         </div>
       </div>
       <span
-        style={{ transform: `translateX(${completion - 100.1}%)` }}
+        style={{ transform: `translateX(${completion - 100}%)` }}
         className="absolute bg-primary-100 h-1 w-full bottom-0"
       />
     </div>
