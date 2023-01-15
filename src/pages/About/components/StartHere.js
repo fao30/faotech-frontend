@@ -1,8 +1,16 @@
 import React from "react";
 import { Icon } from "@iconify/react";
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 
 const StartHere = () => {
+  const navigate = useNavigate();
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
   return (
     <motion.div
       className="px-[8vw] max-lg:pb-[14vw] pb-[7vw] w-full z-10"
@@ -23,7 +31,13 @@ const StartHere = () => {
           <p className=" text-[#757575] text-[16px] md:text-[20px] font-[400] text-left my-6">
             Hit the button, we are there waiting for you!
           </p>
-          <button className=" mt-6 md:w-72 w-48 font-[500] hover:bg-[#4C6BDC] hover:text-white normal-case text-[15px] lg:text-[20px] btn border-none relative inline-flex items-center overflow-hidden text-md text-[white] shadow-md bg-[#4C6BDC] group">
+          <button
+            onClick={() => {
+              navigate("/contact");
+              scrollToTop();
+            }}
+            className=" mt-6 md:w-72 w-48 font-[500] hover:bg-[#4C6BDC] hover:text-white normal-case text-[15px] lg:text-[20px] btn border-none relative inline-flex items-center overflow-hidden text-md text-[white] shadow-md bg-[#4C6BDC] group"
+          >
             <span className=" h-full w-0 group-hover:w-full absolute block transition-all bg-[#3F58B5] opacity-100 duration-500 ease"></span>
             <span className="invisible group-hover:visible scale-0 group-hover:scale-110 absolute right-[2.2rem] md:right-[4.7rem] flex items-center justify-start  w-10 h-10 duration-300 transform">
               {" "}

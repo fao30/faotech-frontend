@@ -1,8 +1,16 @@
 import React from "react";
 import { Icon } from "@iconify/react";
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 
 const ReachUs = () => {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+  const navigate = useNavigate();
   return (
     <motion.div
       className="mt-12 lg:mt-24 w-full"
@@ -25,7 +33,13 @@ const ReachUs = () => {
               You know where to go
             </p>
           </div>
-          <button className="hidden md:flex mt-4 lg:mt-0 btn text-sm lg:text-xl  hover:bg-white normal-case font-semibold rounded-lg border-none bg-white text-[#4C6BDC] w-40 group">
+          <button
+            onClick={() => {
+              navigate("/contact");
+              scrollToTop();
+            }}
+            className="hidden md:flex mt-4 lg:mt-0 btn text-sm lg:text-xl  hover:bg-white normal-case font-semibold rounded-lg border-none bg-white text-[#4C6BDC] w-40 group"
+          >
             Reach Us{" "}
             <span className="ml-1.5 animate-pulse">
               <Icon
@@ -38,8 +52,14 @@ const ReachUs = () => {
           </button>
         </div>
         <div className="md:hidden items-center justify-end flex w-full">
-          <button className=" mt-4 lg:mt-0 btn  text-lg lg:text-2xl  hover:bg-white normal-case font-semibold rounded-lg border-none bg-white text-[#4C6BDC] w-40 group">
-            Reach Us{" "}
+          <button
+            onClick={() => {
+              navigate("/contact");
+              scrollToTop();
+            }}
+            className=" mt-4 lg:mt-0 btn  text-lg lg:text-2xl  hover:bg-white normal-case font-semibold rounded-lg border-none bg-white text-[#4C6BDC] w-40 group"
+          >
+            Reach Us
             <span className="ml-1.5 animate-pulse">
               <Icon
                 icon="mdi:customer-service"

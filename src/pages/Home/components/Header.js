@@ -6,6 +6,12 @@ import CarouselItem from "./components/CarouselItem";
 
 const Header = () => {
   const navigate = useNavigate();
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
   return (
     <div className="px-[8vw] py-[6vw] lg:py-[8vw] w-full z-10">
       <div className="w-full flex justify-between flex-wrap items-center">
@@ -37,6 +43,7 @@ const Header = () => {
             <button
               onClick={() => {
                 navigate("/contact");
+                scrollToTop();
               }}
               className="text-white  hover:bg-primary-400 rounded-2xl bg-primary-100 shadow-xl btn border-none normal-case w-full mb-12 md:mb-0"
             >
