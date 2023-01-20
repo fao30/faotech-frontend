@@ -52,7 +52,7 @@ const Footer = () => {
         </div>
         <div className="w-96 md:w-96 lg:w-32 pr-12 lg:space-y-4">
           <span className="text-lg">Features</span>
-          {footerOptions.map((e) => {
+          {footerOptions?.map((e) => {
             return (
               <a
                 href

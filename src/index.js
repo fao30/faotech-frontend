@@ -6,7 +6,6 @@ import Navbar from "./components/Navbar";
 import { HashRouter, Routes, Route } from "react-router-dom";
 import LoadToTop from "./components/LoadToTop";
 import { routesOptions } from "./store/helper/Routes";
-import { motion } from "framer-motion";
 import Preloader from "./components/Loader";
 
 export default function Routing() {
@@ -25,7 +24,7 @@ export default function Routing() {
         <>
           <Navbar />
           <Routes>
-            {routesOptions.map((e) => {
+            {routesOptions?.map((e) => {
               return <Route path={e.path} element={e.element} />;
             })}
           </Routes>
