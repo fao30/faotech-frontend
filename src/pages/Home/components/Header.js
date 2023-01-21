@@ -57,13 +57,10 @@ const Header = () => {
           <div className="carousel carousel-center rounded-box space-x-4">
             {" "}
             <CarouselItem
-              carouselPictureProps={require("./components/screenHeader.jpeg")}
+              carouselPictureProps={require("./components/1.jpg")}
             />
             <CarouselItem
-              carouselPictureProps={require("./components/screenHeader.jpeg")}
-            />
-            <CarouselItem
-              carouselPictureProps={require("./components/screenHeader.jpeg")}
+              carouselPictureProps={require("./components/2.jpg")}
             />
           </div>
         </div>
