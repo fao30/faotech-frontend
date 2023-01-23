@@ -22,6 +22,7 @@ module.exports = {
           200: "#2F51CB",
           69: "#1159C7",
           300: "#e4ecf8",
+          400: "#3F58B5",
         },
       },
       padding: {
@@ -40,14 +41,4 @@ module.exports = {
     },
   },
   plugins: [require("daisyui")],
-  daisyui: {
-    themes: [
-      {
-        light: {
-          ...require("daisyui/src/colors/themes")["[data-theme=light]"],
-          primary: "#4C6BDC",
-        },
-      },
-    ],
-  },
 };

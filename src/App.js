@@ -1,5 +1,3 @@
-import { motion } from "framer-motion";
-
 import Index from "./pages/Home/Index";
 
 function App() {

@@ -4,38 +4,33 @@ import "./index.css";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import { HashRouter, Routes, Route } from "react-router-dom";
-import { motion } from "framer-motion";
 import LoadToTop from "./components/LoadToTop";
-import Loading from "react-fullscreen-loading";
 import { routesOptions } from "./store/helper/Routes";
+import Preloader from "./components/Loader";
 
 export default function Routing() {
   const [loading, setLoading] = useState(false);
   useEffect(() => {
-    let loadingTimer = setTimeout(() => setLoading(true), 1.1 * 1000);
-    return () => {
-      clearTimeout(loadingTimer);
-    };
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 1000);
   }, []);
   return (
     <HashRouter>
       {loading ? (
-        <motion.div
-          initial={{ opacity: 0.5 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-        >
+        <Preloader />
+      ) : (
+        <>
           <Navbar />
           <Routes>
-            {routesOptions.map((e) => {
+            {routesOptions?.map((e) => {
               return <Route path={e.path} element={e.element} />;
             })}
           </Routes>
           <Footer />
           <LoadToTop />
-        </motion.div>
-      ) : (
-        <Loading loading background="white" loaderColor="#4C6BDC" />
+        </>
       )}
     </HashRouter>
   );

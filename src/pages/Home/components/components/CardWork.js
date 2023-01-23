@@ -1,15 +1,12 @@
 import React from "react";
-// import "./custom.css";
 
 const CardWork = ({ cardIconProps, cardTitleProps }) => {
   return (
-    <div class="flex justify-between items-center transition-all transform hover:scale-105 hover:cursor-pointer">
-      <div class="bg-white text-ourWork-100 font-bold mx-5 my-3 shadow-2xl rounded-2xl">
-        <div class="flex flex-row justify-start items-center w-32 h-12 sm:h-16 sm:w-40 lg:h-16 lg:w-72 ml-4">
-          <div class="fixed"> {cardIconProps} </div>
-          <div class="ml-10 text-s sm:text-base md:lg:text-base font-normal">
-            {cardTitleProps}
-          </div>
+    <div className="items-center flex h-[4rem] m-2 bg-white text-ourWork-100 font-bold shadow-xl border-2 rounded-2xl w-[45%] md:w-[25%] lg:w-[20%] transition-all transform hover:scale-105 hover:cursor-pointer">
+      <div className="px-2 lg:px-4 flex flex-row flex-wrap justify-start items-center w-full h-12">
+        <div className="fixed ml-1"> {cardIconProps} </div>
+        <div className="text-[#333333] ml-10 md:text-[16px] text-[14px] font-normal">
+          {cardTitleProps}
         </div>
       </div>
     </div>
