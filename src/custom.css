@@ -82,7 +82,7 @@
 
 @media (min-width: 1024px) {
   .contact-bg {
-    right: -2.5rem;
+    right: 0px;
     display: flex;
     position: absolute;
     width: 50%;

@@ -50,7 +50,7 @@ const Navbar = () => {
             className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-white hover:bg-white rounded-box w-52 "
           >
             <li>
-              {dropdownOptions.map((e) => {
+              {dropdownOptions?.map((e) => {
                 return (
                   <NavLink
                     to={e.to}
@@ -103,7 +103,7 @@ const Navbar = () => {
           <div className="hidden md:flex lg:flex">
             <ul className=" menu-horizontal">
               <li>
-                {navbarWithoutContact.map((e) => {
+                {navbarWithoutContact?.map((e) => {
                   return (
                     <NavLink
                       to={e.to}
@@ -136,7 +136,7 @@ const Navbar = () => {
         </div>
       </div>
       <span
-        style={{ transform: `translateX(${completion - 100.1}%)` }}
+        style={{ transform: `translateX(${completion - 100}%)` }}
         className="absolute bg-primary-100 h-1 w-full bottom-0"
       />
     </div>

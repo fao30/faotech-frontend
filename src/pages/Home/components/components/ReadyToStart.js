@@ -1,8 +1,16 @@
 import { Icon } from "@iconify/react";
 import { motion } from "framer-motion";
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const ReadyToStart = () => {
+  const navigate = useNavigate();
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
   return (
     <motion.div
       className="w-full"
@@ -25,6 +33,10 @@ const ReadyToStart = () => {
             </p>
           </div>
           <button
+            onClick={() => {
+              navigate("/contact");
+              scrollToTop();
+            }}
             className="hidden md:flex lg:mt-0 btn text-[1rem] lg:text-[1.3rem]  hover:bg-white normal-case font-semibold rounded-lg border-none bg-white text-[#4C6BDC] w-40 group 
 relative items-center overflow-hidden"
           >
@@ -44,6 +56,10 @@ relative items-center overflow-hidden"
         </div>
         <div className=" items-center justify-end flex w-full">
           <button
+            onClick={() => {
+              navigate("/contact");
+              scrollToTop();
+            }}
             className="md:hidden mt-4 lg:mt-0 btn text-[1rem] lg:text-[1.3rem]  hover:bg-white normal-case font-semibold rounded-lg border-none bg-white text-[#4C6BDC] w-40 group 
 relative items-center overflow-hidden"
           >

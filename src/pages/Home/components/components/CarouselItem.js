@@ -6,7 +6,7 @@ const CarouselItem = ({ carouselPictureProps }) => {
       <img
         alt=""
         src={carouselPictureProps}
-        className="rounded-box w-[36rem]"
+        className="rounded-box w-[36rem] h-[30rem] object-cover grayscale"
       />
     </div>
   );
