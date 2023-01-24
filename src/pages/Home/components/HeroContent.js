@@ -21,9 +21,9 @@ const HeroContent = () => {
           </h3>
         </div>
         {/* CARDS */}
-        <div className="w-full md:w-[55%] flex flex-wrap justify-center items-center">
+        <div className="rounded-box w-full md:w-[55%] flex flex-wrap justify-center items-center">
           <motion.div
-            className="flex justify-center"
+            className="flex justify-center w-full"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 1 }}
@@ -49,11 +49,11 @@ const HeroContent = () => {
             />
           </motion.div>
           <motion.div
-            className="flex justify-center"
+            className="flex justify-center w-full"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 1 }}
-            transition={{ delay: 0.3, duration: 0.3 }}
+            transition={{ delay: 0.4, duration: 0.4 }}
             variants={{
               hidden: { opacity: 0, scale: 0.5 },
               visible: { opacity: 1, scale: 1 },
@@ -61,12 +61,12 @@ const HeroContent = () => {
           >
             <CardHero
               cardDescProps={
-                "Bring business operation productivity and efficiency by implementing an automation engine."
+                "Every project includes free bug fixing up to 3 months after the handover time."
               }
-              cardTitleProps={"Automation"}
+              cardTitleProps={"Bug Free Waranty"}
               cardIconProps={
                 <Icon
-                  icon="fluent-mdl2:connect-virtual-machine"
+                  icon="mdi:shield-bug"
                   color="#4C6BDC"
                   width="62px"
                   height="67px"
@@ -75,7 +75,7 @@ const HeroContent = () => {
             />
           </motion.div>
           <motion.div
-            className="flex justify-center"
+            className="flex justify-center w-full"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 1 }}
