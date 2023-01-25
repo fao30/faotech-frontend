@@ -21,9 +21,9 @@ const HeroContent = () => {
           </h3>
         </div>
         {/* CARDS */}
-        <div className="rounded-box w-full md:w-[55%] flex flex-wrap justify-center items-center">
+        <div className="w-full md:w-[55%] flex flex-wrap justify-center items-center">
           <motion.div
-            className="flex justify-center"
+            className="flex justify-center w-full"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 1 }}
@@ -49,7 +49,7 @@ const HeroContent = () => {
             />
           </motion.div>
           <motion.div
-            className="flex justify-center"
+            className="flex justify-center w-full"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 1 }}
@@ -75,7 +75,7 @@ const HeroContent = () => {
             />
           </motion.div>
           <motion.div
-            className="flex justify-center"
+            className="flex justify-center w-full"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 1 }}
