@@ -5,7 +5,6 @@ import {
   dropdownOptions,
   navbarWithoutContact,
 } from "../store/helper/NavbarOptions";
-import "../custom.css";
 
 const Navbar = () => {
   const logo = require("./assets/faoTech.png");
