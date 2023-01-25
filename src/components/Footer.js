@@ -20,7 +20,8 @@ const Footer = () => {
             <img src={logo} className="w-7 h-7 items-center mr-1" /> faoTech.
           </h1>
           <p className="text-footer-100">© 2023. All rights reserved.</p>
-          <p className="text-footer-100">Lets’s</p>
+          {/* Slogan here */}
+          <p className="text-footer-100"></p>
           <div className="flex justify-start items-center ">
             <a
               href="https://www.google.com"
