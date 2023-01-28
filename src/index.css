@@ -2,6 +2,40 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  /* padding
+  paddingAllEquals = paddingX + paddingY
+  paddingAllYLonger = paddingX + paddingYLonger
+  paddingYLonger = paddingTopLonger + paddingBottomLonger
+  paddingY = paddingTop + paddingBottom
+  px-[8vw] py-[6vw] lg:py-[8vw]
+  */
+  .paddingX {
+    @apply px-[8vw];
+  }
+  .paddingY {
+    @apply py-[6vw] lg:py-[10vw];
+  }
+  .paddingYLonger {
+    @apply py-[10vw] lg:py-[12vw];
+  }
+  .paddingTop {
+    @apply pt-[6vw] lg:pt-[10vw];
+  }
+  .paddingTopShorter {
+    @apply pt-[6vw] lg:pt-[6vw];
+  }
+  .paddingTopLonger {
+    @apply pt-[10vw] lg:pt-[12vw];
+  }
+  .paddingBottom {
+    @apply pb-[6vw] lg:pb-[10vw];
+  }
+  .paddingBottomLonger {
+    @apply pb-[10vw] lg:pb-[12vw];
+  }
+}
+
 /* Hides scroll bar */
 html {
   scrollbar-width: none; /* Firefox */

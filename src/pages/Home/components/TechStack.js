@@ -5,7 +5,7 @@ import ReadyToStart from "./components/ReadyToStart";
 
 const TechStack = () => {
   return (
-    <div className="px-[8vw] pb-[4vw] w-full z-10">
+    <div className="paddingX paddingBottomLonger w-full z-10">
       <div>
         <div className="flex flex-col justify-center flex-wrap items-center mb-6">
           <h1 className="md:lg:text-5xl text-4xl  font-bold text-black text-center">

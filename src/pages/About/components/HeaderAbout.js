@@ -3,10 +3,10 @@ import React from "react";
 
 const HeaderAbout = () => {
   return (
-    <div className="px-[8vw] py-[7vw] w-full z-10">
+    <div className="paddingX paddingTopShorter paddingBottomLonger w-full z-10">
       <div className="flex justify-between flex-wrap items-center w-full ">
         {/* HEADER TITLE, Digital Product Made By Us*/}
-        <div className="w-full md:w-[50%] text-[#757575] text-[16px] md:text-[20px]">
+        <div className="w-full lg:w-[50%] text-[#757575] text-[16px] md:text-[20px]">
           <motion.div
             initial="hidden"
             whileInView="visible"
@@ -37,7 +37,7 @@ const HeaderAbout = () => {
           </motion.div>
         </div>
 
-        <div className="w-full md:w-[40%] max-md:mt-6">
+        <div className="w-full lg:w-[45%] xl:w-[40%] max-lg:mt-6">
           <img alt="coding" src={require("./alvinAbout.jpeg")} />
         </div>
       </div>
