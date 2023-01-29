@@ -1,4 +1,4 @@
-import { React } from "react";
+import { React, useState, useRef, useEffect } from "react";
 import useReadingProgress from "./UseReadingProgress";
 import { NavLink, useNavigate, useLocation } from "react-router-dom";
 import {
@@ -7,6 +7,19 @@ import {
 } from "../store/helper/NavbarOptions";
 
 const Navbar = () => {
+  const [dropdownOpened, setDropdownOpened] = useState(false);
+  const dropdownMenu = useRef(null);
+  const dropdownMenuButton = useRef(null);
+  useEffect(() => {
+    if (!dropdownOpened) {
+      document.activeElement.blur();
+    } else if (
+      dropdownOpened &&
+      !dropdownMenu.current.contains(document.activeElement)
+    ) {
+      setDropdownOpened(false);
+    }
+  }, [dropdownOpened]);
   const logo = require("./assets/faoTech.png");
   const location = useLocation();
   const navigate = useNavigate();
@@ -27,8 +40,20 @@ const Navbar = () => {
           className={`${
             location.pathname === "/contact" ? "hidden" : "dropdown md:hidden"
           }`}
+          ref={dropdownMenu}
         >
           <label
+            ref={dropdownMenuButton}
+            onBlur={(e) => {
+              setDropdownOpened(false);
+            }}
+            onClick={(e) => {
+              if (dropdownOpened) {
+                setDropdownOpened(false);
+              } else {
+                setDropdownOpened(true);
+              }
+            }}
             tabindex="0"
             className="btn btn-ghost rounded-2xl pl-0 hover:bg-transparent"
           >
@@ -50,6 +75,12 @@ const Navbar = () => {
           <ul
             tabindex="0"
             className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-white hover:bg-white rounded-box w-52 "
+            onBlur={(e) => {
+              dropdownMenuButton.current.focus();
+            }}
+            onFocus={(e) => {
+              setDropdownOpened(true);
+            }}
           >
             <li>
               {dropdownOptions?.map((e) => {
@@ -63,7 +94,13 @@ const Navbar = () => {
                     }
                     onClick={() => {
                       scrollToTop();
+                      if (dropdownOpened) {
+                        setDropdownOpened(false);
+                      } else {
+                        setDropdownOpened(true);
+                      }
                     }}
+                    ref={dropdownMenuButton}
                   >
                     {e.label}
                   </NavLink>
