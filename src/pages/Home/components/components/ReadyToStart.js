@@ -23,7 +23,7 @@ const ReadyToStart = () => {
         visible: { opacity: 1, scale: 1 },
       }}
     >
-      <div className="p-12 my-16 flex sm:justify-start md:lg:justify-between content-center flex-wrap items-center rounded-xl bg-[#4C6BDC] ">
+      <div className="p-12 mt-16 flex sm:justify-start md:lg:justify-between content-center flex-wrap items-center rounded-xl bg-[#4C6BDC] ">
         <div className="flex justify-between items-center w-full">
           <div className="md:text-lg w-full">
             <p className="text-[#FCFDFF] font-bold text-3xl">Ready to Start?</p>

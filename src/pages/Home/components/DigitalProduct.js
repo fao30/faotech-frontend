@@ -11,7 +11,7 @@ const DigitalProduct = () => {
     //       scaleY: scrollYProgress,
     //     }}
     //   />
-    <div className="px-[8vw] pb-[6vw] lg:pb-[8vw] w-full z-10">
+    <div className="paddingX paddingBottom w-full z-10">
       {/* HEADER TITLE, Digital Product Made By Us*/}
       <motion.div
         className="flex justify-between flex-wrap items-center mb-12 md:mb-24"

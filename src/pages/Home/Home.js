@@ -4,9 +4,8 @@ import Header from "./components/Header";
 import HeroContent from "./components/HeroContent";
 import OurWorkSector from "./components/OurWorkSector";
 import TechStack from "./components/TechStack";
-import "../../custom.css";
 
-const Index = () => {
+const Home = () => {
   return (
     <div>
       {/* BACKGROUND */}
@@ -27,4 +26,4 @@ const Index = () => {
   );
 };
 
-export default Index;
+export default Home;

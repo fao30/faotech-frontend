@@ -1,13 +1,25 @@
-import { React } from "react";
+import { React, useState, useRef, useEffect } from "react";
 import useReadingProgress from "./UseReadingProgress";
 import { NavLink, useNavigate, useLocation } from "react-router-dom";
 import {
   dropdownOptions,
   navbarWithoutContact,
 } from "../store/helper/NavbarOptions";
-import "../custom.css";
 
 const Navbar = () => {
+  const [dropdownOpened, setDropdownOpened] = useState(false);
+  const dropdownMenu = useRef(null);
+  const dropdownMenuButton = useRef(null);
+  useEffect(() => {
+    if (!dropdownOpened) {
+      document.activeElement.blur();
+    } else if (
+      dropdownOpened &&
+      !dropdownMenu.current.contains(document.activeElement)
+    ) {
+      setDropdownOpened(false);
+    }
+  }, [dropdownOpened]);
   const logo = require("./assets/faoTech.png");
   const location = useLocation();
   const navigate = useNavigate();
@@ -22,14 +34,29 @@ const Navbar = () => {
     "btn bg-transparent hover:bg-transparent border-none rounded-2xl text-primary-100 mx-0.5 normal-case";
   let activeClassNameDropdown = "bg-transparent text-primary-100 my-0.5";
   return (
-    <div className="px-[3vw] md:px-[8vw] z-30 sticky top-0 h-16 bg-white text-black shadow navbar flex justify-center ">
+    <div className="paddingX z-30 sticky top-0 h-16 bg-white text-black shadow navbar flex justify-center ">
       <div className="navbar-start">
         <div
           className={`${
             location.pathname === "/contact" ? "hidden" : "dropdown md:hidden"
           }`}
+          ref={dropdownMenu}
         >
-          <label tabindex="0" className="btn btn-ghost rounded-2xl">
+          <label
+            ref={dropdownMenuButton}
+            onBlur={(e) => {
+              setDropdownOpened(false);
+            }}
+            onClick={(e) => {
+              if (dropdownOpened) {
+                setDropdownOpened(false);
+              } else {
+                setDropdownOpened(true);
+              }
+            }}
+            tabindex="0"
+            className="btn btn-ghost rounded-2xl pl-0 hover:bg-transparent"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-5 w-5"
@@ -48,6 +75,12 @@ const Navbar = () => {
           <ul
             tabindex="0"
             className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-white hover:bg-white rounded-box w-52 "
+            onBlur={(e) => {
+              dropdownMenuButton.current.focus();
+            }}
+            onFocus={(e) => {
+              setDropdownOpened(true);
+            }}
           >
             <li>
               {dropdownOptions?.map((e) => {
@@ -61,7 +94,13 @@ const Navbar = () => {
                     }
                     onClick={() => {
                       scrollToTop();
+                      if (dropdownOpened) {
+                        setDropdownOpened(false);
+                      } else {
+                        setDropdownOpened(true);
+                      }
                     }}
+                    ref={dropdownMenuButton}
                   >
                     {e.label}
                   </NavLink>
@@ -72,11 +111,7 @@ const Navbar = () => {
         </div>
         <p
           className={`
-          ${
-            location.pathname === "/contact"
-              ? "max-md:ml-[4.5vw]"
-              : "md:flex hidden"
-          } `}
+          ${location.pathname === "/contact" ? "" : "md:flex hidden"} `}
         >
           <h1 className="font-bold text-3xl text-primary-100 shadowit flex justify-center items-center">
             <img src={logo} className="w-7 h-7 items-center mr-1" /> faoTech.
@@ -90,7 +125,7 @@ const Navbar = () => {
           className={` ${
             location.pathname === "/contact"
               ? "hidden"
-              : "btn btn-ghost md:hidden normal-case"
+              : "btn btn-ghost md:hidden normal-case px-0 hover:bg-transparent"
           }`}
         >
           <h1 className="font-bold text-3xl text-primary-100 shadowit flex justify-center items-center">

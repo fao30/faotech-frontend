@@ -1,12 +1,12 @@
-import App from "../../App";
 import About from "../../pages/About/About";
 import Contact from "../../pages/Contact/Contact";
+import Home from "../../pages/Home/Home";
 import Portfolio from "../../pages/Portfolio/Portfolio";
 
 export const routesOptions = [
   {
     path: "/",
-    element: <App />,
+    element: <Home />,
   },
   {
     path: "/contact",
@@ -22,6 +22,6 @@ export const routesOptions = [
   },
   {
     path: "*",
-    element: <App />,
+    element: <Home />,
   },
 ];

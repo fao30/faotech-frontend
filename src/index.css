@@ -1,3 +1,146 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  /* padding
+  paddingAllEquals = paddingX + paddingY
+  paddingAllYLonger = paddingX + paddingYLonger
+  paddingYLonger = paddingTopLonger + paddingBottomLonger
+  paddingY = paddingTop + paddingBottom
+  px-[8vw] py-[6vw] lg:py-[8vw]
+  */
+  .paddingX {
+    @apply px-[8vw];
+  }
+  .paddingY {
+    @apply py-[6vw] lg:py-[10vw];
+  }
+  .paddingYLonger {
+    @apply py-[10vw] lg:py-[12vw];
+  }
+  .paddingTop {
+    @apply pt-[6vw] lg:pt-[10vw];
+  }
+  .paddingTopShorter {
+    @apply pt-[6vw] lg:pt-[6vw];
+  }
+  .paddingTopLonger {
+    @apply pt-[10vw] lg:pt-[12vw];
+  }
+  .paddingBottom {
+    @apply pb-[6vw] lg:pb-[10vw];
+  }
+  .paddingBottomLonger {
+    @apply pb-[10vw] lg:pb-[12vw];
+  }
+}
+
+/* Hides scroll bar */
+html {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
+html::-webkit-scrollbar {
+  /* WebKit */
+  width: 0;
+  height: 0;
+}
+
+.shadowit {
+  text-shadow: 0px 0.5px 1px gray;
+}
+
+@media (min-width: 1024px) {
+  .header-bg1 {
+    display: flex;
+    position: absolute;
+    filter: blur(64px);
+    border-radius: 9999px;
+    border-bottom-right-radius: 1rem;
+    right: 0px;
+    width: 60rem;
+    height: 60rem;
+    top: 8rem;
+    background-color: #eaf0fa;
+    z-index: -10;
+  }
+}
+
+@media (min-width: 1024px) {
+  .header-bg2 {
+    display: flex;
+    position: absolute;
+    filter: blur(64px);
+    border-radius: 9999px;
+    border-bottom-left-radius: 1rem;
+    border-top-left-radius: 1rem;
+    width: 28%;
+    height: 60rem;
+    top: 110rem;
+    left: 0;
+    z-index: -10;
+    background-color: #e7f0f7;
+  }
+}
+
+@media (min-width: 1024px) {
+  .header-bg3 {
+    height: 24rem;
+    top: 201rem;
+    display: flex;
+    position: absolute;
+    filter: blur(64px);
+    border-radius: 9999px;
+    width: 100%;
+    background-color: #eaf0fa;
+    z-index: -10;
+  }
+}
+
+@media (min-width: 1024px) {
+  .about-bg1 {
+    width: 45rem;
+    height: 42rem;
+    top: 8rem;
+    display: flex;
+    filter: blur(64px);
+    position: absolute;
+    border-radius: 9999px;
+    border-bottom-right-radius: 1 rem;
+    border-top-right-radius: 1rem;
+    right: 0px;
+    background-color: #eaf0fa;
+    z-index: -10;
+  }
+}
+
+@media (min-width: 1024px) {
+  .about-bg2 {
+    width: 100%;
+    top: 60rem;
+    display: flex;
+    filter: blur(64px);
+    position: absolute;
+    border-radius: 9999px;
+    height: 40rem;
+    background-color: #eaf0fa;
+    z-index: -10;
+  }
+}
+
+@media (min-width: 1024px) {
+  .contact-bg {
+    right: 0px;
+    display: flex;
+    position: absolute;
+    width: 50%;
+    height: 90%;
+    top: 5rem;
+    background-color: #eaf0fa;
+    filter: blur(64px);
+    z-index: -10;
+    border-top-left-radius: 9999px;
+    border-bottom-left-radius: 9999px;
+  }
+}
