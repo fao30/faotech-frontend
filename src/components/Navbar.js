@@ -34,7 +34,11 @@ const Navbar = () => {
     "btn bg-transparent hover:bg-transparent border-none rounded-2xl text-primary-100 mx-0.5 normal-case";
   let activeClassNameDropdown = "bg-transparent text-primary-100 my-0.5";
   return (
-    <div className="paddingX z-30 sticky top-0 h-16 bg-white text-black shadow navbar flex justify-center ">
+    <div
+      className={`sm:paddingX z-30 sticky top-0 h-16 bg-white text-black shadow navbar flex justify-center ${
+        location.pathname === "/contact" ? "paddingX" : ""
+      }`}
+    >
       <div className="navbar-start">
         <div
           className={`${
@@ -55,7 +59,7 @@ const Navbar = () => {
               }
             }}
             tabindex="0"
-            className="btn btn-ghost rounded-2xl pl-0 hover:bg-transparent"
+            className="btn px-5 btn-ghost rounded-2xl hover:bg-transparent"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
