@@ -35,7 +35,7 @@ const Navbar = () => {
   let activeClassNameDropdown = "bg-transparent text-primary-100 my-0.5";
   return (
     <div
-      className={`sm:paddingX z-30 sticky top-0 h-16 bg-white text-black shadow navbar flex justify-center ${
+      className={`md:paddingX z-30 sticky top-0 h-16 bg-white text-black shadow navbar flex justify-center ${
         location.pathname === "/contact" ? "paddingX" : ""
       }`}
     >
