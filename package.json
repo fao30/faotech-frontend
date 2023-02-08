@@ -1,5 +1,4 @@
 {
-  "homepage": "https://faotech.dev",
   "name": "faotech-frontend",
   "version": "0.1.0",
   "private": true,
@@ -8,25 +7,16 @@
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
-    "daisyui": "^2.46.1",
-    "framer-motion": "^8.0.2",
+    "daisyui": "^2.47.0",
+    "framer-motion": "^8.5.2",
     "react": "^18.2.0",
-    "react-animated-popup": "^0.1.8",
-    "react-cards-stack": "^1.1.1",
-    "react-carousel-dots": "^0.1.0",
     "react-dom": "^18.2.0",
-    "react-fullscreen-loading": "^0.0.4",
     "react-scripts": "5.0.1",
-    "react-spring": "^9.6.1",
-    "reshake": "^1.2.4",
-    "theme-change": "^2.2.0",
-    "web-vitals": "^2.1.4"
+    "react-spinners": "^0.13.7"
   },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "GENERATE_SOURCEMAP=false react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -51,8 +41,7 @@
   "devDependencies": {
     "@iconify/icons-material-symbols": "^1.2.25",
     "@iconify/react": "^4.0.1",
-    "gh-pages": "^4.0.0",
-    "react-router-dom": "^6.6.1",
+    "react-router-dom": "^6.6.2",
     "tailwindcss": "^3.2.4"
   }
 }

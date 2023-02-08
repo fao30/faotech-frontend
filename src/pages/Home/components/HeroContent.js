@@ -2,84 +2,109 @@ import { Icon } from "@iconify/react";
 import { motion } from "framer-motion";
 import { React } from "react";
 import CardHero from "./components/CardHero";
-// from-white to-blue-200  bg-gradient-to-r
 
 const HeroContent = () => {
   return (
-    <div class="flex flex-col justify-around">
-      <div class="my-6 lg:mb-16 z-10">
-        <div class="flex lg:justify-around justify-center flex-wrap items-center">
-          {/* HERO TITLE */}
-          <div class="z-20 mx-10 lg:pl-14 w-full lg:w-[39rem] md:w-4/5">
-            <motion.div
-              initial={{ x: "-20%" }}
-              animate={{ x: "calc(100% - 100%)" }}
-            >
-              <h1 class="text-xl my-2 text-primary-100 font-bold">
-                For Your Business Future
-              </h1>
-              <h1 class="md:lg:text-5xl text-4xl font-bold text-black">
-                We are building the best for your Digital Product as comfortable
-                as you wish!
-              </h1>
-              <h1 class="text-l my-6 text-[#757575]">
-                Everything's in our service like you need.
-              </h1>
-            </motion.div>
-          </div>
-
-          {/* DON'T DELETE CODES BELOW */}
-          {/* <div class="hidden lg:md:sm:flex absolute w-7/12 h-3/4 right-0 bg-primary-300 blur-3xl"></div>
-          <div class="md:lg:hidden w-1/5 h-2/5 top-3/4 right-0 absolute rounded-2xl bg-blue-100 blur-3xl rounded-tl-full"></div> */}
-          <div class="lg:pr-12 z-10 mx-10 rounded-box w-full md:w-4/5 sm:w-full lg:w-2/5 bg-transparent flex justify-center lg:justify-end flex-wrap items-center">
-            <div>
-              <CardHero
-                cardDescProps={
-                  "Bring business operation productivity and efficiency by implementing an automation engine."
-                }
-                cardTitleProps={"Automation"}
-                cardIconProps={
-                  <Icon
-                    icon="fluent-mdl2:connect-virtual-machine"
-                    color="#4C6BDC"
-                    width="62px"
-                    height="67px"
-                  />
-                }
-              />
-              <CardHero
-                cardDescProps={
-                  "Every project includes free bug fixing up to 3 months after the handover time."
-                }
-                cardTitleProps={"Bug Free Waranty"}
-                cardIconProps={
-                  <Icon
-                    icon="mdi:shield-bug"
-                    color="#4C6BDC"
-                    width="56.25px"
-                    height="68.75px"
-                  />
-                }
-              />
-              <CardHero
-                cardDescProps={
-                  "Help enterprises to improve business operation through digitalization by increasing visibility."
-                }
-                cardTitleProps={"Visibility"}
-                cardIconProps={
-                  <Icon
-                    icon="ic:round-remove-red-eye"
-                    color="#4C6BDC"
-                    width="56.25px"
-                    height="68.75px"
-                  />
-                }
-              />
-            </div>
-          </div>
+    <div className="paddingX paddingBottom w-full z-10">
+      <div className="flex w-full justify-between flex-wrap items-center">
+        {/* HERO TITLE */}
+        <div className="w-full md:w-[40%]">
+          <h2 className="text-[28px] my-2 text-primary-100 font-bold">
+            For Your Business Future
+          </h2>
+          <h1 className="md:lg:text-5xl text-4xl font-bold text-black">
+            We are building the best for your Digital Product as comfortable as
+            you wish!
+          </h1>
+          <h3 className="my-6 text-[#757575] text-[16px] md:text-[20px]">
+            Everything's in our service like you need.
+          </h3>
+        </div>
+        {/* CARDS */}
+        <div className="w-full md:w-[55%] flex flex-wrap justify-center items-center">
+          <motion.div
+            className="flex justify-center w-full"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 1 }}
+            transition={{ delay: 0.3, duration: 0.3 }}
+            variants={{
+              hidden: { opacity: 0, scale: 0.5 },
+              visible: { opacity: 1, scale: 1 },
+            }}
+          >
+            <CardHero
+              cardDescProps={
+                "Bring business operation productivity and efficiency by implementing an automation engine."
+              }
+              cardTitleProps={"Automation"}
+              cardIconProps={
+                <Icon
+                  icon="fluent-mdl2:connect-virtual-machine"
+                  color="#4C6BDC"
+                  width="62px"
+                  height="67px"
+                />
+              }
+            />
+          </motion.div>
+          <motion.div
+            className="flex justify-center w-full"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 1 }}
+            transition={{ delay: 0.4, duration: 0.4 }}
+            variants={{
+              hidden: { opacity: 0, scale: 0.5 },
+              visible: { opacity: 1, scale: 1 },
+            }}
+          >
+            <CardHero
+              cardDescProps={
+                "Every project includes free bug fixing up to 3 months after the handover time."
+              }
+              cardTitleProps={"Bug Free Waranty"}
+              cardIconProps={
+                <Icon
+                  icon="mdi:shield-bug"
+                  color="#4C6BDC"
+                  width="62px"
+                  height="67px"
+                />
+              }
+            />
+          </motion.div>
+          <motion.div
+            className="flex justify-center w-full"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 1 }}
+            transition={{ delay: 0.5, duration: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, scale: 0.5 },
+              visible: { opacity: 1, scale: 1 },
+            }}
+          >
+            <CardHero
+              cardDescProps={
+                "Help enterprises to improve business operation through digitalization by increasing visibility."
+              }
+              cardTitleProps={"Visibility"}
+              cardIconProps={
+                <Icon
+                  icon="ic:round-remove-red-eye"
+                  color="#4C6BDC"
+                  width="62px"
+                  height="67px"
+                />
+              }
+            />
+          </motion.div>
         </div>
       </div>
     </div>
+
+    // </motion.div>
   );
 };
 

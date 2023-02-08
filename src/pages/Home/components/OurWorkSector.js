@@ -1,157 +1,61 @@
 import { React } from "react";
 import CardWork from "./components/CardWork";
 import { Icon } from "@iconify/react";
-// from-white to-blue-200  bg-gradient-to-r
+import { motion, useScroll, useTransform } from "framer-motion";
+import ReachUs from "./components/ReachUs";
+import { ourWorkData } from "../../../store/helper/OurWork";
 
 const OurWorkSector = () => {
+  // const [cardWork, setCardWork] = useState([])
+  // useEffect(() => {
+  //   fetch("BASE_URL")
+  //   .then (res => res.json())
+  //   .then (data => {
+  //     setCardWork(data)
+  //   })
+  // }, [])
+  // const { scrollYProgress } = useScroll();
+  // const scale = useTransform(scrollYProgress, [0, 0.5], [0.8, 1]);
+
   return (
-    <div id="ourWorkSelector" class="grid place-items-center items-end">
-      <div class="mt-6 lg:mt-2 lg:mb-10 z-10 md:w-4/5 lg:w-full">
-        <div>
-          <div class="flex flex-col justify-center flex-wrap items-center mb-6">
-            <h1 class="text-xl  text-primary-100 font-bold">
-              Solutions are Here!
-            </h1>
-            <h1 class="text-4xl md:lg:text-5xl font-bold text-black text-center">
-              Our Work Sector
-            </h1>
-          </div>
-          <div class="flex flex-wrap justify-center items-center">
-            <CardWork
-              cardIconProps={
-                <Icon
-                  icon="icon-park-outline:blockchain"
-                  color="#4c6bdc"
-                  width="30"
-                  height="30"
-                />
-              }
-              cardTitleProps={"Blockchain"}
-            />
-            <CardWork
-              cardIconProps={
-                <Icon
-                  icon="icon-park-outline:blockchain"
-                  color="#4c6bdc"
-                  width="30"
-                  height="30"
-                />
-              }
-              cardTitleProps={"Software Architecture"}
-            />
-            <CardWork
-              cardIconProps={
-                <Icon
-                  icon="icon-park-outline:blockchain"
-                  color="#4c6bdc"
-                  width="30"
-                  height="30"
-                />
-              }
-              cardTitleProps={"Blockchain Development"}
-            />
-            <CardWork
-              cardIconProps={
-                <Icon
-                  icon="icon-park-outline:blockchain"
-                  color="#4c6bdc"
-                  width="30"
-                  height="30"
-                />
-              }
-              cardTitleProps={"Blockchain Development"}
-            />
-            <CardWork
-              cardIconProps={
-                <Icon
-                  icon="icon-park-outline:blockchain"
-                  color="#4c6bdc"
-                  width="30"
-                  height="30"
-                />
-              }
-              cardTitleProps={"Blockchain Development"}
-            />
-            <CardWork
-              cardIconProps={
-                <Icon
-                  icon="icon-park-outline:blockchain"
-                  color="#4c6bdc"
-                  width="30"
-                  height="30"
-                />
-              }
-              cardTitleProps={"Blockchain Development"}
-            />
-            <CardWork
-              cardIconProps={
-                <Icon
-                  icon="icon-park-outline:blockchain"
-                  color="#4c6bdc"
-                  width="30"
-                  height="30"
-                />
-              }
-              cardTitleProps={"Blockchain Development"}
-            />
-            <CardWork
-              cardIconProps={
-                <Icon
-                  icon="icon-park-outline:blockchain"
-                  color="#4c6bdc"
-                  width="30"
-                  height="30"
-                />
-              }
-              cardTitleProps={"Blockchain Development"}
-            />
-            <CardWork
-              cardIconProps={
-                <Icon
-                  icon="icon-park-outline:blockchain"
-                  color="#4c6bdc"
-                  width="30"
-                  height="30"
-                />
-              }
-              cardTitleProps={"Blockchain Development"}
-            />
-            <CardWork
-              cardIconProps={
-                <Icon
-                  icon="icon-park-outline:blockchain"
-                  color="#4c6bdc"
-                  width="30"
-                  height="30"
-                />
-              }
-              cardTitleProps={"Blockchain Development"}
-            />
-            <CardWork
-              cardIconProps={
-                <Icon
-                  icon="icon-park-outline:blockchain"
-                  color="#4c6bdc"
-                  width="30"
-                  height="30"
-                />
-              }
-              cardTitleProps={"Blockchain Development"}
-            />
-            <CardWork
-              cardIconProps={
-                <Icon
-                  icon="icon-park-outline:blockchain"
-                  color="#4c6bdc"
-                  width="30"
-                  height="30"
-                />
-              }
-              cardTitleProps={"Blockchain Development"}
-            />
-          </div>
-        </div>
+    // <motion.div style={{ scale }}>
+    //   <motion.div
+    //     style={{
+    //       scaleY: scrollYProgress,
+    //     }}
+    //   />
+    <div className="paddingX paddingBottom w-full z-10">
+      <div className="flex flex-col justify-center flex-wrap items-center mb-12">
+        <h2 className="text-[28px] text-primary-100 font-bold max-sm:mt-6">
+          Solutions are Here!
+        </h2>
+        <h1 className="text-4xl md:lg:text-5xl font-bold text-black text-center">
+          Our Work Sector
+        </h1>
       </div>
+      <motion.div
+        className="flex flex-wrap justify-around items-center w-full"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 1 }}
+        transition={{ delay: 0.3, duration: 0.3 }}
+        variants={{
+          hidden: { opacity: 0.75, y: 50 },
+          visible: { opacity: 1, y: 0 },
+        }}
+      >
+        {ourWorkData?.map((e) => {
+          return (
+            <CardWork
+              cardIconProps={
+                <Icon icon={e.icon} color="#4c6bdc" width="30" height="30" />
+              }
+              cardTitleProps={e.label}
+            />
+          );
+        })}
+      </motion.div>
+      <ReachUs />
     </div>
   );
 };

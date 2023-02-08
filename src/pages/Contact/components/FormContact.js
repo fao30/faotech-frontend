@@ -72,7 +72,7 @@ const FormContact = () => {
         </div>
 
         {/* Project Detail */}
-        <div class="col-start-1 col-end-3">
+        <div className="col-start-1 col-end-3">
           <div className="flex flex-col gap-y-1">
             <label htmlFor="projectDetail" className="text-[#757575] ml-1">
               Project Detail
@@ -91,7 +91,7 @@ const FormContact = () => {
             value="Submit Message"
             className="text-[#FFFFFF] bg-[#4C6BDC] hover:bg-primary-400 py-4 rounded-xl w-full sm:w-72 cursor-pointer btn border-none normal-case"
           />
-          <span class="absolute w-0 h-0 transition-all duration-300 ease-out bg-white rounded-full group-hover:w-32 group-hover:h-32 opacity-10"></span>
+          <span className="absolute w-0 h-0 transition-all duration-300 ease-out bg-white rounded-full group-hover:w-32 group-hover:h-32 opacity-10"></span>
         </div>
       </div>
     </form>
