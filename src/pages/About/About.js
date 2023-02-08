@@ -1,11 +1,15 @@
 import { React } from "react";
+import { Helmet } from "react-helmet";
 import CompanyProfile from "./components/CompanyProfile";
 import HeaderAbout from "./components/HeaderAbout";
 import StartHere from "./components/StartHere";
 
-const About = () => {
+const About = ({ title }) => {
   return (
     <div>
+      <Helmet>
+        <title>{title}</title>
+      </Helmet>
       {/* BACKGROUND */}
       <div className="about-bg1 "></div>
       <div className="about-bg2"></div>

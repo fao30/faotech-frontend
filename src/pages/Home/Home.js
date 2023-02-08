@@ -1,13 +1,17 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import DigitalProduct from "./components/DigitalProduct";
 import Header from "./components/Header";
 import HeroContent from "./components/HeroContent";
 import OurWorkSector from "./components/OurWorkSector";
 import TechStack from "./components/TechStack";
 
-const Home = () => {
+const Home = ({ title }) => {
   return (
     <div>
+      <Helmet>
+        <title>{title}</title>
+      </Helmet>
       {/* BACKGROUND */}
       <div className="header-bg1"></div>
       <div className="header-bg2"></div>

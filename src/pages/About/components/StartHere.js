@@ -13,7 +13,7 @@ const StartHere = () => {
   };
   return (
     <motion.div
-      className="paddingX paddingBottomLonger w-full z-10"
+      className="paddingX marginBottomLonger w-full z-10"
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 1 }}
