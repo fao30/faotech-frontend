@@ -61,7 +61,7 @@ const HeroContent = () => {
           >
             <CardHero
               cardDescProps={
-                "Every project includes free bug fixing up to 3 months after the handover time."
+                "Every project includes free bug fixing up to 1 month after the handover time."
               }
               cardTitleProps={"Bug Free Waranty"}
               cardIconProps={

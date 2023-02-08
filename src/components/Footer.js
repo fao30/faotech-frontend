@@ -24,7 +24,7 @@ const Footer = () => {
           <p className="text-footer-100"></p>
           <div className="flex justify-start items-center ">
             <a
-              href="https://www.google.com"
+              href="https://www.linkedin.com/company/faotech/"
               rel="noreferrer"
               target="_blank"
               className="transition-all transform hover:scale-110"
@@ -37,7 +37,7 @@ const Footer = () => {
               />
             </a>
             <a
-              href="https://www.google.com"
+              href="https://www.instagram.com/faotech/"
               rel="noreferrer"
               target="_blank"
               className="ml-0.5 transition-all transform hover:scale-110"

@@ -43,6 +43,18 @@
   .paddingBottomLonger {
     @apply pb-[10vw] lg:pb-[12vw];
   }
+  .marginY {
+    @apply my-[6vw] lg:py-[10vw];
+  }
+  .marginYLonger {
+    @apply py-[10vw] lg:py-[12vw];
+  }
+  .marginBottom {
+    @apply mb-[6vw] lg:mb-[10vw];
+  }
+  .marginBottomLonger {
+    @apply mb-[10vw] lg:mb-[12vw];
+  }
 }
 
 /* Hides scroll bar */

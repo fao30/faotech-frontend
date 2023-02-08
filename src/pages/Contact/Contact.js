@@ -2,12 +2,16 @@ import { useNavigate } from "react-router-dom";
 import { Icon } from "@iconify/react";
 import FormContact from "./components/FormContact";
 import { motion } from "framer-motion";
+import { Helmet } from "react-helmet";
 
-const Contact = () => {
+const Contact = ({ title }) => {
   const navigate = useNavigate();
 
   return (
     <section className="flex flex-col space-y-3 pb-20 sm:pb-96 px-[8vw] from-white via-white to-blue-100 max-lg:bg-gradient-to-bl">
+      <Helmet>
+        <title>{title}</title>
+      </Helmet>
       <div className="flex justify-end mt-10 z-20 xl:w-[60rem] xl:mx-auto">
         {/* Button Back to Homepage */}
         <button

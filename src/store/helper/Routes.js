@@ -6,11 +6,11 @@ import Portfolio from "../../pages/Portfolio/Portfolio";
 export const routesOptions = [
   {
     path: "/",
-    element: <Home />,
+    element: <Home title="faoTech — Homepage" />,
   },
   {
     path: "/contact",
-    element: <Contact />,
+    element: <Contact title="Contact Us" />,
   },
   {
     path: "/portfolio",
@@ -18,10 +18,10 @@ export const routesOptions = [
   },
   {
     path: "/about",
-    element: <About />,
+    element: <About title="About Us" />,
   },
   {
     path: "*",
-    element: <Home />,
+    element: <Home title="faoTech — Homepage" />,
   },
 ];
