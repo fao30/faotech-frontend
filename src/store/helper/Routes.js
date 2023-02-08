@@ -14,7 +14,7 @@ export const routesOptions = [
   },
   {
     path: "/portfolio",
-    element: <Portfolio />,
+    element: <Portfolio title="Portfolio" />,
   },
   {
     path: "/about",

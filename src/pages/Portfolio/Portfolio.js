@@ -1,12 +1,16 @@
 import { motion } from "framer-motion";
 import React from "react";
+import { Helmet } from "react-helmet";
 import CardPortfolio, { portfolioData } from "./components/CardPortfolio";
 
-const Portfolio = () => {
+const Portfolio = ({ title }) => {
   return (
-    <section className="paddingX paddingBottomLonger z-10">
+    <section className="paddingBottomLonger z-10">
+      <Helmet>
+        <title>{title}</title>
+      </Helmet>
       <motion.div
-        className="w-full items-center text-center paddingYShorter"
+        className="w-full items-center text-center paddingY md:paddingYShorter"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 1 }}
@@ -21,7 +25,7 @@ const Portfolio = () => {
           Product Made by Us
         </h1>
       </motion.div>
-      <div className="flex flex-col gap-16">
+      <div className="paddingX flex flex-col gap-16">
         {portfolioData?.map((e, index) => {
           return (
             <CardPortfolio
