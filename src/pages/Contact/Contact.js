@@ -8,7 +8,7 @@ const Contact = ({ title }) => {
   const navigate = useNavigate();
 
   return (
-    <section className="flex flex-col space-y-3 pb-20 sm:pb-96 px-[8vw] from-white via-white to-blue-100 max-lg:bg-gradient-to-bl">
+    <section className="flex flex-col space-y-3 pb-20 sm:pb-96 px-[8vw] from-white via-white to-blue-100 max-xl:bg-gradient-to-bl">
       <Helmet>
         <title>{title}</title>
       </Helmet>

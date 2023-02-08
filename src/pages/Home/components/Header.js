@@ -13,7 +13,7 @@ const Header = () => {
     });
   };
   return (
-    <div className="paddingX paddingY w-full z-10">
+    <div className="paddingX paddingTop paddingBottomLonger w-full z-10">
       <div className="w-full flex justify-between flex-wrap items-center">
         {/* HEADER TITLE */}
         <motion.div

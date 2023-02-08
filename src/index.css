@@ -13,6 +13,9 @@
   .paddingX {
     @apply px-[8vw];
   }
+  .paddingXShorter {
+    @apply px-[6vw];
+  }
   .paddingXLonger {
     @apply px-[10vw];
   }
@@ -20,40 +23,52 @@
     @apply px-[12vw];
   }
   .paddingY {
-    @apply py-[6vw] lg:py-[10vw];
+    @apply py-[8vw];
   }
   .paddingYShorter {
     @apply py-[6vw];
   }
   .paddingYLonger {
-    @apply py-[10vw] lg:py-[12vw];
+    @apply py-[10vw];
+  }
+  .paddingYLonger2 {
+    @apply py-[12vw];
   }
   .paddingTop {
-    @apply pt-[6vw] lg:pt-[10vw];
+    @apply pt-[8vw];
   }
   .paddingTopShorter {
-    @apply pt-[6vw] lg:pt-[6vw];
+    @apply pt-[6vw];
   }
   .paddingTopLonger {
-    @apply pt-[10vw] lg:pt-[12vw];
+    @apply pt-[10vw];
+  }
+  .paddingTopLonger2 {
+    @apply pt-[12vw];
   }
   .paddingBottom {
-    @apply pb-[6vw] lg:pb-[10vw];
+    @apply pb-[8vw];
+  }
+  .paddingBottomShorter {
+    @apply pb-[6vw];
   }
   .paddingBottomLonger {
-    @apply pb-[10vw] lg:pb-[12vw];
+    @apply pb-[10vw];
+  }
+  .paddingBottomLonger2 {
+    @apply pb-[12vw];
   }
   .marginY {
-    @apply my-[6vw] lg:py-[10vw];
+    @apply my-[8vw];
   }
   .marginYLonger {
-    @apply py-[10vw] lg:py-[12vw];
+    @apply py-[10vw];
   }
   .marginBottom {
-    @apply mb-[6vw] lg:mb-[10vw];
+    @apply mb-[8vw];
   }
   .marginBottomLonger {
-    @apply mb-[10vw] lg:mb-[12vw];
+    @apply mb-[10vw];
   }
 }
 
@@ -72,7 +87,7 @@ html::-webkit-scrollbar {
   text-shadow: 0px 0.5px 1px gray;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1280px) {
   .header-bg1 {
     display: flex;
     position: absolute;
@@ -88,7 +103,7 @@ html::-webkit-scrollbar {
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1280px) {
   .header-bg2 {
     display: flex;
     position: absolute;
@@ -105,7 +120,7 @@ html::-webkit-scrollbar {
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1280px) {
   .header-bg3 {
     height: 24rem;
     top: 201rem;
@@ -119,7 +134,7 @@ html::-webkit-scrollbar {
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1280px) {
   .about-bg1 {
     width: 45rem;
     height: 42rem;
@@ -136,7 +151,7 @@ html::-webkit-scrollbar {
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1280px) {
   .about-bg2 {
     width: 100%;
     top: 60rem;
@@ -150,7 +165,7 @@ html::-webkit-scrollbar {
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1280px) {
   .contact-bg {
     right: 0px;
     display: flex;

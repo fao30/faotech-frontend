@@ -31,7 +31,7 @@ const Navbar = () => {
   };
   const completion = useReadingProgress();
   let activeClassName =
-    "btn bg-transparent hover:bg-transparent border-none rounded-2xl text-primary-100 mx-0.5 normal-case";
+    "text-base btn bg-transparent hover:bg-transparent border-none rounded-2xl text-primary-100 mx-0.5 normal-case";
   let activeClassNameDropdown = "bg-transparent text-primary-100 my-0.5";
   return (
     <div
@@ -149,7 +149,7 @@ const Navbar = () => {
                       className={({ isActive }) =>
                         isActive
                           ? activeClassName
-                          : "btn btn-ghost hover:bg-transparent border-none rounded-2xl mx-0.5 normal-case text-[#393737] "
+                          : "btn btn-ghost hover:bg-transparent border-none rounded-2xl mx-0.5 normal-case text-[#393737] text-base"
                       }
                       onClick={() => {
                         scrollToTop();
@@ -161,7 +161,7 @@ const Navbar = () => {
                 })}
                 <a
                   href
-                  className="btn btn-ghost rounded-2xl mx-0.5 normal-case border-none  text-[#393737] hover:bg-primary-100 hover:text-white active:bg-primary-200 hover:shadow-xl"
+                  className="text-base btn btn-ghost rounded-2xl mx-0.5 normal-case border-none  text-[#393737] hover:bg-primary-100 hover:text-white active:bg-primary-200 hover:shadow-xl"
                   onClick={() => {
                     navigate("/contact");
                     scrollToTop();

@@ -42,14 +42,14 @@ const CardPortfolio = ({ img1, img2, title, desc, label, link, index }) => {
           <h1 className="text-2xl lg:text-3xl text-black font-bold">{title}</h1>
           <p className="text-[#858282] lg:text-xl font-normal">{desc}</p>
           <div className="flex justify-between items-center">
-            <label className="text-[#1361DE] lg:text-xl font-semibold">
+            <label className="text-[#1361DE] text-xl font-semibold">
               {label}
             </label>
             <a
               rel="noreferrer"
               target="_blank"
               href={link}
-              className="max-lg:hidden text-white bg-[#1361DE] hover:bg-[#1361DE] border-none normal-case rounded-xl shadow-md font-semibold text-lg px-5 py-2"
+              className="btn max-lg:hidden text-white hover:bg-blue-700 bg-[#1361DE]  border-none normal-case rounded-xl shadow-md font-semibold lg:text-lg  text-center"
             >
               Visit Website
             </a>
@@ -59,7 +59,7 @@ const CardPortfolio = ({ img1, img2, title, desc, label, link, index }) => {
               rel="noreferrer"
               target="_blank"
               href={link}
-              className="text-white bg-[#1361DE] hover:bg-[#1361DE] border-none normal-case rounded-xl shadow-md font-semibold text-lg px-5 py-2 w-full text-center mt-2"
+              className="btn text-white hover:bg-primary-400 bg-[#1361DE]  border-none normal-case rounded-xl shadow-md font-semibold text-lg  w-full text-center mt-2"
             >
               Visit Website
             </a>
