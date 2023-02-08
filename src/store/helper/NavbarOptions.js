@@ -8,10 +8,10 @@ export const footerOptions = [
     to: "/about",
     label: "About",
   },
-  // {
-  //   to: "/portfolio",
-  //   label: "Portfolio",
-  // },
+  {
+    to: "/portfolio",
+    label: "Portfolio",
+  },
   {
     to: "/contact",
     label: "Contact Us",
@@ -42,8 +42,8 @@ export const navbarWithoutContact = [
     to: "/about",
     label: "About",
   },
-  // {
-  //   to: "/portfolio",
-  //   label: "Portfolio",
-  // },
+  {
+    to: "/portfolio",
+    label: "Portfolio",
+  },
 ];
