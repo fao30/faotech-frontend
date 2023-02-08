@@ -22,6 +22,9 @@
   .paddingY {
     @apply py-[6vw] lg:py-[10vw];
   }
+  .paddingYShorter {
+    @apply py-[6vw];
+  }
   .paddingYLonger {
     @apply py-[10vw] lg:py-[12vw];
   }

@@ -5,20 +5,20 @@ import CompanyProfile from "./CompanyProfile";
 
 const AboutUs = () => {
   return (
-    <div class="grid place-items-center items-end">
-      <div class="my-10 lg:my-16 z-10 w-full">
-        <div class="flex justify-between flex-wrap items-center mx-10 md:mx-20 lg:mx-[9.5rem] mb-12 md:mb-0">
+    <div className="grid place-items-center items-end">
+      <div className="my-10 lg:my-16 z-10 w-full">
+        <div className="flex justify-between flex-wrap items-center mx-10 md:mx-20 lg:mx-[9.5rem] mb-12 md:mb-0">
           {/* HEADER TITLE, Digital Product Made By Us*/}
           <motion.div
             initial={{ x: "-20%" }}
             animate={{ x: "calc(100% - 100%)" }}
           >
-            <div class="w-full lg:w-[60%] md:w-4/5">
-              <h1 class="md:lg:text-5xl text-4xl font-bold text-[#1363DF]">
+            <div className="w-full lg:w-[60%] md:w-4/5">
+              <h1 className="md:lg:text-5xl text-4xl font-bold text-[#1363DF]">
                 About Us
               </h1>
             </div>
-            <div class="md:w-96 lg:w-[27.7rem] text-[#757575] text-[16px] mt-6 ">
+            <div className="md:w-96 lg:w-[27.7rem] text-[#757575] text-[16px] mt-6 ">
               <h1>
                 We are a technology company that is moving forward to build a
                 technology ecosystem to help humanity maximize its work. we
@@ -36,15 +36,15 @@ const AboutUs = () => {
           </motion.div>
           <img
             alt="coding"
-            class="hidden lg:flex w-full lg:w-5/12  shadow-xl md:ml-6 md:mt-6 ml-0 mt-12 lg:mt-0"
+            className="hidden lg:flex w-full lg:w-5/12  shadow-xl md:ml-6 md:mt-6 ml-0 mt-12 lg:mt-0"
             src={require("./components/alvinAbout.jpeg")}
           />
         </div>
         {/* IMG FOR MOBILE DEVICES */}
-        <div class="flex justify-center">
+        <div className="flex justify-center">
           <img
             alt="coding"
-            class="md:lg:hidden  shadow-xl w-[80%] md:mt-8"
+            className="md:lg:hidden  shadow-xl w-[80%] md:mt-8"
             src={require("./components/alvinAbout.jpeg")}
           ></img>
         </div>
