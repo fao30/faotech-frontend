@@ -4,10 +4,10 @@ import CardCompany from "./components/CardCompany";
 const CompanyProfile = () => {
   return (
     <div className="flex flex-col justify-around">
-      <div className="flex lg:justify-around justify-center flex-wrap items-center">
-        <div className="grid place-items-center items-end">
-          <div className="my-24 lg:mb-12  z-10 md:w-4/5 lg:w-full">
-            <div className="flex flex-col justify-center flex-wrap items-center mb-6">
+      <div className="flex flex-wrap items-center justify-center lg:justify-around">
+        <div className="grid items-end place-items-center">
+          <div className="z-10 my-24 lg:mb-12 md:w-4/5 lg:w-full">
+            <div className="flex flex-col flex-wrap items-center justify-center mb-6">
               <h1 className="text-3xl md:lg:text-2xl font-intern text-[#1363DF] text-center">
                 Our Company Philosophy
               </h1>
@@ -22,8 +22,8 @@ const CompanyProfile = () => {
 
             {/* card */}
             <div className="flex justify-between flex-wrap items-center mx-10 md:mx-20 lg:mx-[9.5rem] mb-12 md:mb-24">
-              <div className="flex my-14 sm:justify-center lg:justify-items-center  lg:flex-row sm:w-full  mx:w-full object-center position-absolute">
-                <div className="flex flex-wrap justify-center items-center">
+              <div className="flex object-center my-14 sm:justify-center lg:justify-items-center lg:flex-row sm:w-full mx:w-full position-absolute">
+                <div className="flex flex-wrap items-center justify-center">
                   <div>
                     <CardCompany
                       cardDescProps={
@@ -32,7 +32,7 @@ const CompanyProfile = () => {
                       cardTitleProps={"Vision"}
                     />
                   </div>
-                  {/* <div className="lg:pr-12 z-10 mx-10 rounded-box w-full md:w-4/5 sm:w-full lg:w-2/5 bg-transparent flex justify-center lg:justify-end flex-wrap items-end"> */}
+                  {/* <div className="z-10 flex flex-wrap items-end justify-center w-full mx-10 bg-transparent lg:pr-12 rounded-box md:w-4/5 sm:w-full lg:w-2/5 lg:justify-end"> */}
                   <div>
                     <CardCompany
                       cardDescProps={

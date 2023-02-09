@@ -3,8 +3,8 @@ const logo = require("./assets/faoTech.png");
 
 const Preloader = () => {
   return (
-    <div className="mx-auto flex min-h-screen w-full flex-col items-center justify-center text-center">
-      <img src={logo} alt="logo" className="mb-6 h-12 w-12" />
+    <div className="flex flex-col items-center justify-center w-full min-h-screen mx-auto text-center">
+      <img src={logo} alt="logo" className="w-12 h-12 mb-6" />
       <BarLoader size={100} color="#2D2B2B" width="150" speedMultiplier="1" />
     </div>
   );
