@@ -131,7 +131,7 @@ const FormContact = () => {
               </label>
               <textarea
                 type="text"
-                className={`textAreaShadow h-[15rem] px-3 py-2 text-sm drop-shadow-[1px_1px_2.1px_#ababab] bg-white rounded-lg md:py-3 lg:py-3 focus:ring-0 lg:text-lg text-black outline-[#4C6BDC] `}
+                className={`textAreaShadow h-[15rem] px-3 py-2 text-sm shadow-[1px_1px_5px_0px_#ababab] bg-white rounded-lg md:py-3 lg:py-3 focus:ring-0 lg:text-lg text-black outline-[#4C6BDC] `}
                 name="textarea"
                 value={formik.values.textarea}
                 onChange={formik.handleChange}
