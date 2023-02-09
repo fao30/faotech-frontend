@@ -122,13 +122,16 @@ const FormContact = () => {
           </div>
           {/* Project Detail */}
           <div className="col-start-1 col-end-3">
-            <div className="flex flex-col gap-y-1">
-              <label htmlFor="projectDetail" className="text-[#757575] ml-1">
+            <div className="flex flex-col md:gap-y-2">
+              <label
+                htmlFor="projectDetail"
+                className="ml-1 lg:text-xl text-[#757575]"
+              >
                 Project Detail
               </label>
               <textarea
                 type="text"
-                className={`px-3 py-2 h-[15rem] text-sm drop-shadow-[1px_1px_2.1px_#ababab] bg-white rounded-lg md:py-3 lg:py-3 focus:ring-0 lg:text-lg text-black outline-[#4C6BDC] `}
+                className={`h-[15rem] px-3 py-2 text-sm shadow-[1.5px_1.5px_4px_0px_#ababab] bg-white rounded-lg md:py-3 lg:py-3 focus:ring-0 lg:text-lg text-black outline-[#4C6BDC] `}
                 name="textarea"
                 value={formik.values.textarea}
                 onChange={formik.handleChange}
