@@ -18,7 +18,7 @@ const InputForm = ({
           name={name}
           value={value}
           id={name}
-          className={`px-3 py-2 text-sm drop-shadow-[1px_1px_2px_#ababab] bg-white rounded-lg md:py-3 lg:py-3 focus:ring-0 lg:text-lg text-black outline-[#4C6BDC] `}
+          className={`px-3 py-2 text-sm drop-shadow-[1px_1px_2.1px_#ababab] bg-white rounded-lg md:py-3 lg:py-3 focus:ring-0 lg:text-lg text-black outline-[#4C6BDC] `}
           onChange={onChange}
           onBlur={onBlur}
         />
