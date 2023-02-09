@@ -59,7 +59,7 @@ const CardPortfolio = ({ img1, img2, title, desc, label, link, index }) => {
               rel="noreferrer"
               target="_blank"
               href={link}
-              className="btn text-white hover:bg-primary-400 bg-[#1361DE]  border-none normal-case rounded-xl shadow-md font-semibold text-lg  w-full text-center mt-2"
+              className="btn text-white hover:bg-primary-400 bg-[#1361DE]  border-none normal-case rounded-xl shadow-md font-semibold text-base lg:text-lg  w-full text-center mt-2"
             >
               Visit Website
             </a>

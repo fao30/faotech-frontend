@@ -146,7 +146,7 @@ const FormContact = () => {
             <button
               disabled={!(formik.isValid && formik.dirty)}
               type="submit"
-              className=" md:text-base text-[#FFFFFF] bg-[#4C6BDC] hover:bg-primary-400 rounded-xl w-full sm:w-72 cursor-pointer btn border-none relative overflow-hidden group"
+              className="normal-case md:text-base text-[#FFFFFF] bg-[#4C6BDC] hover:bg-primary-400 rounded-xl w-full sm:w-72 cursor-pointer btn border-none relative overflow-hidden group"
             >
               Submit Message
             </button>
