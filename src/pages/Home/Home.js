@@ -13,17 +13,17 @@ const Home = ({ title }) => {
         <title>{title}</title>
       </Helmet>
       {/* BACKGROUND */}
-      <div className="header-bg1"></div>
+      {/* <div className="header-bg1"></div>
       <div className="header-bg2"></div>
-      <div className="header-bg3"></div>
-      <div className="from-white via-white to-blue-100 max-xl:bg-gradient-to-br">
+      <div className="header-bg3"></div> */}
+      <div className="from-white via-white to-blue-100 bg-gradient-to-br">
         <Header />
         <HeroContent />
       </div>
-      <div className="from-white via-white to-blue-100 max-xl:bg-gradient-to-tr">
+      <div className="from-white via-white to-blue-100 bg-gradient-to-tr">
         <OurWorkSector />
       </div>
-      <div className="from-white via-white to-blue-100 max-xl:bg-gradient-to-bl">
+      <div className="from-white via-white to-blue-100 bg-gradient-to-bl">
         <DigitalProduct /> <TechStack />{" "}
       </div>
     </div>

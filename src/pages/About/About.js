@@ -11,12 +11,12 @@ const About = ({ title }) => {
         <title>{title}</title>
       </Helmet>
       {/* BACKGROUND */}
-      <div className="about-bg1 "></div>
-      <div className="about-bg2"></div>
-      <div className="from-white via-white to-blue-100 max-xl:bg-gradient-to-br">
+      {/* <div className="about-bg1 "></div>
+      <div className="about-bg2"></div> */}
+      <div className="from-white via-white to-blue-100 bg-gradient-to-br">
         <HeaderAbout />
       </div>
-      <div className="from-white via-white to-blue-100 max-xl:bg-gradient-to-tr">
+      <div className="from-white via-white to-blue-100 bg-gradient-to-tr">
         <CompanyProfile />
         <StartHere />
       </div>
