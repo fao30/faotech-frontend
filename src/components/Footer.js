@@ -80,10 +80,10 @@ const Footer = () => {
             <a
               rel="noreferrer"
               target="_blank"
-              href="mailto:contact@faotech.com"
+              href="mailto:partnership@faotech.dev"
               className="link link-hover text-gray-500 ml-2"
             >
-              contact@faotech.com
+              partnership@faotech.dev
             </a>
           </div>
           <div className="flex justify-center items-start">
