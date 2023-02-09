@@ -18,7 +18,7 @@ const Contact = ({ title }) => {
           className="btn  md:text-lg hover:bg-[#4C6BDC] border-none normal-case relative inline-flex items-center px-16 overflow-hidden  text-[#393737] shadow-[0_2px_3px_gray] hover:text-white rounded-br-none rounded-tl-none rounded-tr-3xl rounded-bl-3xl bg-[#FFFFFF] group"
           onClick={() => navigate("/")}
         >
-          <span className="absolute right-0 flex items-center justify-start  w-10 h-10 duration-300 transform translate-x-full group-hover:-translate-x-4 ease">
+          <span className="absolute right-0 flex items-center justify-start w-10 h-10 duration-300 transform translate-x-full group-hover:-translate-x-4 ease">
             <Icon
               icon="material-symbols:arrow-right-alt-rounded"
               color="white"
@@ -26,12 +26,12 @@ const Contact = ({ title }) => {
               height="25"
             />
           </span>
-          <span className="relative  group-hover:-translate-x-2 ease duration-100 group-hover:transform">
+          <span className="relative duration-100 group-hover:-translate-x-2 ease group-hover:transform">
             Back to Homepage
           </span>
         </button>
       </div>
-      <div className="flex flex-col z-10 xl:mx-auto pt-2 ">
+      <div className="z-10 flex flex-col pt-2 xl:mx-auto ">
         <motion.div
           initial="hidden"
           whileInView="visible"
