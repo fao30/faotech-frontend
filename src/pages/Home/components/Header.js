@@ -45,7 +45,7 @@ const Header = () => {
                 navigate("/contact");
                 scrollToTop();
               }}
-              className="text-white  hover:bg-primary-400 rounded-2xl bg-primary-100 shadow-xl btn border-none normal-case w-full mb-12 md:mb-0"
+              className="text-white md:text-lg  hover:bg-primary-400 rounded-2xl bg-primary-100 shadow-xl btn border-none normal-case w-full mb-12 md:mb-0"
             >
               Start Your Journey
             </button>
