@@ -4,10 +4,6 @@ import { useFormik } from "formik";
 import * as Yup from "yup";
 import emailjs from "@emailjs/browser";
 
-const serviceKey = functions.config().config.react_app_service_id_emailjs;
-const templateKey = functions.config().config.react_app_template_id_emailjs;
-const publicKey = functions.config().config.react_app_public_key_emailjs;
-
 const FormContact = () => {
   // Formik Logic
   const formik = useFormik({
@@ -19,22 +15,23 @@ const FormContact = () => {
       textarea: "",
     },
     validationSchema: Yup.object({
-      yourName: Yup.string().required("Field required"),
-      companyName: Yup.string().required("Field required"),
-      email: Yup.string()
-        .email("Invalid email address")
-        .required("Field required"),
+      yourName: Yup.string().required("Required"),
+      companyName: Yup.string().required("Required"),
+      email: Yup.string().email("Invalid email address").required("Required"),
       yourBudget: Yup.number()
         .positive()
         .integer()
         .typeError("This field must only contain number")
-        .required("Field required"),
-      textarea: Yup.string().required("Field required"),
+        .required("Required"),
+      textarea: Yup.string().required("Required"),
     }),
-    onSubmit: (actions, { resetForm, setSubmitting }) => {
-      console.log(formik.values);
-      // emailjs send
-      emailjs.send(serviceKey, templateKey, values, publicKey);
+    onSubmit: (values, { resetForm, setSubmitting }) => {
+      emailjs.send(
+        process.env.REACT_APP_SERVICE_ID_EMAILJS,
+        process.env.REACT_APP_TEMPLATE_ID_EMAILJS,
+        values,
+        process.env.REACT_APP_PUBLIC_KEY_EMAILJS
+      );
       resetForm();
     },
   });
