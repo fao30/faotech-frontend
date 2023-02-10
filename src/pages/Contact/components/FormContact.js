@@ -2,6 +2,7 @@ import InputForm from "./InputForm";
 
 import { useFormik } from "formik";
 import * as Yup from "yup";
+import emailjs from "@emailjs/browser";
 
 import toast, { Toaster } from "react-hot-toast";
 
@@ -28,15 +29,14 @@ const FormContact = () => {
         .required("Required field"),
       textarea: Yup.string().required("Required field"),
     }),
-    onSubmit: (actions, { resetForm, setSubmitting }) => {
-      console.log(formik.values);
+    onSubmit: (values, { resetForm }) => {
       // // emailjs send
-      // emailjs.send(
-      //   process.env.REACT_APP_SERVICE_ID,
-      //   process.env.REACT_APP_TEMPLATE_ID,
-      //   values,
-      //   process.env.REACT_APP_PUBLIC_KEY
-      // );
+      emailjs.send(
+        process.env.REACT_APP_SERVICE_ID_EMAILJS,
+        process.env.REACT_APP_TEMPLATE_ID_EMAILJS,
+        values,
+        process.env.REACT_APP_PUBLIC_KEY_EMAILJS
+      );
       resetForm();
     },
   });
@@ -128,17 +128,17 @@ const FormContact = () => {
               </label>
               <textarea
                 type="text"
-                className="h-[13rem] shadow-lg rounded-xl px-3 py-3  drop-shadow-[1px_1px_2px_#ababab] outline-[#4C6BDC]"
+                className="h-[13rem] shadow-md shadow-[#ababab] rounded-xl px-3 py-3 outline-[#4C6BDC]"
                 name="textarea"
                 value={formik.values.textarea}
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
               />
-              {/* {formik.errors.textarea && formik.touched.textarea ? (
+              {formik.errors.textarea && formik.touched.textarea ? (
                 <p className="mt-1 ml-1 text-sm text-red-600 md:text-base">
                   {formik.errors.textarea}
                 </p>
-              ) : null} */}
+              ) : null}
             </div>
           </div>
           {/* Submit Button */}
