@@ -2,6 +2,7 @@ import InputForm from "./InputForm";
 import toast, { Toaster } from "react-hot-toast";
 import { useFormik } from "formik";
 import * as Yup from "yup";
+import emailjs from "@emailjs/browser";
 
 const serviceKey = firebase.config().config.react_app_service_id_emailjs;
 const templateKey = firebase.config().config.react_app_template_id_emailjs;
@@ -134,11 +135,11 @@ const FormContact = () => {
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
               />
-              {/* {formik.errors.textarea && formik.touched.textarea ? (
+              {formik.errors.textarea && formik.touched.textarea ? (
                 <p className="mt-1 ml-1 text-sm text-red-600 md:text-base">
                   {formik.errors.textarea}
                 </p>
-              ) : null} */}
+              ) : null}
             </div>
           </div>
           {/* Submit Button */}
