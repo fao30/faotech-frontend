@@ -33,12 +33,7 @@ const FormContact = () => {
     onSubmit: (actions, { resetForm, setSubmitting }) => {
       console.log(formik.values);
       // emailjs send
-      emailjs.send(
-        process.env.REACT_APP_SERVICE_ID || serviceKey,
-        process.env.REACT_APP_TEMPLATE_ID || templateKey,
-        values,
-        process.env.REACT_APP_PUBLIC_KEY || publicKey
-      );
+      emailjs.send(serviceKey, templateKey, values, publicKey);
       resetForm();
     },
   });
