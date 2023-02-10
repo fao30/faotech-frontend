@@ -23,7 +23,7 @@ const Home = ({ title }) => {
       <div className="from-white via-white to-blue-100 bg-gradient-to-tr">
         <OurWorkSector />
       </div>
-      <div className="from-white via-white to-blue-100 bg-gradient-to-bl">
+      <div className="from-white via-white to-[#e7f0f7] bg-gradient-to-bl">
         <DigitalProduct /> <TechStack />{" "}
       </div>
     </div>
