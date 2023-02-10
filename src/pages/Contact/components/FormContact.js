@@ -122,13 +122,16 @@ const FormContact = () => {
           </div>
           {/* Project Detail */}
           <div className="col-start-1 col-end-3">
-            <div className="flex flex-col gap-y-1">
-              <label htmlFor="projectDetail" className="text-[#757575] ml-1">
+            <div className="flex flex-col md:gap-y-2">
+              <label
+                htmlFor="projectDetail"
+                className="ml-1 lg:text-xl text-[#757575]"
+              >
                 Project Detail
               </label>
               <textarea
                 type="text"
-                className="h-[13rem] shadow-md shadow-[#ababab] rounded-xl px-3 py-3 outline-[#4C6BDC]"
+                className={`textAreaShadow h-[15rem] px-3 py-2 text-sm shadow-[1px_1px_5px_0px_#ababab] bg-white rounded-lg md:py-3 lg:py-3 focus:ring-0 lg:text-lg text-black outline-[#4C6BDC] `}
                 name="textarea"
                 value={formik.values.textarea}
                 onChange={formik.handleChange}
@@ -146,7 +149,7 @@ const FormContact = () => {
             <button
               disabled={!(formik.isValid && formik.dirty)}
               type="submit"
-              className=" md:text-base text-[#FFFFFF] bg-[#4C6BDC] hover:bg-primary-400 rounded-xl w-full sm:w-72 cursor-pointer btn border-none relative overflow-hidden group"
+              className="normal-case md:text-base text-[#FFFFFF] bg-[#4C6BDC] hover:bg-primary-400 rounded-xl w-full sm:w-72 cursor-pointer btn border-none relative overflow-hidden group"
             >
               Submit Message
             </button>

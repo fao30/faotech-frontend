@@ -5,7 +5,7 @@ import CardPortfolio, { portfolioData } from "./components/CardPortfolio";
 
 const Portfolio = ({ title }) => {
   return (
-    <section className="paddingBottomLonger z-10">
+    <section className="paddingBottomLonger z-10 from-white via-white to-[#e7f0f7] bg-gradient-to-tr">
       <Helmet>
         <title>{title}</title>
       </Helmet>
