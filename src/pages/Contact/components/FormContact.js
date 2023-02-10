@@ -1,9 +1,11 @@
 import InputForm from "./InputForm";
-
+import toast, { Toaster } from "react-hot-toast";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 
-import toast, { Toaster } from "react-hot-toast";
+const serviceKey = firebase.config().config.react_app_service_id_emailjs;
+const templateKey = firebase.config().config.react_app_template_id_emailjs;
+const publicKey = firebase.config().config.react_app_public_key_emailjs;
 
 const FormContact = () => {
   // Formik Logic
@@ -30,13 +32,13 @@ const FormContact = () => {
     }),
     onSubmit: (actions, { resetForm, setSubmitting }) => {
       console.log(formik.values);
-      // // emailjs send
-      // emailjs.send(
-      //   process.env.REACT_APP_SERVICE_ID,
-      //   process.env.REACT_APP_TEMPLATE_ID,
-      //   values,
-      //   process.env.REACT_APP_PUBLIC_KEY
-      // );
+      // emailjs send
+      emailjs.send(
+        process.env.REACT_APP_SERVICE_ID || serviceKey,
+        process.env.REACT_APP_TEMPLATE_ID || templateKey,
+        values,
+        process.env.REACT_APP_PUBLIC_KEY || publicKey
+      );
       resetForm();
     },
   });
