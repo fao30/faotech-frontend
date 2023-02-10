@@ -4,9 +4,9 @@ import { useFormik } from "formik";
 import * as Yup from "yup";
 import emailjs from "@emailjs/browser";
 
-const serviceKey = firebase.config().config.react_app_service_id_emailjs;
-const templateKey = firebase.config().config.react_app_template_id_emailjs;
-const publicKey = firebase.config().config.react_app_public_key_emailjs;
+const serviceKey = functions.config().config.react_app_service_id_emailjs;
+const templateKey = functions.config().config.react_app_template_id_emailjs;
+const publicKey = functions.config().config.react_app_public_key_emailjs;
 
 const FormContact = () => {
   // Formik Logic
