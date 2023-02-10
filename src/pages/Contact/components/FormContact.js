@@ -19,17 +19,17 @@ const FormContact = () => {
       textarea: "",
     },
     validationSchema: Yup.object({
-      yourName: Yup.string().required("Required field"),
-      companyName: Yup.string().required("Required field"),
+      yourName: Yup.string().required("Field required"),
+      companyName: Yup.string().required("Field required"),
       email: Yup.string()
         .email("Invalid email address")
-        .required("Required field"),
+        .required("Field required"),
       yourBudget: Yup.number()
         .positive()
         .integer()
         .typeError("This field must only contain number")
-        .required("Required field"),
-      textarea: Yup.string().required("Required field"),
+        .required("Field required"),
+      textarea: Yup.string().required("Field required"),
     }),
     onSubmit: (actions, { resetForm, setSubmitting }) => {
       console.log(formik.values);
