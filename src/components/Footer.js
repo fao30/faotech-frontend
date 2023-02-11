@@ -15,7 +15,7 @@ const Footer = () => {
   return (
     <div className="px-[8vw] py-6 md:py-12 bg-white border-t-2 ">
       <footer className="footer gap-y-6 flex flex-wrap justify-between items-start">
-        <div className="w-full md:w-[50%] xl:w-[65%]">
+        <div className="w-full md:w-[50%] xl:w-[60%]">
           <label className="text-3xl font-bold   text-primary-100 shadowit flex justify-center items-center">
             <img src={logo} className="w-7 h-7 items-center mr-1" /> faoTech.
           </label>
@@ -53,7 +53,7 @@ const Footer = () => {
             </a>
           </div>
         </div>
-        <div className="w-96 md:w-96 lg:w-36 pr-12 lg:space-y-4">
+        <div className="w-96 md:w-96 lg:w-[15%] lg:space-y-4">
           <p>Features</p>
           {footerOptions?.map((e) => {
             return (

@@ -43,9 +43,9 @@ const Contact = ({ title }) => {
           visible: { opacity: 1, y: 0 },
         }}
       >
-        <label className="text-[#4C6BDC] text-4xl md:text-5xl font-bold">
+        <h1 className="text-[#4C6BDC] h1Smaller">
           Let’s discuss your project with our team
-        </label>
+        </h1>
         <p className="text-[#A1A1A1]">
           We would love to hear from you! Send us an email and we will respond
           within 24 hours.
