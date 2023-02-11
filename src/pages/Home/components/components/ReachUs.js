@@ -26,12 +26,10 @@ const ReachUs = () => {
       <div className="p-8 md:p-12 flex sm:justify-start md:lg:justify-between content-center flex-wrap items-center rounded-xl bg-[#4C6BDC] ">
         <div className="flex justify-between items-center w-full">
           <div className="md: w-full mr-6 flex flex-col gap-2">
-            <p className="text-[#FEFEFF] font-bold pBigger">
+            <h2 className="text-[#FEFEFF] font-bold">
               Already have a plan or do you need consultation?
-            </p>
-            <p className="text-[#FEFEFF] font-bold pBigger">
-              You know where to go
-            </p>
+            </h2>
+            <h2 className="text-[#FEFEFF] font-bold">You know where to go</h2>
           </div>
           <button
             onClick={() => {

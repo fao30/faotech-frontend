@@ -6,14 +6,14 @@ import CardHero from "./components/CardHero";
 const HeroContent = () => {
   return (
     <div className="paddingX paddingBottom w-full z-10">
-      <div className="flex w-full justify-between flex-wrap items-center gap-y-6 lg:gap-y-12">
+      <div className="flex w-full justify-between flex-wrap items-start gap-y-6 lg:gap-y-12">
         {/* HERO TITLE */}
-        <div className="w-full lg:w-[45%] flex flex-col gap-2">
+        <div className="w-full lg:w-[48%] 2xl:w-[45%] flex flex-col gap-2">
           <h2 className="text-primary-100">For Your Business Future</h2>
-          <h1 className="h1Smaller">
+          <label className="text-4xl md:text-5xl xl:text-5xl 2xl:text-[3.5rem] 2xl:leading-[1] font-bold">
             We are building the best for your Digital Product as comfortable as
             you wish!
-          </h1>
+          </label>
           <p className="text-[#757575] lg:mt-2">
             Everything's in our service like you need.
           </p>
