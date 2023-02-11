@@ -7,7 +7,7 @@
     @apply text-4xl md:text-5xl font-bold;
   }
   h2 {
-    @apply text-2xl md:text-3xl font-bold;
+    @apply text-2xl font-bold;
   }
   p {
     @apply text-base md:text-lg;
