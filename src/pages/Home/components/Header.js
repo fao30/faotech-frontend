@@ -13,7 +13,7 @@ const Header = () => {
     });
   };
   return (
-    <div className="paddingX paddingTop paddingBottom xl:paddingTopShorter xl:paddingBottomLonger w-full z-10">
+    <div className="paddingX paddingTop paddingBottom xl:paddingTopShorter xl:paddingBottomLonger 2xl:paddingTop w-full z-10">
       <div className="w-full flex justify-between flex-wrap items-center gap-y-8">
         {/* HEADER TITLE */}
         <motion.div
@@ -28,7 +28,7 @@ const Header = () => {
           }}
         >
           <h2 className="text-primary-100 ">Fast, Trust, Number 1</h2>
-          <label className="text-4xl md:text-5xl xl:text-6xl font-bold">
+          <label className="text-4xl md:text-5xl xl:text-6xl 2xl:text-7xl font-bold">
             We Help You Develop Through Digitalization
           </label>
           <p className="text-[#757575] md:mt-4 ">
