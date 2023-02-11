@@ -31,11 +31,12 @@ const Navbar = () => {
   };
   const completion = useReadingProgress();
   let activeClassName =
-    "text-base btn bg-transparent hover:bg-transparent border-none rounded-2xl text-primary-100 mx-0.5 normal-case";
-  let activeClassNameDropdown = "bg-transparent text-primary-100 my-0.5";
+    "pSmaller btn bg-transparent hover:bg-transparent border-none rounded-2xl text-primary-100 mx-0.5 normal-case";
+  let activeClassNameDropdown =
+    "pSmaller bg-transparent text-primary-100 my-0.5";
   return (
     <div
-      className={`md:paddingX z-30 sticky top-0 h-16 bg-white text-black shadow navbar flex justify-center ${
+      className={`md:paddingX z-30 sticky top-0 h-16 bg-white  shadow navbar flex justify-center ${
         location.pathname === "/contact" ? "paddingX" : ""
       }`}
     >
@@ -94,7 +95,7 @@ const Navbar = () => {
                     className={({ isActive }) =>
                       isActive
                         ? activeClassNameDropdown
-                        : "my-0.5 text-[#393737] active:bg-primary-100 active:text-white"
+                        : "my-0.5 #393737] active:bg-primary-100 pSmaller"
                     }
                     onClick={() => {
                       scrollToTop();
@@ -117,9 +118,9 @@ const Navbar = () => {
           className={`
           ${location.pathname === "/contact" ? "" : "md:flex hidden"} `}
         >
-          <h1 className="font-bold text-3xl text-primary-100 shadowit flex justify-center items-center">
+          <label className="text-3xl font-bold  text-primary-100 shadowit flex justify-center items-center">
             <img src={logo} className="w-7 h-7 items-center mr-1" /> faoTech.
-          </h1>
+          </label>
         </p>
         <a
           onClick={() => {
@@ -132,9 +133,9 @@ const Navbar = () => {
               : "btn btn-ghost md:hidden normal-case px-0 hover:bg-transparent"
           }`}
         >
-          <h1 className="font-bold text-3xl text-primary-100 shadowit flex justify-center items-center">
+          <label className="text-3xl font-bold   text-primary-100 shadowit flex justify-center items-center">
             <img src={logo} className="w-7 h-7 items-center mr-1" /> faoTech.
-          </h1>
+          </label>
         </a>
       </div>
       <div className="navbar-end">
@@ -149,7 +150,7 @@ const Navbar = () => {
                       className={({ isActive }) =>
                         isActive
                           ? activeClassName
-                          : "btn btn-ghost hover:bg-transparent border-none rounded-2xl mx-0.5 normal-case text-[#393737] text-base"
+                          : "pSmaller btn btn-ghost hover:bg-transparent border-none rounded-2xl mx-0.5 normal-case #393737] "
                       }
                       onClick={() => {
                         scrollToTop();
@@ -159,16 +160,16 @@ const Navbar = () => {
                     </NavLink>
                   );
                 })}
-                <a
+                <li
                   href
-                  className="text-base btn btn-ghost rounded-2xl mx-0.5 normal-case border-none  text-[#393737] hover:bg-primary-100 hover:text-white active:bg-primary-200 hover:shadow-xl"
+                  className="pSmaller btn btn-ghost rounded-2xl mx-0.5 normal-case border-none  text-[#393737] hover:bg-primary-100 hover:text-white active:bg-primary-200 hover:shadow-xl"
                   onClick={() => {
                     navigate("/contact");
                     scrollToTop();
                   }}
                 >
                   Contact Us
-                </a>
+                </li>
               </li>
             </ul>
           </div>

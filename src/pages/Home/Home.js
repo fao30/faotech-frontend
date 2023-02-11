@@ -24,7 +24,7 @@ const Home = ({ title }) => {
         <OurWorkSector />
       </div>
       <div className="from-white via-white to-[#e7f0f7] bg-gradient-to-bl">
-        <DigitalProduct /> <TechStack />{" "}
+        <DigitalProduct /> <TechStack />
       </div>
     </div>
   );

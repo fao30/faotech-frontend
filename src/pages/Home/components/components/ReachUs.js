@@ -23,13 +23,13 @@ const ReachUs = () => {
         visible: { opacity: 1, scale: 1 },
       }}
     >
-      <div className="p-12 flex sm:justify-start md:lg:justify-between content-center flex-wrap items-center rounded-xl bg-[#4C6BDC] ">
+      <div className="p-8 md:p-12 flex sm:justify-start md:lg:justify-between content-center flex-wrap items-center rounded-xl bg-[#4C6BDC] ">
         <div className="flex justify-between items-center w-full">
-          <div className="md:text-lg w-full mr-6">
-            <p className="text-[#FEFEFF] font-bold text-xl lg:text-2xl">
+          <div className="md: w-full mr-6 flex flex-col gap-2">
+            <p className="text-[#FEFEFF] font-bold pBigger">
               Already have a plan or do you need consultation?
             </p>
-            <p className="mt-2 text-[#FEFEFF] font-bold text-xl lg:text-2xl">
+            <p className="text-[#FEFEFF] font-bold pBigger">
               You know where to go
             </p>
           </div>
@@ -38,9 +38,9 @@ const ReachUs = () => {
               navigate("/contact");
               scrollToTop();
             }}
-            className="hidden md:flex mt-4 lg:mt-0 btn text-sm lg:text-xl  hover:bg-white normal-case font-semibold rounded-lg border-none bg-white text-[#4C6BDC] w-40 group"
+            className="hidden md:flex mt-4 lg:mt-0 btn  hover:bg-white normal-case  rounded-lg border-none bg-white #4C6BDC] w-40 group"
           >
-            Reach Us{" "}
+            <p className="text-primary-100">Reach Us</p>
             <span className="ml-1.5 animate-pulse">
               <Icon
                 icon="mdi:customer-service"
@@ -57,9 +57,9 @@ const ReachUs = () => {
               navigate("/contact");
               scrollToTop();
             }}
-            className=" mt-4 lg:mt-0 btn  text-lg lg:text-2xl  hover:bg-white normal-case font-semibold rounded-lg border-none bg-white text-[#4C6BDC] w-40 group"
+            className=" mt-4 lg:mt-0 btn   lg:  hover:bg-white normal-case  rounded-lg border-none bg-white #4C6BDC] w-40 group"
           >
-            Reach Us
+            <p className="text-primary-100">Reach Us</p>
             <span className="ml-1.5 animate-pulse">
               <Icon
                 icon="mdi:customer-service"

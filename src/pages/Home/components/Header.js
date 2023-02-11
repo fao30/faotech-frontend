@@ -14,10 +14,10 @@ const Header = () => {
   };
   return (
     <div className="paddingX paddingTop paddingBottomLonger w-full z-10">
-      <div className="w-full flex justify-between flex-wrap items-center">
+      <div className="w-full flex justify-between flex-wrap items-center gap-y-8">
         {/* HEADER TITLE */}
         <motion.div
-          className="w-full md:w-[40%]"
+          className="w-full lg:w-[45%] flex flex-col gap-2"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 1 }}
@@ -27,35 +27,30 @@ const Header = () => {
             visible: { opacity: 1, y: 0 },
           }}
         >
-          <h2 className="text-[28px] mb-2 text-primary-100 font-bold">
-            Fast, Trust, Number 1
-          </h2>
-          <h1 className="md:lg:text-5xl text-4xl font-bold text-black">
-            We Help You Develop Through Digitalization
-          </h1>
-          <h1 className="text-l my-6 text-[#757575] text-[16px] md:text-[20px]">
+          <h2 className="text-primary-100 ">Fast, Trust, Number 1</h2>
+          <h1>We Help You Develop Through Digitalization</h1>
+          <p className="text-[#757575] md:mt-4">
             faoTech — a technology company engaged in industrial digitization
             located in Kazan. We focus on helping you to digitalize your
             business from the first scratch until a digital product ready to
             use!
-          </h1>
-          <div className="flex justify-center">
+          </p>
+          <div className="flex justify-center mt-2 md:mt-6">
             <button
               onClick={() => {
                 navigate("/contact");
                 scrollToTop();
               }}
-              className="text-white md:text-lg  hover:bg-primary-400 rounded-2xl bg-primary-100 shadow-xl btn border-none normal-case w-full mb-12 md:mb-0"
+              className="hover:bg-primary-400 lg:h-16 rounded-2xl bg-primary-100 shadow-xl btn border-none normal-case w-full"
             >
-              Start Your Journey
+              <p>Start Your Journey</p>
             </button>
           </div>
         </motion.div>
 
         {/* CAROUSEL */}
-        <div className="w-full md:w-[55%] transition-all transform hover:scale-110 hover:cursor-ew-resize">
+        <div className="w-full lg:w-[50%] hover:cursor-ew-resize">
           <div className="carousel carousel-center rounded-box space-x-4">
-            {" "}
             <CarouselItem
               carouselPictureProps={require("./components/1.jpg")}
             />

@@ -38,12 +38,9 @@ const FormContact = () => {
 
   return (
     <>
-      <form
-        className="mt-10 z-10 xl:w-[60rem] xl:mx-auto"
-        onSubmit={formik.handleSubmit}
-      >
+      <form onSubmit={formik.handleSubmit}>
         <div className="flex flex-col flex-wrap gap-x-10 gap-y-5">
-          <div className="flex flex-col gap-[1rem] sm:flex-row sm:gap-[4rem] text-[#757575]">
+          <div className="flex flex-col gap-[1rem] sm:flex-row sm:gap-[4rem] p text-[#757575]">
             {/* Your Name */}
             <div className="flex flex-col gap-y-1 sm:w-full">
               <InputForm
@@ -80,7 +77,7 @@ const FormContact = () => {
             </div>
           </div>
           {/* Email Adress */}
-          <div className="flex flex-col gap-[1rem] sm:flex-row sm:gap-[4rem] text-[#757575]">
+          <div className="flex flex-col gap-[1rem] sm:flex-row sm:gap-[4rem] p text-[#757575]">
             <div className="flex flex-col gap-y-1 sm:w-full">
               <InputForm
                 label="Email"
@@ -118,22 +115,19 @@ const FormContact = () => {
           {/* Project Detail */}
           <div className="col-start-1 col-end-3">
             <div className="flex flex-col md:gap-y-2">
-              <label
-                htmlFor="projectDetail"
-                className="ml-1 lg:text-xl text-[#757575]"
-              >
+              <label htmlFor="projectDetail" className="p ml-1 text-[#757575]">
                 Project Detail
               </label>
               <textarea
                 type="text"
-                className={`textAreaShadow h-[15rem] px-3 py-2 text-sm shadow-[1px_1px_5px_0px_#ababab] bg-white rounded-lg md:py-3 lg:py-3 focus:ring-0 lg:text-lg text-black outline-[#4C6BDC] `}
+                className={`textAreaShadow h-[15rem] px-3 py-2  shadow-[1px_1px_5px_0px_#ababab] bg-white rounded-lg md:py-3 lg:py-3 focus:ring-0 lg:  outline-[#4C6BDC] `}
                 name="textarea"
                 value={formik.values.textarea}
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
               />
               {formik.errors.textarea && formik.touched.textarea ? (
-                <p className="mt-1 ml-1 text-sm text-red-600 md:text-base">
+                <p className="mt-1 ml-1  text-red-600">
                   {formik.errors.textarea}
                 </p>
               ) : null}
@@ -144,9 +138,9 @@ const FormContact = () => {
             <button
               disabled={!(formik.isValid && formik.dirty)}
               type="submit"
-              className="normal-case md:text-base text-[#FFFFFF] bg-[#4C6BDC] hover:bg-primary-400 rounded-xl w-full sm:w-72 cursor-pointer btn border-none relative overflow-hidden group"
+              className="normal-case bg-[#4C6BDC] hover:bg-primary-400 rounded-xl w-full sm:w-72 cursor-pointer btn border-none relative overflow-hidden group"
             >
-              Submit Message
+              <p>Submit Message</p>
             </button>
           </div>
         </div>

@@ -6,22 +6,20 @@ import CardHero from "./components/CardHero";
 const HeroContent = () => {
   return (
     <div className="paddingX paddingBottom w-full z-10">
-      <div className="flex w-full justify-between flex-wrap items-center">
+      <div className="flex w-full justify-between flex-wrap items-center gap-y-6 md:gap-y-12">
         {/* HERO TITLE */}
-        <div className="w-full md:w-[40%]">
-          <h2 className="text-[28px] my-2 text-primary-100 font-bold">
-            For Your Business Future
-          </h2>
-          <h1 className="md:lg:text-5xl text-4xl font-bold text-black">
+        <div className="w-full lg:w-[55%] flex flex-col gap-2">
+          <h2 className="text-primary-100">For Your Business Future</h2>
+          <h1>
             We are building the best for your Digital Product as comfortable as
             you wish!
           </h1>
-          <h3 className="my-6 text-[#757575] text-[16px] md:text-[20px]">
+          <p className="text-[#757575] lg:mt-6">
             Everything's in our service like you need.
-          </h3>
+          </p>
         </div>
         {/* CARDS */}
-        <div className="w-full md:w-[55%] flex flex-wrap justify-center items-center">
+        <div className="w-full lg:w-[40%] flex flex-wrap justify-center items-center">
           <motion.div
             className="flex justify-center w-full"
             initial="hidden"

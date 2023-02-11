@@ -6,7 +6,7 @@ const HeaderAbout = () => {
     <div className="lg:paddingYLonger2 paddingX paddingBottomLonger paddingTop xl:paddingTopShorter xl:paddingBottomLonger w-full z-10">
       <div className="flex justify-between flex-wrap items-center w-full ">
         {/* HEADER TITLE, Digital Product Made By Us*/}
-        <div className="w-full lg:w-[50%] text-[#757575] text-[16px] md:text-[20px]">
+        <div className="w-full lg:w-[50%] text-[#757575] 16px] md:20px]">
           <motion.div
             initial="hidden"
             whileInView="visible"
@@ -17,11 +17,9 @@ const HeaderAbout = () => {
               visible: { opacity: 1, y: 0 },
             }}
           >
-            <h1 className="md:lg:text-5xl text-4xl font-bold text-[#1363DF]">
-              About Us
-            </h1>
+            <h1 className="text-[#1363DF]">About Us</h1>
             <br />
-            <p className="text-[16px] md:text-[20px]">
+            <p>
               We are a technology company that is moving forward to build a
               technology ecosystem to help humanity maximize its work. we
               prioritize the realization of the best technology in any kind of

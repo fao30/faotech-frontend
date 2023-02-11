@@ -13,15 +13,17 @@ const Footer = () => {
     });
   };
   return (
-    <div className="px-[8vw] py-6 md:py-12 bg-white text-base-content border-t-2 ">
-      <footer className="footer flex flex-wrap justify-between items-start">
-        <div className="w-4/6">
-          <h1 className="font-bold text-3xl text-primary-100 shadowit flex justify-center items-center">
+    <div className="px-[8vw] py-6 md:py-12 bg-white border-t-2 ">
+      <footer className="footer gap-y-6 flex flex-wrap justify-between items-start">
+        <div className="w-full md:w-[50%] xl:w-[65%]">
+          <label className="text-3xl font-bold   text-primary-100 shadowit flex justify-center items-center">
             <img src={logo} className="w-7 h-7 items-center mr-1" /> faoTech.
-          </h1>
-          <p className="text-footer-100">© 2023. All rights reserved.</p>
+          </label>
+          <p className="text-footer-100 pSmaller">
+            © 2023. All rights reserved.
+          </p>
           {/* Slogan here */}
-          <p className="text-footer-100"></p>
+          {/* <p className="text-footer-100"></p> */}
           <div className="flex justify-start items-center ">
             <a
               href="https://www.linkedin.com/company/faotech/"
@@ -51,25 +53,24 @@ const Footer = () => {
             </a>
           </div>
         </div>
-        <div className="w-96 md:w-96 lg:w-32 pr-12 lg:space-y-4">
-          <span className="text-lg">Features</span>
+        <div className="w-96 md:w-96 lg:w-36 pr-12 lg:space-y-4">
+          <p>Features</p>
           {footerOptions?.map((e) => {
             return (
-              <a
-                href
+              <p
                 onClick={() => {
                   navigate(`${e.to}`);
                   scrollToTop();
                 }}
-                className=" text-footer-100 link link-hover"
+                className=" text-footer-100 link link-hover pSmaller"
               >
                 {e.label}
-              </a>
+              </p>
             );
           })}
         </div>
         <div className="w-42 lg:space-y-4 items-center">
-          <span className="text-lg">Contact</span>
+          <p>Contact</p>
           <div className="flex justify-center items-start">
             <Icon
               icon="material-symbols:mail-outline"
@@ -81,7 +82,7 @@ const Footer = () => {
               rel="noreferrer"
               target="_blank"
               href="mailto:partnership@faotech.dev"
-              className="link link-hover text-gray-500 ml-2"
+              className="link link-hover text-gray-500 ml-2 pSmaller"
             >
               partnership@faotech.dev
             </a>
@@ -97,7 +98,7 @@ const Footer = () => {
               href="tel:+6287762023382"
               rel="noreferrer"
               target="_blank"
-              className="link link-hover text-gray-500 ml-2"
+              className="link link-hover text-gray-500 ml-2 pSmaller"
             >
               +62 877-6202-3382
             </a>
@@ -109,7 +110,7 @@ const Footer = () => {
               width="24"
               height="24"
             />
-            <a href className="link link-hover text-gray-500 ml-2">
+            <a href className="link link-hover text-gray-500 ml-2 pSmaller">
               Jl. Bima Citra 16 No. 2,
               <br />
               Tambun, Bekasi,

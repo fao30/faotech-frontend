@@ -6,16 +6,14 @@ import ReadyToStart from "./components/ReadyToStart";
 const TechStack = () => {
   return (
     <div className="paddingX paddingBottomLonger w-full z-10">
-      <div>
-        <div className="flex flex-col justify-center flex-wrap items-center mb-6">
-          <h1 className="md:lg:text-5xl text-4xl  font-bold text-black text-center">
-            Tech Stack
-          </h1>
-          <h2 className="text-center text-[#757575] w-full md:w-10/12 lg:w-[50%] mt-4 text-[16px] md:text-[20px] ">
+      <div className="flex flex-col gap-12">
+        <div className="flex flex-col justify-center flex-wrap items-center gap-2">
+          <h1>Tech Stack</h1>
+          <p className="text-center text-[#757575] w-full md:w-10/12 lg:w-[50%] mt-4 16px] md:20px] ">
             There is no right answer when choosing the right tech stack for you.
             We take into account your long term goal, development timeline,
             speed and budget.
-          </h2>
+          </p>
         </div>
         <div className="flex flex-wrap justify-center items-center">
           <CardTech

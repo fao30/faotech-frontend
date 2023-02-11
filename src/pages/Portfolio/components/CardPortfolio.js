@@ -39,19 +39,17 @@ const CardPortfolio = ({ img1, img2, title, desc, label, link, index }) => {
           src={img2}
         />
         <div className="gap-2 max-md:px-8  max-md:py-6 px-10 py-8 flex flex-col bg-white rounded-xl shadow-[0px_0px_24px_0px_#bfdbfe] ">
-          <h1 className="text-2xl lg:text-3xl text-black font-bold">{title}</h1>
-          <p className="text-[#858282] lg:text-xl font-normal">{desc}</p>
+          <h2>{title}</h2>
+          <p className="text-[#858282]">{desc}</p>
           <div className="flex justify-between items-center">
-            <label className="text-[#1361DE] text-xl font-semibold">
-              {label}
-            </label>
+            <p className="text-[#1361DE] font-bold">{label}</p>
             <a
               rel="noreferrer"
               target="_blank"
               href={link}
-              className="btn max-lg:hidden text-white hover:bg-blue-700 bg-[#1361DE]  border-none normal-case rounded-xl shadow-md font-semibold lg:text-lg  text-center"
+              className="btn max-lg:hidden  hover:bg-blue-700 bg-[#1361DE]  border-none normal-case rounded-xl shadow-md  lg:  text-center"
             >
-              Visit Website
+              <p>Visit Website</p>
             </a>
           </div>
           <div className="lg:hidden flex justify-center">
@@ -59,7 +57,7 @@ const CardPortfolio = ({ img1, img2, title, desc, label, link, index }) => {
               rel="noreferrer"
               target="_blank"
               href={link}
-              className="btn text-white hover:bg-primary-400 bg-[#1361DE]  border-none normal-case rounded-xl shadow-md font-semibold text-base lg:text-lg  w-full text-center mt-2"
+              className="btn  hover:bg-primary-400 bg-[#1361DE]  border-none normal-case rounded-xl shadow-md   lg:  w-full text-center mt-2"
             >
               Visit Website
             </a>

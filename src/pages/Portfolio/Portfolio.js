@@ -20,10 +20,8 @@ const Portfolio = ({ title }) => {
           visible: { opacity: 1, y: 0 },
         }}
       >
-        <h2 className="text-[28px] text-black font-bold">Our Portfolio</h2>
-        <h1 className="md:lg:text-5xl text-4xl font-bold text-[#1363DF]">
-          Product Made by Us
-        </h1>
+        <h2>Our Portfolio</h2>
+        <h1 className="text-[#1363DF]">Product Made by Us</h1>
       </motion.div>
       <div className="paddingX flex flex-col gap-16">
         {portfolioData?.map((e, index) => {

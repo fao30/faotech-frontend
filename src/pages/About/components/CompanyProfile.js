@@ -16,10 +16,8 @@ const CompanyProfile = () => {
           visible: { opacity: 1, scale: 1 },
         }}
       >
-        <h1 className="md:lg:text-5xl text-4xl font-bold text-[#1363DF] ">
-          Our Company Philosophy
-        </h1>
-        <p className=" lg:w-[70%] text-[#757575] mt-4 text-[16px] md:text-[20px]">
+        <h1 className=" text-[#1363DF] ">Our Company Philosophy</h1>
+        <p className=" lg:w-[70%] text-[#757575] mt-4 16px] md:20px]">
           We are obliged to fulfill the maximum potential of your enterprises
           and business. Conduct research on every variable that exists,
           determine the direction in solving problems, generate ideas in

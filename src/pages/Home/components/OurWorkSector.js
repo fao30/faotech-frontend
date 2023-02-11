@@ -25,36 +25,34 @@ const OurWorkSector = () => {
     //     }}
     //   />
     <div className="paddingX paddingBottom w-full z-10">
-      <div className="flex flex-col justify-center flex-wrap items-center mb-12">
-        <h2 className="text-[28px] text-primary-100 font-bold max-sm:mt-6">
-          Solutions are Here!
-        </h2>
-        <h1 className="text-4xl md:lg:text-5xl font-bold text-black text-center">
-          Our Work Sector
-        </h1>
+      <div className="flex flex-col gap-6 md:gap-12">
+        <div className="flex flex-col justify-center flex-wrap items-center gap-2">
+          <h2 className="text-primary-100">Solutions are Here!</h2>
+          <h1>Our Work Sector</h1>
+        </div>
+        <motion.div
+          className="flex flex-wrap justify-around items-center w-full"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 1 }}
+          transition={{ delay: 0.3, duration: 0.3 }}
+          variants={{
+            hidden: { opacity: 0.75, y: 50 },
+            visible: { opacity: 1, y: 0 },
+          }}
+        >
+          {ourWorkData?.map((e) => {
+            return (
+              <CardWork
+                cardIconProps={
+                  <Icon icon={e.icon} color="#4c6bdc" width="30" height="30" />
+                }
+                cardTitleProps={e.label}
+              />
+            );
+          })}
+        </motion.div>
       </div>
-      <motion.div
-        className="flex flex-wrap justify-around items-center w-full"
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 1 }}
-        transition={{ delay: 0.3, duration: 0.3 }}
-        variants={{
-          hidden: { opacity: 0.75, y: 50 },
-          visible: { opacity: 1, y: 0 },
-        }}
-      >
-        {ourWorkData?.map((e) => {
-          return (
-            <CardWork
-              cardIconProps={
-                <Icon icon={e.icon} color="#4c6bdc" width="30" height="30" />
-              }
-              cardTitleProps={e.label}
-            />
-          );
-        })}
-      </motion.div>
       <ReachUs />
     </div>
   );

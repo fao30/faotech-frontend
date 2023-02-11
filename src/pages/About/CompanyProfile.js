@@ -8,10 +8,10 @@ const CompanyProfile = () => {
         <div className="grid items-end place-items-center">
           <div className="z-10 my-24 lg:mb-12 md:w-4/5 lg:w-full">
             <div className="flex flex-col flex-wrap items-center justify-center mb-6">
-              <h1 className="text-3xl md:lg:text-2xl font-intern text-[#1363DF] text-center">
+              <h1 className=" md:lg:  #1363DF] text-center">
                 Our Company Philosophy
               </h1>
-              <p className="md:w-96 lg:w-[872px] sm:text-center text-center text-[#757575] w-96 sm:w-5/12 mt-4 indent-8 text-m">
+              <p className="md:w-96 lg:w-[872px] sm:text-center text-center #757575] w-96 sm:w-5/12 mt-4 indent-8 text-m">
                 we are obliged to fulfill the maximum potential of your
                 enterprises and business. Conduct research on every variable
                 that exists, determine the direction in solving problems,
