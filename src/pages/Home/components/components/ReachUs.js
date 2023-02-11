@@ -29,7 +29,7 @@ const ReachUs = () => {
             <h2 className="text-[#FEFEFF] font-bold">
               Already have a plan or do you need consultation?
             </h2>
-            <h2 className="text-[#FEFEFF] font-bold">You know where to go</h2>
+            <p className="text-[#FEFEFF] font-bold">You know where to go</p>
           </div>
           <button
             onClick={() => {
