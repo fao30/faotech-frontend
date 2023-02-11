@@ -8,18 +8,18 @@ const HeroContent = () => {
     <div className="paddingX paddingBottom w-full z-10">
       <div className="flex w-full justify-between flex-wrap items-center gap-y-6 md:gap-y-12">
         {/* HERO TITLE */}
-        <div className="w-full lg:w-[55%] flex flex-col gap-2">
+        <div className="w-full lg:w-[45%] flex flex-col gap-2">
           <h2 className="text-primary-100">For Your Business Future</h2>
-          <h1>
+          <h1 className="h1Smaller">
             We are building the best for your Digital Product as comfortable as
             you wish!
           </h1>
-          <p className="text-[#757575] lg:mt-6">
+          <p className="text-[#757575] lg:mt-2">
             Everything's in our service like you need.
           </p>
         </div>
         {/* CARDS */}
-        <div className="w-full lg:w-[40%] flex flex-wrap justify-center items-center">
+        <div className="w-full lg:w-[45%] flex flex-wrap justify-center items-center">
           <motion.div
             className="flex justify-center w-full"
             initial="hidden"

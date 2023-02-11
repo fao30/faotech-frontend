@@ -13,7 +13,7 @@ const ReachUs = () => {
   const navigate = useNavigate();
   return (
     <motion.div
-      className="mt-12 lg:mt-24 w-full"
+      className="mt-12 w-full"
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 1 }}

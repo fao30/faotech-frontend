@@ -24,7 +24,7 @@ const DigitalProduct = () => {
           visible: { opacity: 1, y: 0 },
         }}
       >
-        <h1 className="w-full md:w-[50%]">
+        <h1 className="w-full md:w-[50%] h1Smaller">
           Digital Product Made By Us For Your Business Transformation
         </h1>
         <p className="text-[#757575] w-full md:w-[30%]">
@@ -34,14 +34,7 @@ const DigitalProduct = () => {
       </motion.div>
       {/* Communication Platform for Business to Business Partners */}
       {/* IMG FOR MOBILE PHONES */}
-      <div className="flex justify-center">
-        <img
-          alt="b2b"
-          className="md:lg:hidden w-full transition-all transform hover:scale-[1.15] hover:cursor-zoom-in"
-          src={require("./components/b2b.png")}
-        ></img>
-      </div>
-      <div className="flex justify-center lg:justify-between flex-wrap items-center">
+      <div className="gap-2  flex justify-between flex-wrap-reverse items-center">
         {/* HEADER TITLE */}
         <motion.div
           className="w-full lg:w-[40%]"
@@ -54,7 +47,7 @@ const DigitalProduct = () => {
             visible: { opacity: 1, y: 0 },
           }}
         >
-          <div className=" flex flex-col gap-2">
+          <div className="flex flex-col gap-2">
             <h2>Communication Platform for Business to Business Partners</h2>
             <p className="text-[#757575]">
               B2B-ONE.COM — it's an effective platform for communication between
@@ -66,9 +59,9 @@ const DigitalProduct = () => {
         </motion.div>
         <img
           alt="b2b"
-          className="hidden lg:flex w-full lg:w-6/12 transition-all transform hover:scale-125 hover:cursor-zoom-in mt-12 lg:mt-0"
+          className="w-full lg:w-6/12"
           src={require("./components/b2b.png")}
-        ></img>
+        />
       </div>
     </div>
   );
