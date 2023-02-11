@@ -6,7 +6,7 @@ import CardHero from "./components/CardHero";
 const HeroContent = () => {
   return (
     <div className="paddingX paddingBottom w-full z-10">
-      <div className="flex w-full justify-between flex-wrap items-center gap-y-6 md:gap-y-12">
+      <div className="flex w-full justify-between flex-wrap items-center gap-y-6 lg:gap-y-12">
         {/* HERO TITLE */}
         <div className="w-full lg:w-[45%] flex flex-col gap-2">
           <h2 className="text-primary-100">For Your Business Future</h2>

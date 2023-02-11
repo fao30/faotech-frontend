@@ -13,7 +13,7 @@ const Header = () => {
     });
   };
   return (
-    <div className="paddingX paddingTop paddingBottomLonger w-full z-10">
+    <div className="paddingX paddingTop paddingBottom xl:paddingTopShorter xl:paddingBottomLonger w-full z-10">
       <div className="w-full flex justify-between flex-wrap items-center gap-y-8">
         {/* HEADER TITLE */}
         <motion.div
@@ -28,8 +28,10 @@ const Header = () => {
           }}
         >
           <h2 className="text-primary-100 ">Fast, Trust, Number 1</h2>
-          <h1>We Help You Develop Through Digitalization</h1>
-          <p className="text-[#757575] md:mt-4">
+          <label className="text-4xl md:text-5xl xl:text-6xl font-bold">
+            We Help You Develop Through Digitalization
+          </label>
+          <p className="text-[#757575] md:mt-4 ">
             faoTech — a technology company engaged in industrial digitization
             located in Kazan. We focus on helping you to digitalize your
             business from the first scratch until a digital product ready to
