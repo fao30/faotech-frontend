@@ -13,7 +13,7 @@ const Header = () => {
     });
   };
   return (
-    <div className="paddingX paddingTopShorter paddingBottom lg:paddingYLonger xl:paddingTopShorter xl:paddingBottomLonger 2xl:paddingTop w-full z-10">
+    <div className="paddingX paddingTopShorter paddingBottom xl:paddingTopShorter xl:paddingBottomLonger 2xl:paddingTop w-full z-10">
       <div className="w-full flex justify-between flex-wrap items-center gap-y-8">
         {/* HEADER TITLE */}
         <motion.div
