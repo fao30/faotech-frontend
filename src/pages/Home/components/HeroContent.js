@@ -10,10 +10,10 @@ const HeroContent = () => {
         {/* HERO TITLE */}
         <div className="w-full lg:w-[48%] 2xl:w-[45%] flex flex-col gap-2">
           <h2 className="text-primary-100">For Your Business Future</h2>
-          <label className="text-4xl md:text-5xl xl:text-5xl 2xl:text-[3.5rem] 2xl:leading-[1] font-bold">
+          <h1>
             We are building the best for your Digital Product as comfortable as
             you wish!
-          </label>
+          </h1>
           <p className="text-[#757575] lg:mt-2">
             Everything's in our service like you need.
           </p>

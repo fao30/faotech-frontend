@@ -43,7 +43,7 @@ const Contact = ({ title }) => {
           visible: { opacity: 1, y: 0 },
         }}
       >
-        <h1 className="text-[#4C6BDC] h1Smaller">
+        <h1 className="text-[#4C6BDC] ">
           Let’s discuss your project with our team
         </h1>
         <p className="text-[#A1A1A1]">

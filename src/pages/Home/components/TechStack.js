@@ -8,7 +8,7 @@ const TechStack = () => {
     <div className="paddingX paddingBottomLonger w-full z-10">
       <div className="flex flex-col gap-2">
         <div className="flex flex-col justify-center flex-wrap items-center gap-2">
-          <h1 className="h1Smaller">Tech Stack</h1>
+          <h1 className="">Tech Stack</h1>
           <p className="text-center text-[#757575] w-full md:w-10/12 lg:w-[50%] mt-4 16px] md:20px] ">
             There is no right answer when choosing the right tech stack for you.
             We take into account your long term goal, development timeline,

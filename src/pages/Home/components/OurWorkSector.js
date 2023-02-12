@@ -28,7 +28,7 @@ const OurWorkSector = () => {
       <div className="flex flex-col gap-6 md:gap-12">
         <div className="flex flex-col justify-center flex-wrap items-center gap-2">
           <h2 className="text-primary-100">Solutions are Here!</h2>
-          <h1 className="h1Smaller">Our Work Sector</h1>
+          <h1 className="">Our Work Sector</h1>
         </div>
         <motion.div
           className="flex flex-wrap justify-around items-center w-full"

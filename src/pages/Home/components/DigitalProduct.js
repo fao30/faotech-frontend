@@ -24,7 +24,7 @@ const DigitalProduct = () => {
           visible: { opacity: 1, y: 0 },
         }}
       >
-        <h1 className="w-full md:w-[55%] lg:w-[60%] xl:w-[45%] h1Smaller">
+        <h1 className="w-full md:w-[55%] lg:w-[60%] xl:w-[45%] ">
           Digital Product Made By Us For Your Business Transformation
         </h1>
         <p className="text-[#757575] w-full md:w-[30%]">
@@ -34,7 +34,7 @@ const DigitalProduct = () => {
       </motion.div>
       {/* Communication Platform for Business to Business Partners */}
       {/* IMG FOR MOBILE PHONES */}
-      <div className="gap-2  flex justify-between flex-wrap-reverse items-center">
+      <div className="gap-2  flex justify-between flex-wrap items-center">
         {/* HEADER TITLE */}
         <motion.div
           className="w-full lg:w-[40%]"

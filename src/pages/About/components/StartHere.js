@@ -25,7 +25,7 @@ const StartHere = () => {
     >
       <div className="flex justify-center w-full flex-wrap items-end rounded-xl  bg-white border-2 shadow-xl p-12">
         <div className="justify-center items-center w-full flex flex-col gap-6">
-          <h1 className="text-[#1363DF]  h1Smaller sm:text-center text-left">
+          <h1 className="text-[#1363DF]   sm:text-center text-left">
             Let’s create something amazing together
           </h1>
           <p className="text-[#757575] sm:text-center text-left">
