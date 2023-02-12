@@ -29,7 +29,7 @@ const Footer = () => {
     });
   };
   return (
-    <footer className="paddingX paddingY md:paddingX md:paddingYShorter2 border-t-2">
+    <footer className="paddingX paddingY lg:paddingX lg:paddingYShorter2 border-t-2">
       <div className="flex justify-between flex-wrap gap-y-6">
         <div className="w-full lg:w-[50%] xl:w-[55%] 2xl:w-[60%] flex flex-col gap-y-2">
           <div className="flex items-center">
