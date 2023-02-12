@@ -52,6 +52,9 @@
   .paddingYShorter {
     @apply py-[6vw];
   }
+  .paddingYShorter2 {
+    @apply py-[4vw];
+  }
   .paddingYLonger {
     @apply py-[10vw];
   }
