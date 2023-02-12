@@ -3,7 +3,7 @@ import React from "react";
 
 const HeaderAbout = () => {
   return (
-    <div className="lg:paddingYLonger2 paddingX paddingBottomLonger paddingTopShorter xl:paddingTopShorter xl:paddingBottomLonger w-full z-10">
+    <div className="paddingX paddingBottomLonger paddingTopShorter xl:paddingYLonger 2xl:paddingTopShorter 2xl:paddingBottomLonger w-full z-10">
       <div className="flex justify-between flex-wrap items-center w-full ">
         {/* HEADER TITLE, Digital Product Made By Us*/}
         <div className="w-full lg:w-[50%] text-[#757575] 16px] md:20px]">
