@@ -28,8 +28,13 @@ const FormContact = () => {
         values,
         process.env.REACT_APP_PUBLIC_KEY_EMAILJS
       );
-      toast.success("Message Sent!");
-      resetForm();
+      toast.loading("Sending...", {
+        duration: 2000,
+      });
+      setTimeout(() => {
+        toast.success("Message Sent!");
+        resetForm();
+      }, 2000);
     },
   });
 
