@@ -18,26 +18,24 @@ const FormContact = () => {
       yourName: Yup.string().required("Required"),
       companyName: Yup.string().required("Required"),
       email: Yup.string().email("Invalid email address").required("Required"),
-      yourBudget: Yup.number()
-        .positive()
-        .integer()
-        .typeError("This field must only contain number")
-        .required("Required"),
+      yourBudget: Yup.string().required("Required"),
       textarea: Yup.string().required("Required"),
     }),
-    onSubmit: (values, { resetForm, setSubmitting }) => {
+    onSubmit: (values, { resetForm }) => {
       emailjs.send(
         process.env.REACT_APP_SERVICE_ID_EMAILJS,
         process.env.REACT_APP_TEMPLATE_ID_EMAILJS,
         values,
         process.env.REACT_APP_PUBLIC_KEY_EMAILJS
       );
+      toast.success("Message Sent!");
       resetForm();
     },
   });
 
   return (
     <>
+      <Toaster />
       <form onSubmit={formik.handleSubmit}>
         <div className="flex flex-col flex-wrap gap-x-10 gap-y-5">
           <div className="flex flex-col gap-[1rem] sm:flex-row sm:gap-[4rem] p text-[#757575]">
@@ -127,7 +125,7 @@ const FormContact = () => {
                 onBlur={formik.handleBlur}
               />
               {formik.errors.textarea && formik.touched.textarea ? (
-                <p className="mt-1 ml-1  text-red-600">
+                <p className="mt-1 ml-1 text-red-600">
                   {formik.errors.textarea}
                 </p>
               ) : null}
