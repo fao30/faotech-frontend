@@ -34,6 +34,7 @@ const Portfolio = ({ title }) => {
               desc={e?.desc}
               link={e?.link}
               label={e?.label}
+              alt={e?.alt}
             />
           );
         })}
